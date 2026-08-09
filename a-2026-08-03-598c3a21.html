@@ -155,7 +155,20 @@ body{
 .toc-when{color:var(--muted); font-size:.72rem; flex:none; padding-top:.12rem}
 .toc-list a{color:var(--ink-soft); text-decoration:none}
 .toc-list a:hover{color:var(--accent); text-decoration:underline}
-.toc-more{color:var(--muted); font-size:.75rem; font-style:italic}
+/* The disclosure for the rest of a theme. Styled as a quiet control
+   rather than a label, because the old "+17 more below" read as a
+   statement and this is a button. */
+.toc-rest{margin:.1rem 0 0}
+.toc-rest > summary{
+  cursor:pointer; color:var(--muted); font-size:.75rem;
+  list-style:none; display:inline-flex; align-items:center; gap:.3rem;
+  padding:.15rem 0;
+}
+.toc-rest > summary::-webkit-details-marker{display:none}
+.toc-rest > summary::before{content:"▸"; font-size:.65rem}
+.toc-rest[open] > summary::before{content:"▾"}
+.toc-rest > summary:hover{color:var(--accent)}
+.toc-rest[open] > summary{margin-bottom:.35rem}
 /* The unsorted group is a holding pen, not a theme — it should read as
    pending rather than as a peer of the real ones. */
 .toc-unsorted .toc-name{color:var(--muted); font-style:italic}
