@@ -24,7 +24,8 @@
     "Industrial Chemicals & Materials",
     "Energy Services & Wellhead Equipment",
     "Engineering & Infrastructure Consulting",
-    "Power Generation & Utilities"
+    "Power Generation & Utilities",
+    "Semiconductor Equipment & Tools"
   ],
   "assignments": {
     "05d6ceb503864d2f9b302bb0d5c688dc": "AI Semiconductors & Optical Components",
@@ -70,6 +71,7 @@
     "4bdbe5738101463e91f1a37b92d24e54": "Cybersecurity & Identity Software",
     "4e7a892862154572a0208f6d4a84d1f4": "Enterprise Software & Cloud Infrastructure",
     "50832333bd08404c94d24750627bd6a8": "Back-Office & HR Software",
+    "51128a44fe4242a9bbae0de6d1835bea": "Semiconductor Equipment & Tools",
     "5349d0528a884233b860604f144b1e69": "Financial Services & Capital Markets",
     "5427b0bcd0de4adfb4f4a802dada088e": "AI Semiconductors & Optical Components",
     "54c451c36a59402e8fea8c0cf0fb0332": "Networking & Data-Center Gear",
