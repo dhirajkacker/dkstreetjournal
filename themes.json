@@ -18,7 +18,8 @@
     "Nuclear & Uranium",
     "Semiconductor Manufacturing & Test",
     "Oil Refining",
-    "Restaurants & Hospitality"
+    "Restaurants & Hospitality",
+    "Pharmaceuticals & Biotech"
   ],
   "assignments": {
     "05d6ceb503864d2f9b302bb0d5c688dc": "AI Semiconductors & Chips",
@@ -62,6 +63,7 @@
     "30abb4a636de4110a92dcf0975186a7d": "Defense, Aerospace, Oil Services & Diversified",
     "30f0a316dd60451c8a2ef163538614fb": "Business Software & Enterprise SaaS",
     "325f7d72b14c422988fb7d29677aa401": "Defense, Aerospace, Oil Services & Diversified",
+    "364e4b52bbf343f0809de82af4f24740": "Pharmaceuticals & Biotech",
     "37e049cb6b084a0e97d6dd6d24573daf": "IT Services & Management Consulting",
     "3b326af4172e42ef920e7d03ef66f899": "Defense, Aerospace, Oil Services & Diversified",
     "3e8c0a2a78274ee8b08281dbb86e67d0": "AI Server Hardware & Assembly",
