@@ -22,7 +22,8 @@
     "Industrial Chemicals & Materials",
     "Defense & Government Contractors",
     "Financial Software & Payments",
-    "Oil Refining & Petroleum"
+    "Oil Refining & Petroleum",
+    "Satellite & Earth Observation"
   ],
   "assignments": {
     "05d6ceb503864d2f9b302bb0d5c688dc": "Memory & Semiconductor Manufacturing",
@@ -178,6 +179,7 @@
     "c0466c2bdd1f4ace893594d4cfb848d2": "Memory & Semiconductor Manufacturing",
     "c0c287c560cd4dee8361f55b54aa06d1": "Enterprise Cloud & Infrastructure Software",
     "c194bb239aef48ae8c654cc174462889": "Enterprise Cloud & Infrastructure Software",
+    "c376cc5dc64948d69c5a371dda90e983": "Satellite & Earth Observation",
     "c5c5fa746dfd43bcb834754794926f44": "AI Data-Center Infrastructure & Power",
     "c602ea5453aa4023972ffa854ba8bf99": "IT Consulting & Technology Services",
     "c7ba245b5bcb4996955fd214b472eba1": "AI Server Manufacturing & Assembly",
