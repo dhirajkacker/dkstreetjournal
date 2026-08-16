@@ -19,7 +19,8 @@
     "Semiconductor Manufacturing & Test",
     "Oil Refining",
     "Restaurants & Hospitality",
-    "Pharmaceuticals & Biotech"
+    "Pharmaceuticals & Biotech",
+    "Trucking & Rail Transportation"
   ],
   "assignments": {
     "05d6ceb503864d2f9b302bb0d5c688dc": "AI Semiconductors & Chips",
@@ -210,6 +211,7 @@
     "f2497266c7a747c5891fdebebb27ccd4": "Business Software & Enterprise SaaS",
     "f622ab85ab984fbfafde239a2cc520ef": "Networking & Optical Communications",
     "f737e16899ec4a6daa3970a850645cb4": "IT Services & Management Consulting",
+    "fb28ad7a050a48a5860c37ba2033452f": "Trucking & Rail Transportation",
     "fe30ee94a7234b2c9523dca6c81fa7c2": "Defense, Aerospace, Oil Services & Diversified"
   }
 }
