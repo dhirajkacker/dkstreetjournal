@@ -17,7 +17,8 @@
     "Analog & Power Semiconductors",
     "Nuclear & Uranium",
     "Semiconductor Manufacturing & Test",
-    "Oil Refining"
+    "Oil Refining",
+    "Restaurants & Hospitality"
   ],
   "assignments": {
     "05d6ceb503864d2f9b302bb0d5c688dc": "AI Semiconductors & Chips",
@@ -67,6 +68,7 @@
     "4064ace34bf74c2d98cbf1cf5bbba9a3": "AI Semiconductors & Chips",
     "425bed3abcbe4bfb948c26531cb83844": "Business Software & Enterprise SaaS",
     "4285c7fa59bc49738e1110b6e17908e5": "Analog & Power Semiconductors",
+    "46039bd5385148f0a58294a6c0f3d54d": "Restaurants & Hospitality",
     "471801be50724976982a0c0d51754ef7": "Cloud Computing & Data Infrastructure",
     "47588d8895d04555869e711b37f81de6": "IT Services & Management Consulting",
     "476789ef95c149deb7e10bc00bb10615": "Natural Gas & LNG Infrastructure",
