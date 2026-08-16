@@ -16,7 +16,8 @@
     "Electric Power & Utilities",
     "Analog & Power Semiconductors",
     "Nuclear & Uranium",
-    "Semiconductor Manufacturing & Test"
+    "Semiconductor Manufacturing & Test",
+    "Oil Refining"
   ],
   "assignments": {
     "05d6ceb503864d2f9b302bb0d5c688dc": "AI Semiconductors & Chips",
@@ -97,6 +98,7 @@
     "61052cf7cfae4de790467686a8f25681": "Natural Gas & LNG Infrastructure",
     "61accf08ef8948548c9fa9b724bd6075": "AI Server Hardware & Assembly",
     "68a5b0bce5e74dc4b2c6dc6be669fe68": "Defense, Aerospace, Oil Services & Diversified",
+    "6944813aaff946b5808f290701f7a871": "Oil Refining",
     "6af049604dd948e694312b658a05b2c8": "Nuclear & Uranium",
     "6b494eef46c449749786bcdef8a77687": "AI Semiconductors & Chips",
     "6c84a39c15bf46a89bb22859b7b33320": "Analog & Power Semiconductors",
