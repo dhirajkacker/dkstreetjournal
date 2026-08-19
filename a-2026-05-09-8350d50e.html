@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>POET Technologies: Speculative Rebound or Catch-Up Trade? The Evidence Is Mixed</title>
+<meta name="description" content="POET&#x27;s apparent 5-day/1-month breakout is an artifact of a +107% spike and -47% crash driven by a governance failure (Marvell order cancellation), not a clean technical breakout. With ~\$430M in…"/>
+<meta property="og:site_name" content="DK Street Journal"/>
+<meta property="og:title" content="POET Technologies: Speculative Rebound or Catch-Up Trade? The Evidence Is Mixed"/>
+<meta property="og:description" content="POET&#x27;s apparent 5-day/1-month breakout is an artifact of a +107% spike and -47% crash driven by a governance failure (Marvell order cancellation), not a clean technical breakout. With ~\$430M in…"/>
+<meta property="og:type" content="article"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://dkstreetjournal.com/a-2026-05-09-8350d50e.html"/>
+<link rel="canonical" href="https://dkstreetjournal.com/a-2026-05-09-8350d50e.html"/>
+<meta property="article:published_time" content="2026-05-10T02:35:28Z"/>
+<meta property="og:image" content="https://dkstreetjournal.com/assets/chart-POET-2026-05-09.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="POET Technologies: Speculative Rebound or Catch-Up Trade? The Evidence Is Mixed"/>
+<meta name="twitter:description" content="POET&#x27;s apparent 5-day/1-month breakout is an artifact of a +107% spike and -47% crash driven by a governance failure (Marvell order cancellation), not a clean technical breakout. With ~\$430M in…"/>
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48 64x64" href="assets/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png"/><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"/><link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png"/>
+<style>
+:root{
+  --ink:#111418; --ink-soft:#454b54; --muted:#6b7280; --hair:#e3e6ea;
+  --bg:#fbfbfa; --card:#ffffff; --accent:#2563eb;
+  --bull:#15803d; --bear:#e11d48;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,
+    "Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,
+    Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:17px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1120px; margin:0 auto; padding:0 22px 72px}
+
+/* masthead */
+.masthead{text-align:center; padding:56px 0 26px; border-bottom:3px double var(--ink)}
+.lockup{
+  display:flex; align-items:center; justify-content:center;
+  gap:clamp(.34rem,1.2vw,.75rem); flex-wrap:nowrap;
+}
+/* The mark scales with the name it sits beside, so the lockup keeps
+   its proportions from phone to desktop instead of the monogram
+   swelling as the type shrinks. It now stands IN the wordline in
+   place of the word "DK", so it is sized against cap height. */
+.mark{display:block; flex:0 0 auto; line-height:0}
+.mark img{display:block; height:clamp(2.05rem,5.8vw,3.5rem); width:auto}
+/* ⚠️ Specificity, not just order. `.mark img` is (0,1,1) and a bare
+   `.mark-dark` is (0,1,0), so `display:block` won and BOTH marks
+   rendered — the cream one over white read as a ghosted second
+   monogram. The selectors below match `.mark img`'s weight and add a
+   class, so the toggle actually wins. */
+.mark img.mark-dark{display:none}
+.wordmark{
+  font-family:var(--serif); font-weight:700; letter-spacing:.02em;
+  font-size:clamp(1.9rem,5.4vw,3.6rem); line-height:1.05; margin:0;
+  text-transform:uppercase;
+}
+.wordmark-text{display:inline-block}
+/* Available to a screen reader, absent from the page. */
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+.tagline{
+  margin:.55rem 0 0; color:var(--muted); font-size:.82rem;
+  letter-spacing:.18em; text-transform:uppercase;
+}
+.masthead-meta{margin:.7rem 0 0; color:var(--muted); font-size:.8rem}
+
+/* ⚠️ An article page's nameplate is a LINK, and a link needs its own
+   rules. Without these the anchor fell back to browser defaults —
+   blue and underlined — and `.mark`'s `display:block` broke the line,
+   so the monogram sat alone above a centred blue "DK Street Journal".
+   It shipped that way because the front page uses `<h1 class="wordmark
+   lockup">` and I reused `.masthead` around a different element,
+   assuming the styling would carry. */
+.masthead-slim{padding:34px 0 22px}
+.masthead-slim .back{
+  display:inline-flex; align-items:center; justify-content:center;
+  gap:clamp(.3rem,1.1vw,.62rem);
+  font-family:var(--serif); font-weight:700; letter-spacing:.02em;
+  font-size:clamp(1.15rem,2.4vw,1.6rem); line-height:1;
+  color:var(--ink); text-decoration:none;
+}
+.masthead-slim .back:hover{color:var(--accent)}
+/* Smaller than the front page's nameplate: this one sits above a
+   single article, not over the whole paper. */
+.masthead-slim .mark img{height:clamp(1.45rem,3.2vw,2.1rem)}
+
+/* disclaimer — must not be skimmable past */
+.disclaimer{
+  margin:26px auto 0; max-width:82ch; padding:20px 22px; background:#fff8f1;
+  border:1px solid #f0d9c0; border-left:4px solid #c2410c; border-radius:6px;
+}
+.disc-head{
+  margin:0 0 .6rem; font-family:var(--sans); font-size:.78rem;
+  letter-spacing:.14em; text-transform:uppercase; color:#9a3412;
+}
+.disclaimer p{margin:.5rem 0; font-size:.86rem; line-height:1.6; color:var(--ink-soft)}
+.disclaimer strong{color:var(--ink)}
+.disc-closer{margin-top:.9rem !important; font-weight:600; color:var(--ink) !important}
+
+/* how it works */
+.how{margin:34px auto 0}
+.how h2{
+  font-family:var(--sans); font-size:.78rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 .8rem;
+}
+.how{max-width:74ch; margin-left:auto; margin-right:auto}
+.how p{margin:.6rem 0; font-size:.94rem; color:var(--ink-soft)}
+.how-lede strong{color:var(--ink)}
+.agents{margin:.6rem 0; padding-left:1.25rem}
+.agents li{margin:.4rem 0; font-size:.94rem; color:var(--ink-soft)}
+.agents strong{color:var(--ink)}
+.rule{border:0; border-top:1px solid var(--hair); margin:40px 0 0}
+
+/* articles
+   Text sits in a centred reading measure; the visuals break out to
+   the full width. Left-aligning the prose inside a 1120px wrap left a
+   dead gutter down the whole right-hand side of every article. */
+.article{padding:44px 0; border-bottom:1px solid var(--hair)}
+.article:last-child{border-bottom:0}
+.art-head,.dek,.body,.art-foot{max-width:68ch; margin-left:auto; margin-right:auto}
+.dateline{
+  margin:0 0 .5rem; color:var(--muted); font-size:.75rem;
+  letter-spacing:.1em; text-transform:uppercase;
+}
+.headline{
+  font-family:var(--serif); font-weight:700; margin:0;
+  font-size:clamp(1.6rem,3.6vw,2.3rem); line-height:1.18;
+  letter-spacing:-.008em;
+}
+/* The table of contents. Full-width like the visuals rather than
+   inside the 68ch measure — it is a scanning surface, not prose, and
+   at ~8 themes a single column would push the first article a screen
+   and a half down the page. `auto-fit` + `minmax` gives 3 columns on a
+   desktop and 1 on a phone with no media query and no JavaScript (the
+   site's CSP is `script-src 'none'`). */
+.toc{margin:1.6rem 0 0}
+.toc-head{
+  font-family:var(--sans); font-size:.72rem; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
+  margin:0 0 .9rem; display:flex; align-items:baseline; gap:.6rem;
+  border-bottom:1px solid var(--hair); padding-bottom:.5rem;
+}
+.toc-total{
+  font-weight:400; letter-spacing:.02em; text-transform:none;
+  font-size:.75rem;
+}
+.toc-grid{
+  display:grid; gap:1rem 1.6rem;
+  grid-template-columns:repeat(auto-fit,minmax(255px,1fr));
+}
+.toc-card{min-width:0}
+.toc-name{
+  font-family:var(--serif); font-size:1.02rem; font-weight:700;
+  margin:0 0 .4rem; line-height:1.25; color:var(--ink);
+  display:flex; align-items:baseline; gap:.45rem;
+}
+.toc-count{
+  font-family:var(--sans); font-size:.68rem; font-weight:600;
+  color:var(--muted); background:var(--hair); border-radius:999px;
+  padding:1px 7px; flex:none;
+}
+.toc-list{list-style:none; margin:0; padding:0}
+.toc-list li{
+  font-size:.86rem; line-height:1.4; margin:0 0 .35rem;
+  display:flex; gap:.5rem;
+}
+.toc-when{color:var(--muted); font-size:.72rem; flex:none; padding-top:.12rem}
+.toc-list a{color:var(--ink-soft); text-decoration:none}
+.toc-list a:hover{color:var(--accent); text-decoration:underline}
+/* The disclosure for the rest of a theme. Styled as a quiet control
+   rather than a label, because the old "+17 more below" read as a
+   statement and this is a button. */
+.toc-rest{margin:.1rem 0 0}
+.toc-rest > summary{
+  cursor:pointer; color:var(--muted); font-size:.75rem;
+  list-style:none; display:inline-flex; align-items:center; gap:.3rem;
+  padding:.15rem 0;
+}
+.toc-rest > summary::-webkit-details-marker{display:none}
+.toc-rest > summary::before{content:"▸"; font-size:.65rem}
+.toc-rest[open] > summary::before{content:"▾"}
+.toc-rest > summary:hover{color:var(--accent)}
+.toc-rest[open] > summary{margin-bottom:.35rem}
+/* The unsorted group is a holding pen, not a theme — it should read as
+   pending rather than as a peer of the real ones. */
+.toc-unsorted .toc-name{color:var(--muted); font-style:italic}
+
+/* The summary is a standfirst, not a caption. Editor v1.2 writes
+   ~120-150 words here, where v1.1 wrote ~50 — a size that reads as one
+   emphatic line collapses into a grey slab at three times the length.
+   So it takes a rule and a little indent: enough to stay distinct from
+   the body without competing with the headline above it. Briefs
+   published before v1.2 keep their short summary and simply occupy
+   less of the same frame. */
+/* Provenance sits between the headline and the summary — close enough
+   to the headline to be read as a byline, quiet enough not to compete
+   with it. Sized below the dateline above it so the header reads
+   top-down in decreasing weight. */
+.provenance{
+  margin:.55rem 0 0; font-family:var(--sans); font-size:.72rem;
+  color:var(--muted); letter-spacing:.01em; line-height:1.5;
+}
+.prov-role{
+  text-transform:uppercase; letter-spacing:.08em; font-size:.64rem;
+  color:var(--hair-ink,#9aa3ad); font-weight:600;
+}
+
+.dek{
+  margin:1rem 0 0; padding:0 0 0 .95rem;
+  border-left:3px solid var(--hair);
+}
+.dek p{
+  margin:0 0 .55rem; font-size:1.02rem; line-height:1.6;
+  color:var(--ink-soft);
+}
+.dek p:last-child{margin-bottom:0}
+
+/* The permalink sits above the dateline, right-aligned and quiet. It
+   is a utility, not part of the article — it exists so a reader can
+   right-click and send the piece to someone. */
+.entry{position:relative}
+.permabar{
+  max-width:68ch; margin:0 auto; text-align:right;
+  font-size:.72rem; line-height:1; height:0;
+}
+.permalink{
+  color:var(--muted); text-decoration:none; letter-spacing:.03em;
+  position:relative; top:.15rem;
+}
+.permalink:hover{color:var(--accent); text-decoration:underline}
+.entry:target .headline{
+  /* Landing from a shared link should show you WHICH article you
+     were sent, or the jump reads as an ordinary scroll position. */
+  box-shadow:-.6rem 0 0 var(--accent);
+}
+
+.pager{
+  display:flex; flex-wrap:wrap; align-items:center; gap:.4rem;
+  justify-content:center; margin:2.5rem auto 0; max-width:68ch;
+  padding-top:1.4rem; border-top:1px solid var(--hair);
+}
+.pager a,.pager span{
+  font-size:.82rem; padding:.36rem .6rem; border-radius:4px;
+  text-decoration:none; color:var(--ink-soft);
+}
+.pager a:hover{background:var(--hair); color:var(--accent)}
+.pg-num{min-width:2rem; text-align:center}
+.pg-here{background:var(--accent); color:#fff; font-weight:600}
+.pg-off{color:var(--hair)}
+.pg-gap{padding:.36rem .2rem; color:var(--muted)}
+.short-notice{margin:0 0 .5rem}
+.short-notice a{color:var(--muted); white-space:nowrap}
+.chips{display:flex; flex-wrap:wrap; gap:6px; margin:1rem 0 0}
+.chip{
+  font-size:.7rem; letter-spacing:.04em; color:var(--muted);
+  background:#f1f3f5; border:1px solid var(--hair);
+  border-radius:999px; padding:2px 9px; white-space:nowrap;
+}
+.chip-ticker{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-weight:600; color:var(--ink); background:#fff;
+}
+.body{margin:1.6rem auto 0}
+.body p{margin:0 0 1.05rem}
+.body h2,.body h3{
+  font-family:var(--serif); margin:2rem 0 .6rem; line-height:1.25;
+}
+.body h2{font-size:1.28rem}
+.body h3{font-size:1.1rem}
+.body a{color:var(--accent); text-decoration:underline;
+  text-underline-offset:2px; text-decoration-thickness:1px}
+.body a:hover{background:#eff4ff}
+.body ul,.body ol{margin:0 0 1.05rem; padding-left:1.3rem}
+.body li{margin:.3rem 0}
+.body blockquote{
+  margin:1.2rem 0; padding:.2rem 0 .2rem 1rem;
+  border-left:3px solid var(--hair); color:var(--ink-soft);
+}
+.body table{border-collapse:collapse; width:100%; font-size:.9rem; margin:1.2rem 0}
+.body th,.body td{border-bottom:1px solid var(--hair); padding:6px 8px; text-align:left}
+
+/* visuals */
+.visuals{margin:2.2rem 0 0}
+.visuals-lede{margin:1.5rem 0 0}
+.visuals-lede .vis-head{margin-top:1.3rem}
+.vis-head{
+  font-family:var(--sans); font-size:.72rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted);
+  margin:1.8rem 0 .7rem; padding-bottom:.4rem;
+  border-bottom:1px solid var(--hair);
+}
+.vis-note{margin:.5rem 0 0; font-size:.76rem; color:var(--muted)}
+.strip,.table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch}
+.strip table,.table-wrap table{min-width:520px}
+.chart-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+@media (max-width:900px){.chart-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.chart-grid{grid-template-columns:1fr}}
+
+/* disclosures */
+.art-foot{margin:1.8rem auto 0; display:flex; flex-direction:column; gap:.5rem}
+.disclosure{
+  border:1px solid var(--hair); border-radius:6px;
+  background:var(--card); padding:0;
+}
+.disclosure summary{
+  cursor:pointer; padding:9px 13px; font-size:.78rem; color:var(--muted);
+  letter-spacing:.06em; text-transform:uppercase; list-style:none;
+}
+.disclosure summary::-webkit-details-marker{display:none}
+.disclosure summary::before{content:"\25B8  "; color:var(--muted)}
+.disclosure[open] summary::before{content:"\25BE  "}
+.disclosure[open] summary{border-bottom:1px solid var(--hair)}
+.sources{margin:0; padding:10px 13px 12px 30px; font-size:.82rem}
+.sources li{margin:.3rem 0; color:var(--ink-soft)}
+.src-internal{
+  margin:0; padding:8px 13px 12px; color:var(--muted);
+  font-size:.78rem; line-height:1.5; border-top:1px solid var(--hair);
+}
+.src-domain{color:var(--muted); font-size:.74rem}
+.sources a{color:var(--accent)}
+.hyp{margin:0; padding:10px 15px; color:var(--ink-soft); font-size:.9rem}
+.hyp p{margin:.4rem 0}
+.hyp-meta{
+  margin:10px 15px 0; font-size:.72rem; color:var(--muted);
+  letter-spacing:.05em; text-transform:uppercase;
+}
+
+/* footer */
+.site-foot{margin:52px auto 0; padding-top:22px; border-top:3px double var(--ink)}
+.site-foot{max-width:74ch; margin-left:auto; margin-right:auto}
+.site-foot p{margin:.3rem 0; font-size:.78rem; color:var(--muted)}
+.built{color:#9aa1ab !important}
+.empty{color:var(--muted); padding:40px 0}
+
+@media (prefers-color-scheme:dark){
+  :root{
+    --ink:#e8eaed; --ink-soft:#b9bfc7; --muted:#8b939d; --hair:#2a2f36;
+    --bg:#14171a; --card:#1b1f24; --accent:#7aa7ff;
+  }
+  /* A PNG cannot recolour itself, so the navy mark is swapped for
+     the near-white one rather than filtered — a CSS invert would take
+     the gold slash with it and turn it blue. */
+  .mark img.mark-light{display:none}
+  .mark img.mark-dark{display:block}
+  .disclaimer{background:#2a1c12; border-color:#5c3a1e; border-left-color:#ea8c4b}
+  .disc-head{color:#f0a868}
+  .chip{background:#22272e}
+  .chip-ticker{background:#1b1f24}
+  .body a:hover{background:#1e2a44}
+  /* The chart cards and tables carry their own light ground; keep
+     them on white rather than letting dark text land on it. */
+  .strip,.chart-grid,.table-wrap{
+    background:#fff; border-radius:8px; padding:10px; color:#111418;
+  }
+}
+
+/* --- Search ------------------------------------------------------- */
+.mast-search{margin:14px auto 0; max-width:34rem}
+.masthead-slim + .mast-search{margin:10px 0 0}
+.mast-search input{
+  width:100%; box-sizing:border-box; padding:8px 12px;
+  font:inherit; font-size:.95rem; color:inherit;
+  background:transparent; border:1px solid #c9c2b4; border-radius:8px;
+}
+.mast-search input:focus{outline:2px solid #1d3557; outline-offset:1px}
+.search-main{max-width:68ch; margin:0 auto}
+.sr-status{color:#6b6455; font-size:.92rem; margin:18px 0 6px}
+.search-results{list-style:none; margin:0; padding:0}
+.search-results li{margin:0 0 22px; padding:0}
+.sr-meta{color:#6b6455; font-size:.82rem; letter-spacing:.02em;
+  text-transform:uppercase; margin:0 0 2px}
+.sr-title{margin:0; font-size:1.08rem; line-height:1.35}
+.sr-title a{color:inherit; text-decoration:none}
+.sr-title a:hover{text-decoration:underline}
+.sr-sum{color:#4c463a; margin:3px 0 0; font-size:.95rem; line-height:1.5}
+@media (prefers-color-scheme: dark){
+  .mast-search input{border-color:#3a3f46}
+  .mast-search input:focus{outline-color:#8fb4e8}
+  .sr-status,.sr-meta{color:#9aa3ad}
+  .sr-sum{color:#b7bec7}
+}
+</style>
+</head>
+<body>
+<div class="wrap"><header class="masthead masthead-slim"><a class="back" href="index.html"><span class="mark" aria-hidden="true"><img class="mark-light" src="assets/mark-navy.png" alt=""/><img class="mark-dark" src="assets/mark-cream.png" alt=""/></span><span>DK Street Journal</span></a></header><form class="mast-search" action="search.html" method="get" role="search"><input type="search" name="q" placeholder="Search companies, tickers, sectors…" aria-label="Search articles" maxlength="200"/></form><hr class="rule"/><main class="feed"><div class="entry"><article class="article" id="a-8350d50e5cbf4d89bba43a127a687540"><header class="art-head"><p class="dateline"><time datetime="2026-05-10T02:35:28Z">May 9, 2026 · 7:35 PM PDT</time></p><h2 class="headline">POET Technologies: Speculative Rebound or Catch-Up Trade? The Evidence Is Mixed</h2><p class="provenance"><span class="prov-role">Prompt</span> v1.0</p><div class="dek"><p>POET's apparent 5-day/1-month breakout is an artifact of a +107% spike and -47% crash driven by a governance failure (Marvell order cancellation), not a clean technical breakout. With ~$430M in cash, genuine technology awards, and sector tailwinds from large-cap peers, POET has structural support — but serial dilution, pre-revenue financials, class-action investigations, and a Zacks fair-value estimate below current price make this a high-risk speculative story, not a straightforward catch-up trade.</p></div><div class="chips"><span class="chip chip-ticker">POET</span><span class="chip chip-ticker">LITE</span><span class="chip chip-ticker">AAOI</span><span class="chip chip-ticker">COHR</span><span class="chip">Semiconductors</span><span class="chip">Optical Networking</span><span class="chip">AI Infrastructure</span></div></header><section class="visuals visuals-lede"><div class="strip"><table style="width:100%;border-collapse:collapse;font-size:0.86rem;line-height:1.35"><thead><tr style="color:#94a3b8;font-size:0.74rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Ticker</th><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Company</th><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Segment</th><th style="text-align:left;padding:0 8px 3px;font-weight:600">Trend · 13mo</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">30D</th><th style="text-align:right;padding:0 0 3px 6px;font-weight:600;white-space:nowrap">1Y</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">POET</code></td><td style="padding:4px 8px 4px 0">POET Technologies</td><td style="padding:4px 8px 4px 0;color:#64748b">Discrete &amp; Power</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+79.9%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+144.1%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">LITE</code></td><td style="padding:4px 8px 4px 0">Lumentum</td><td style="padding:4px 8px 4px 0;color:#64748b">Optical Transport &amp; Switching</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+1.0%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+1292.7%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">AAOI</code></td><td style="padding:4px 8px 4px 0">Applied Optoelectronics</td><td style="padding:4px 8px 4px 0;color:#64748b">RF &amp; Wireless</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+11.7%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+915.3%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">COHR</code></td><td style="padding:4px 8px 4px 0">Coherent</td><td style="padding:4px 8px 4px 0;color:#64748b">Instrumentation &amp; Test Equipment</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+18.0%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+375.1%</span></td></tr></tbody></table></div><h3 class="vis-head">12-month price &amp; trend</h3><div class="chart-grid"><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">POET</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">POET Technologies</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">10.94</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+1.34 (+13.92%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-POET-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="POET 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Discrete &amp; Power</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">LITE</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Lumentum</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">903</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+4.45 (+0.50%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-LITE-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="LITE 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Optical Transport &amp; Switching</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">AAOI</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Applied Optoelectronics</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">149</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−19.54 (−11.60%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-AAOI-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="AAOI 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">RF &amp; Wireless</div></div></div><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px;font-weight:600;white-space:nowrap">Ticker</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">Mkt cap</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">EV/EBITDA</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FCF yld</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">POET</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$1.2B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">—</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">724.4x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">137.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">—</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">—</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">-3.3%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">LITE</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$75.4B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">52.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">25.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">13.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">60.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">31.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.7%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">AAOI</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$12.4B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">149.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">20.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">11.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">72.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">41.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">-3.3%</td></tr></tbody></table></div><div class="chart-grid"><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">COHR</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Coherent</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">335</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+6.79 (+2.07%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-COHR-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="COHR 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Instrumentation &amp; Test Equipment</div></div></div><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px;font-weight:600;white-space:nowrap">Ticker</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">Mkt cap</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">EV/EBITDA</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FCF yld</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">COHR</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$68.7B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">80.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">42.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">9.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">7.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">25.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">18.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">53.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">-85.8%</td></tr></tbody></table></div></section><section class="visuals visuals-tables"><h3 class="vis-head">Consensus projections</h3><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px 0;font-weight:600">Ticker</th><th style="text-align:left;padding:0 6px 3px;font-weight:600"></th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2026E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2027E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2028E</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">POET</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+684.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+609.0%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+1.6%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−8.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−41.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−113.3%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">LITE</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+83.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+89.0%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+54.6%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+314.0%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+125.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+58.9%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">AAOI</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+129.8%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+169.3%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+48.7%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−417.3%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+454.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+102.6%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">COHR</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+21.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+37.7%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+38.2%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+55.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+53.4%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+58.4%</span></td></tr></tbody></table></div><p class="vis-note">Forward fiscal years only. Blank means no analyst coverage for that year.</p></section><div class="body"><h2>What Actually Happened to the Price</h2>
+<p>The framing of POET (TSX-V: PTK / OTC: POETF) as a "gradual breakout" misreads the price action almost entirely. POET surged from ~$7.26 (Apr 17) to $15.10 (Apr 24) — a +107% move in five sessions — then collapsed -47.4% on Apr 27 after <a href="https://www.poet-technologies.com/news/poet-technologies-provides-purchase-order-update" rel="noopener noreferrer">Marvell Semiconductor, which acquired Celestial AI, cancelled ALL purchase orders citing an alleged confidentiality breach</a>. The current price of ~$10.95 (May 8) is a <em>recovery from the crash</em>, not an organic breakout from a depressed base.</p>
+<p>The governance context is damaging: <a href="https://sherwood.news/markets/marvell-cancels-order-with-poet-citing-breach-of-confidentiality/" rel="noopener noreferrer">the cancellation was reportedly triggered by POET's own CFO publicly disclosing confidential order details in a Stocktwits TV interview</a>, a self-inflicted wound that raises real questions about management discipline. Volume in the recovery phase (82M shares May 5, 68M May 6, 71M May 8) dwarfs the pre-spike average of ~8–10M daily — consistent with retail-driven speculation, not institutional accumulation.</p>
+<p>Adding to the overhang, <a href="https://stockanalysis.com/stocks/poet/" rel="noopener noreferrer">multiple securities class action investigations have been filed by law firms including Schall, Block &amp; Leviton, and Johnson Fistel</a> for potential misleading disclosures.</p>
+<h2>Fundamentals: Cash-Rich, Revenue-Starved</h2>
+<p>POET reported FY2025 revenue of just $1.07M against a net loss of $62.96M — essentially pre-revenue at commercial scale. At ~$10.95/share the stock trades at roughly 1,086x trailing sales and ~116x forward 2026 consensus revenue of ~$10M (single-analyst estimate). The forward ramp to $80M in FY2027 is extremely steep and requires successful hyperscaler-grade qualification, volume manufacturing ramp in Malaysia, and new customer wins.</p>
+<p>However, the cash position provides a genuine structural floor. <a href="https://www.timothysykes.com/news/poet-technologies-inc-poet-news-2026_04_30/" rel="noopener noreferrer">POET raised approximately $375M in equity during Q4 2025 and added another $150M in January 2026</a>, resulting in ~$430M cash. With Q4 2025 cash operating burn of ~$11.6M, that implies 9+ years of runway at current rates — the most credible bull-case pillar.</p>
+<p>The cost: serial dilution. Shares outstanding grew from ~46.5M (Q1 2024) to ~93.2M by Q4 2025. <a href="https://www.stocktitan.net/news/POET/poet-technologies-announces-pricing-of-us-150-million-registered-pzvyniqa361p.html" rel="noopener noreferrer">The October 2025 $150M registered direct offering caused a ~10% single-day drop; the January 2026 $150M offering caused a ~13–17% single-day decline</a> — a consistent dilution-driven negative price pattern that shareholders must price in.</p>
+<h2>Technology Credentials vs. Revenue Reality</h2>
+<p>POET's technology differentiation is genuine. <a href="https://www.poet-technologies.com/news/poet-wins-ai-hardware-innovation-award-in-2025-ai-breakthrough-awards" rel="noopener noreferrer">The POET Teralight 1.6T optical engine won Best AI Hardware Innovation at the 2025 AI Breakthrough Awards</a>, competing against much larger players, and <a href="https://www.poet-technologies.com/news/poet-technologies-wins-most-innovative-award-at-ecoc-2025" rel="noopener noreferrer">POET won its 7th industry award in 15 months at ECOC 2025 in Copenhagen</a>. The partnership pipeline is active — Semtech for 1.6T receivers, QCi for <a href="https://www.poet-technologies.com/news/poet-technologies-and-quantum-computing-inc-to-co-develop-3-2-tbps-optical-engines-for-cpo-and-next-gen-ai-connectivity" rel="noopener noreferrer">3.2 Tbps TFLN-based optical engines</a>, and Sivers Semiconductors on AI datacenter light engines. Management is guiding for 30,000+ optical engine shipments in 2026 with Malaysia manufacturing readiness for high-volume 800G engines in Q3 2026 per <a href="https://quartr.com/companies/poet-technologies-inc_20114" rel="noopener noreferrer">investor relations summaries</a>.</p>
+<p>But none of these partnerships have converted to material revenue. The new $5M+ POET Infinity production order from an unnamed technology company — disclosed after the Marvell cancellation — is directionally positive but orders of magnitude below what the stock's implied revenue trajectory demands.</p>
+<h2>Peer Context: Sector Tailwind Is Real, but POET Is a Different Animal</h2>
+<p>Large-cap photonics peers remain in confirmed strongly bullish signal bands: LITE is up ~94% in three months ($465 → $903), AAOI is up ~273% ($39.90 → $148.94), and COHR is up ~59% ($211 → $335). The sector tailwind from hyperscaler AI buildout is not in question. The issue is whether POET is a clean catch-up or a late-cycle micro-cap echo with its own idiosyncratic risks.</p>
+<p>The Zacks sell-side model (the only disclosed coverage) <a href="https://s27.q4cdn.com/906368049/files/News/2025/Zacks_SCR_Research_11182025_POET_Thompson.pdf" rel="noopener noreferrer">values POET at ~$9.65/share on FY2027 revenue estimates of $80M at 11.6x EV/Sales</a> — implying current prices are at or above the most optimistic fundamental scenario. The May 1, 2026 launch of the <a href="https://stockanalysis.com/stocks/poet/" rel="noopener noreferrer">Defiance Daily Target 2X Long POET ETF (POEL)</a> signals meme-stock-adjacent retail dynamics that can amplify moves in both directions. PFIC tax status (Canadian domicile) adds a structural headwind for US taxable accounts, though management has announced plans to redomicile.</p>
+<h2>The Honest Scorecard</h2>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Bullish</th>
+<th>Bearish</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cash runway</td>
+<td>~9+ years at current burn</td>
+<td>Achieved via 2x share count in 18 months</td>
+</tr>
+<tr>
+<td>Technology</td>
+<td>7 industry awards in 15 months</td>
+<td>Near-zero commercial revenue</td>
+</tr>
+<tr>
+<td>Sector peers</td>
+<td>LITE/AAOI/COHR all strongly bullish</td>
+<td>POET not in same quality tier</td>
+</tr>
+<tr>
+<td>Catalysts</td>
+<td>Malaysia ramp, 800G volume (Q3 2026)</td>
+<td>Marvell cancellation removed biggest near-term revenue event</td>
+</tr>
+<tr>
+<td>Governance</td>
+<td>Redomicile positive</td>
+<td>CFO confidentiality breach; class actions</td>
+</tr>
+<tr>
+<td>Valuation</td>
+<td>$430M cash partially offsets market cap</td>
+<td>1,086x trailing sales; above Zacks fair value</td>
+</tr>
+</tbody>
+</table>
+<p>The thesis is not broken — the technology is differentiated and the sector is right. But calling this a "gradual breakout" obscures that the current price is a speculative recovery from a governance-induced crash, with the prior near-term revenue catalyst gone and valuation already stretched against the only disclosed sell-side model.</p></div><footer class="art-foot"><details class="disclosure"><summary>Sources (20)</summary><ul class="sources"><li><a href="https://www.poet-technologies.com/news/poet-technologies-provides-purchase-order-update" target="_blank" rel="noopener noreferrer">POET Technologies Provides Purchase Order Update</a> <span class="src-domain">poet-technologies.com</span></li><li><a href="https://sherwood.news/markets/marvell-cancels-order-with-poet-citing-breach-of-confidentiality/" target="_blank" rel="noopener noreferrer">Marvell cancels order with POET, citing breach of confidentiality</a> <span class="src-domain">sherwood.news</span></li><li><a href="https://stockanalysis.com/stocks/poet/" target="_blank" rel="noopener noreferrer">POET Technologies Stock Price &amp; Overview</a> <span class="src-domain">stockanalysis.com</span></li><li><a href="https://www.timothysykes.com/news/poet-technologies-inc-poet-news-2026_04_30/" target="_blank" rel="noopener noreferrer">POET Technologies Stock Whipsaws As AI Optics Story Grows</a> <span class="src-domain">timothysykes.com</span></li><li><a href="https://www.stocktitan.net/news/POET/poet-technologies-announces-pricing-of-us-150-million-registered-pzvyniqa361p.html" target="_blank" rel="noopener noreferrer">POET Technologies prices $150M direct offering</a> <span class="src-domain">stocktitan.net</span></li><li><a href="https://quartr.com/companies/poet-technologies-inc_20114" target="_blank" rel="noopener noreferrer">POET Technologies (PTK) Investor Relations, Earnings Summary &amp; Outlook</a> <span class="src-domain">quartr.com</span></li><li><a href="https://s27.q4cdn.com/906368049/files/News/2025/Zacks_SCR_Research_11182025_POET_Thompson.pdf" target="_blank" rel="noopener noreferrer">Zacks SCR Research on POET Technologies, Nov 2025</a> <span class="src-domain">q4cdn.com (Zacks Investment Research)</span></li><li><a href="https://www.poet-technologies.com/news/poet-technologies-wins-most-innovative-award-at-ecoc-2025" target="_blank" rel="noopener noreferrer">POET Technologies Wins &#x27;Most Innovative&#x27; Award at ECOC 2025</a> <span class="src-domain">poet-technologies.com</span></li><li><a href="https://www.poet-technologies.com/news/poet-technologies-and-quantum-computing-inc-to-co-develop-3-2-tbps-optical-engines-for-cpo-and-next-gen-ai-connectivity" target="_blank" rel="noopener noreferrer">POET Technologies and Quantum Computing Inc. to Co-Develop 3.2 Tbps Optical Engines</a> <span class="src-domain">poet-technologies.com</span></li><li><a href="https://www.poet-technologies.com/news/poet-wins-ai-hardware-innovation-award-in-2025-ai-breakthrough-awards" target="_blank" rel="noopener noreferrer">POET Wins AI Hardware Innovation Award in 2025 AI Breakthrough Awards</a> <span class="src-domain">poet-technologies.com</span></li></ul><p class="src-internal">Also checked against 5 price-database queries, 4 company-fundamentals reads, 1 research note in the author's own data.</p></details></footer></article></div></main><nav class="pager" aria-label="More"><a href="index.html">← More from DK Street Journal</a></nav><footer class="site-foot"><p class="short-notice">Not investment advice. Written by software, unreviewed, and possibly wrong. The author may hold positions. No liability accepted. <a href="index.html#disclaimer">Read the full disclaimer ›</a></p><p class="built">May 9, 2026 · 7:35 PM PDT</p></footer></div>
+</body>
+</html>

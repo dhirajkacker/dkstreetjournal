@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Second-Tier Datacenter Names: Earnings Catalysts, Valuations, and Remaining Runway</title>
+<meta name="description" content="A May 7 earnings wave re-rated AAON (+72% from 35d low), FLEX (+110%), FLNC (+98%), and DDOG (+90%) on concrete backlog, revenue, and hyperscaler partnership catalysts — but post-surge, none of these…"/>
+<meta property="og:site_name" content="DK Street Journal"/>
+<meta property="og:title" content="Second-Tier Datacenter Names: Earnings Catalysts, Valuations, and Remaining Runway"/>
+<meta property="og:description" content="A May 7 earnings wave re-rated AAON (+72% from 35d low), FLEX (+110%), FLNC (+98%), and DDOG (+90%) on concrete backlog, revenue, and hyperscaler partnership catalysts — but post-surge, none of these…"/>
+<meta property="og:type" content="article"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://dkstreetjournal.com/a-2026-05-09-11a27dbb.html"/>
+<link rel="canonical" href="https://dkstreetjournal.com/a-2026-05-09-11a27dbb.html"/>
+<meta property="article:published_time" content="2026-05-10T01:41:49Z"/>
+<meta property="og:image" content="https://dkstreetjournal.com/assets/chart-AAON-2026-05-09.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Second-Tier Datacenter Names: Earnings Catalysts, Valuations, and Remaining Runway"/>
+<meta name="twitter:description" content="A May 7 earnings wave re-rated AAON (+72% from 35d low), FLEX (+110%), FLNC (+98%), and DDOG (+90%) on concrete backlog, revenue, and hyperscaler partnership catalysts — but post-surge, none of these…"/>
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48 64x64" href="assets/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png"/><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"/><link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png"/>
+<style>
+:root{
+  --ink:#111418; --ink-soft:#454b54; --muted:#6b7280; --hair:#e3e6ea;
+  --bg:#fbfbfa; --card:#ffffff; --accent:#2563eb;
+  --bull:#15803d; --bear:#e11d48;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,
+    "Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,
+    Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:17px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1120px; margin:0 auto; padding:0 22px 72px}
+
+/* masthead */
+.masthead{text-align:center; padding:56px 0 26px; border-bottom:3px double var(--ink)}
+.lockup{
+  display:flex; align-items:center; justify-content:center;
+  gap:clamp(.34rem,1.2vw,.75rem); flex-wrap:nowrap;
+}
+/* The mark scales with the name it sits beside, so the lockup keeps
+   its proportions from phone to desktop instead of the monogram
+   swelling as the type shrinks. It now stands IN the wordline in
+   place of the word "DK", so it is sized against cap height. */
+.mark{display:block; flex:0 0 auto; line-height:0}
+.mark img{display:block; height:clamp(2.05rem,5.8vw,3.5rem); width:auto}
+/* ⚠️ Specificity, not just order. `.mark img` is (0,1,1) and a bare
+   `.mark-dark` is (0,1,0), so `display:block` won and BOTH marks
+   rendered — the cream one over white read as a ghosted second
+   monogram. The selectors below match `.mark img`'s weight and add a
+   class, so the toggle actually wins. */
+.mark img.mark-dark{display:none}
+.wordmark{
+  font-family:var(--serif); font-weight:700; letter-spacing:.02em;
+  font-size:clamp(1.9rem,5.4vw,3.6rem); line-height:1.05; margin:0;
+  text-transform:uppercase;
+}
+.wordmark-text{display:inline-block}
+/* Available to a screen reader, absent from the page. */
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+.tagline{
+  margin:.55rem 0 0; color:var(--muted); font-size:.82rem;
+  letter-spacing:.18em; text-transform:uppercase;
+}
+.masthead-meta{margin:.7rem 0 0; color:var(--muted); font-size:.8rem}
+
+/* ⚠️ An article page's nameplate is a LINK, and a link needs its own
+   rules. Without these the anchor fell back to browser defaults —
+   blue and underlined — and `.mark`'s `display:block` broke the line,
+   so the monogram sat alone above a centred blue "DK Street Journal".
+   It shipped that way because the front page uses `<h1 class="wordmark
+   lockup">` and I reused `.masthead` around a different element,
+   assuming the styling would carry. */
+.masthead-slim{padding:34px 0 22px}
+.masthead-slim .back{
+  display:inline-flex; align-items:center; justify-content:center;
+  gap:clamp(.3rem,1.1vw,.62rem);
+  font-family:var(--serif); font-weight:700; letter-spacing:.02em;
+  font-size:clamp(1.15rem,2.4vw,1.6rem); line-height:1;
+  color:var(--ink); text-decoration:none;
+}
+.masthead-slim .back:hover{color:var(--accent)}
+/* Smaller than the front page's nameplate: this one sits above a
+   single article, not over the whole paper. */
+.masthead-slim .mark img{height:clamp(1.45rem,3.2vw,2.1rem)}
+
+/* disclaimer — must not be skimmable past */
+.disclaimer{
+  margin:26px auto 0; max-width:82ch; padding:20px 22px; background:#fff8f1;
+  border:1px solid #f0d9c0; border-left:4px solid #c2410c; border-radius:6px;
+}
+.disc-head{
+  margin:0 0 .6rem; font-family:var(--sans); font-size:.78rem;
+  letter-spacing:.14em; text-transform:uppercase; color:#9a3412;
+}
+.disclaimer p{margin:.5rem 0; font-size:.86rem; line-height:1.6; color:var(--ink-soft)}
+.disclaimer strong{color:var(--ink)}
+.disc-closer{margin-top:.9rem !important; font-weight:600; color:var(--ink) !important}
+
+/* how it works */
+.how{margin:34px auto 0}
+.how h2{
+  font-family:var(--sans); font-size:.78rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 .8rem;
+}
+.how{max-width:74ch; margin-left:auto; margin-right:auto}
+.how p{margin:.6rem 0; font-size:.94rem; color:var(--ink-soft)}
+.how-lede strong{color:var(--ink)}
+.agents{margin:.6rem 0; padding-left:1.25rem}
+.agents li{margin:.4rem 0; font-size:.94rem; color:var(--ink-soft)}
+.agents strong{color:var(--ink)}
+.rule{border:0; border-top:1px solid var(--hair); margin:40px 0 0}
+
+/* articles
+   Text sits in a centred reading measure; the visuals break out to
+   the full width. Left-aligning the prose inside a 1120px wrap left a
+   dead gutter down the whole right-hand side of every article. */
+.article{padding:44px 0; border-bottom:1px solid var(--hair)}
+.article:last-child{border-bottom:0}
+.art-head,.dek,.body,.art-foot{max-width:68ch; margin-left:auto; margin-right:auto}
+.dateline{
+  margin:0 0 .5rem; color:var(--muted); font-size:.75rem;
+  letter-spacing:.1em; text-transform:uppercase;
+}
+.headline{
+  font-family:var(--serif); font-weight:700; margin:0;
+  font-size:clamp(1.6rem,3.6vw,2.3rem); line-height:1.18;
+  letter-spacing:-.008em;
+}
+/* The table of contents. Full-width like the visuals rather than
+   inside the 68ch measure — it is a scanning surface, not prose, and
+   at ~8 themes a single column would push the first article a screen
+   and a half down the page. `auto-fit` + `minmax` gives 3 columns on a
+   desktop and 1 on a phone with no media query and no JavaScript (the
+   site's CSP is `script-src 'none'`). */
+.toc{margin:1.6rem 0 0}
+.toc-head{
+  font-family:var(--sans); font-size:.72rem; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
+  margin:0 0 .9rem; display:flex; align-items:baseline; gap:.6rem;
+  border-bottom:1px solid var(--hair); padding-bottom:.5rem;
+}
+.toc-total{
+  font-weight:400; letter-spacing:.02em; text-transform:none;
+  font-size:.75rem;
+}
+.toc-grid{
+  display:grid; gap:1rem 1.6rem;
+  grid-template-columns:repeat(auto-fit,minmax(255px,1fr));
+}
+.toc-card{min-width:0}
+.toc-name{
+  font-family:var(--serif); font-size:1.02rem; font-weight:700;
+  margin:0 0 .4rem; line-height:1.25; color:var(--ink);
+  display:flex; align-items:baseline; gap:.45rem;
+}
+.toc-count{
+  font-family:var(--sans); font-size:.68rem; font-weight:600;
+  color:var(--muted); background:var(--hair); border-radius:999px;
+  padding:1px 7px; flex:none;
+}
+.toc-list{list-style:none; margin:0; padding:0}
+.toc-list li{
+  font-size:.86rem; line-height:1.4; margin:0 0 .35rem;
+  display:flex; gap:.5rem;
+}
+.toc-when{color:var(--muted); font-size:.72rem; flex:none; padding-top:.12rem}
+.toc-list a{color:var(--ink-soft); text-decoration:none}
+.toc-list a:hover{color:var(--accent); text-decoration:underline}
+/* The disclosure for the rest of a theme. Styled as a quiet control
+   rather than a label, because the old "+17 more below" read as a
+   statement and this is a button. */
+.toc-rest{margin:.1rem 0 0}
+.toc-rest > summary{
+  cursor:pointer; color:var(--muted); font-size:.75rem;
+  list-style:none; display:inline-flex; align-items:center; gap:.3rem;
+  padding:.15rem 0;
+}
+.toc-rest > summary::-webkit-details-marker{display:none}
+.toc-rest > summary::before{content:"▸"; font-size:.65rem}
+.toc-rest[open] > summary::before{content:"▾"}
+.toc-rest > summary:hover{color:var(--accent)}
+.toc-rest[open] > summary{margin-bottom:.35rem}
+/* The unsorted group is a holding pen, not a theme — it should read as
+   pending rather than as a peer of the real ones. */
+.toc-unsorted .toc-name{color:var(--muted); font-style:italic}
+
+/* The summary is a standfirst, not a caption. Editor v1.2 writes
+   ~120-150 words here, where v1.1 wrote ~50 — a size that reads as one
+   emphatic line collapses into a grey slab at three times the length.
+   So it takes a rule and a little indent: enough to stay distinct from
+   the body without competing with the headline above it. Briefs
+   published before v1.2 keep their short summary and simply occupy
+   less of the same frame. */
+/* Provenance sits between the headline and the summary — close enough
+   to the headline to be read as a byline, quiet enough not to compete
+   with it. Sized below the dateline above it so the header reads
+   top-down in decreasing weight. */
+.provenance{
+  margin:.55rem 0 0; font-family:var(--sans); font-size:.72rem;
+  color:var(--muted); letter-spacing:.01em; line-height:1.5;
+}
+.prov-role{
+  text-transform:uppercase; letter-spacing:.08em; font-size:.64rem;
+  color:var(--hair-ink,#9aa3ad); font-weight:600;
+}
+
+.dek{
+  margin:1rem 0 0; padding:0 0 0 .95rem;
+  border-left:3px solid var(--hair);
+}
+.dek p{
+  margin:0 0 .55rem; font-size:1.02rem; line-height:1.6;
+  color:var(--ink-soft);
+}
+.dek p:last-child{margin-bottom:0}
+
+/* The permalink sits above the dateline, right-aligned and quiet. It
+   is a utility, not part of the article — it exists so a reader can
+   right-click and send the piece to someone. */
+.entry{position:relative}
+.permabar{
+  max-width:68ch; margin:0 auto; text-align:right;
+  font-size:.72rem; line-height:1; height:0;
+}
+.permalink{
+  color:var(--muted); text-decoration:none; letter-spacing:.03em;
+  position:relative; top:.15rem;
+}
+.permalink:hover{color:var(--accent); text-decoration:underline}
+.entry:target .headline{
+  /* Landing from a shared link should show you WHICH article you
+     were sent, or the jump reads as an ordinary scroll position. */
+  box-shadow:-.6rem 0 0 var(--accent);
+}
+
+.pager{
+  display:flex; flex-wrap:wrap; align-items:center; gap:.4rem;
+  justify-content:center; margin:2.5rem auto 0; max-width:68ch;
+  padding-top:1.4rem; border-top:1px solid var(--hair);
+}
+.pager a,.pager span{
+  font-size:.82rem; padding:.36rem .6rem; border-radius:4px;
+  text-decoration:none; color:var(--ink-soft);
+}
+.pager a:hover{background:var(--hair); color:var(--accent)}
+.pg-num{min-width:2rem; text-align:center}
+.pg-here{background:var(--accent); color:#fff; font-weight:600}
+.pg-off{color:var(--hair)}
+.pg-gap{padding:.36rem .2rem; color:var(--muted)}
+.short-notice{margin:0 0 .5rem}
+.short-notice a{color:var(--muted); white-space:nowrap}
+.chips{display:flex; flex-wrap:wrap; gap:6px; margin:1rem 0 0}
+.chip{
+  font-size:.7rem; letter-spacing:.04em; color:var(--muted);
+  background:#f1f3f5; border:1px solid var(--hair);
+  border-radius:999px; padding:2px 9px; white-space:nowrap;
+}
+.chip-ticker{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-weight:600; color:var(--ink); background:#fff;
+}
+.body{margin:1.6rem auto 0}
+.body p{margin:0 0 1.05rem}
+.body h2,.body h3{
+  font-family:var(--serif); margin:2rem 0 .6rem; line-height:1.25;
+}
+.body h2{font-size:1.28rem}
+.body h3{font-size:1.1rem}
+.body a{color:var(--accent); text-decoration:underline;
+  text-underline-offset:2px; text-decoration-thickness:1px}
+.body a:hover{background:#eff4ff}
+.body ul,.body ol{margin:0 0 1.05rem; padding-left:1.3rem}
+.body li{margin:.3rem 0}
+.body blockquote{
+  margin:1.2rem 0; padding:.2rem 0 .2rem 1rem;
+  border-left:3px solid var(--hair); color:var(--ink-soft);
+}
+.body table{border-collapse:collapse; width:100%; font-size:.9rem; margin:1.2rem 0}
+.body th,.body td{border-bottom:1px solid var(--hair); padding:6px 8px; text-align:left}
+
+/* visuals */
+.visuals{margin:2.2rem 0 0}
+.visuals-lede{margin:1.5rem 0 0}
+.visuals-lede .vis-head{margin-top:1.3rem}
+.vis-head{
+  font-family:var(--sans); font-size:.72rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted);
+  margin:1.8rem 0 .7rem; padding-bottom:.4rem;
+  border-bottom:1px solid var(--hair);
+}
+.vis-note{margin:.5rem 0 0; font-size:.76rem; color:var(--muted)}
+.strip,.table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch}
+.strip table,.table-wrap table{min-width:520px}
+.chart-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+@media (max-width:900px){.chart-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.chart-grid{grid-template-columns:1fr}}
+
+/* disclosures */
+.art-foot{margin:1.8rem auto 0; display:flex; flex-direction:column; gap:.5rem}
+.disclosure{
+  border:1px solid var(--hair); border-radius:6px;
+  background:var(--card); padding:0;
+}
+.disclosure summary{
+  cursor:pointer; padding:9px 13px; font-size:.78rem; color:var(--muted);
+  letter-spacing:.06em; text-transform:uppercase; list-style:none;
+}
+.disclosure summary::-webkit-details-marker{display:none}
+.disclosure summary::before{content:"\25B8  "; color:var(--muted)}
+.disclosure[open] summary::before{content:"\25BE  "}
+.disclosure[open] summary{border-bottom:1px solid var(--hair)}
+.sources{margin:0; padding:10px 13px 12px 30px; font-size:.82rem}
+.sources li{margin:.3rem 0; color:var(--ink-soft)}
+.src-internal{
+  margin:0; padding:8px 13px 12px; color:var(--muted);
+  font-size:.78rem; line-height:1.5; border-top:1px solid var(--hair);
+}
+.src-domain{color:var(--muted); font-size:.74rem}
+.sources a{color:var(--accent)}
+.hyp{margin:0; padding:10px 15px; color:var(--ink-soft); font-size:.9rem}
+.hyp p{margin:.4rem 0}
+.hyp-meta{
+  margin:10px 15px 0; font-size:.72rem; color:var(--muted);
+  letter-spacing:.05em; text-transform:uppercase;
+}
+
+/* footer */
+.site-foot{margin:52px auto 0; padding-top:22px; border-top:3px double var(--ink)}
+.site-foot{max-width:74ch; margin-left:auto; margin-right:auto}
+.site-foot p{margin:.3rem 0; font-size:.78rem; color:var(--muted)}
+.built{color:#9aa1ab !important}
+.empty{color:var(--muted); padding:40px 0}
+
+@media (prefers-color-scheme:dark){
+  :root{
+    --ink:#e8eaed; --ink-soft:#b9bfc7; --muted:#8b939d; --hair:#2a2f36;
+    --bg:#14171a; --card:#1b1f24; --accent:#7aa7ff;
+  }
+  /* A PNG cannot recolour itself, so the navy mark is swapped for
+     the near-white one rather than filtered — a CSS invert would take
+     the gold slash with it and turn it blue. */
+  .mark img.mark-light{display:none}
+  .mark img.mark-dark{display:block}
+  .disclaimer{background:#2a1c12; border-color:#5c3a1e; border-left-color:#ea8c4b}
+  .disc-head{color:#f0a868}
+  .chip{background:#22272e}
+  .chip-ticker{background:#1b1f24}
+  .body a:hover{background:#1e2a44}
+  /* The chart cards and tables carry their own light ground; keep
+     them on white rather than letting dark text land on it. */
+  .strip,.chart-grid,.table-wrap{
+    background:#fff; border-radius:8px; padding:10px; color:#111418;
+  }
+}
+
+/* --- Search ------------------------------------------------------- */
+.mast-search{margin:14px auto 0; max-width:34rem}
+.masthead-slim + .mast-search{margin:10px 0 0}
+.mast-search input{
+  width:100%; box-sizing:border-box; padding:8px 12px;
+  font:inherit; font-size:.95rem; color:inherit;
+  background:transparent; border:1px solid #c9c2b4; border-radius:8px;
+}
+.mast-search input:focus{outline:2px solid #1d3557; outline-offset:1px}
+.search-main{max-width:68ch; margin:0 auto}
+.sr-status{color:#6b6455; font-size:.92rem; margin:18px 0 6px}
+.search-results{list-style:none; margin:0; padding:0}
+.search-results li{margin:0 0 22px; padding:0}
+.sr-meta{color:#6b6455; font-size:.82rem; letter-spacing:.02em;
+  text-transform:uppercase; margin:0 0 2px}
+.sr-title{margin:0; font-size:1.08rem; line-height:1.35}
+.sr-title a{color:inherit; text-decoration:none}
+.sr-title a:hover{text-decoration:underline}
+.sr-sum{color:#4c463a; margin:3px 0 0; font-size:.95rem; line-height:1.5}
+@media (prefers-color-scheme: dark){
+  .mast-search input{border-color:#3a3f46}
+  .mast-search input:focus{outline-color:#8fb4e8}
+  .sr-status,.sr-meta{color:#9aa3ad}
+  .sr-sum{color:#b7bec7}
+}
+</style>
+</head>
+<body>
+<div class="wrap"><header class="masthead masthead-slim"><a class="back" href="index.html"><span class="mark" aria-hidden="true"><img class="mark-light" src="assets/mark-navy.png" alt=""/><img class="mark-dark" src="assets/mark-cream.png" alt=""/></span><span>DK Street Journal</span></a></header><form class="mast-search" action="search.html" method="get" role="search"><input type="search" name="q" placeholder="Search companies, tickers, sectors…" aria-label="Search articles" maxlength="200"/></form><hr class="rule"/><main class="feed"><div class="entry"><article class="article" id="a-11a27dbbf2c04dc8844362f14293bffc"><header class="art-head"><p class="dateline"><time datetime="2026-05-10T01:41:49Z">May 9, 2026 · 6:41 PM PDT</time></p><h2 class="headline">Second-Tier Datacenter Names: Earnings Catalysts, Valuations, and Remaining Runway</h2><p class="provenance"><span class="prov-role">Prompt</span> v1.0</p><div class="dek"><p>A May 7 earnings wave re-rated AAON (+72% from 35d low), FLEX (+110%), FLNC (+98%), and DDOG (+90%) on concrete backlog, revenue, and hyperscaler partnership catalysts — but post-surge, none of these names are cheap. The pivot now is from 'did they participate?' to 'how much of the AI buildout is already in the price?' with FLEX's 28x trailing EV/EBITDA standing out as the widest spread against confirmed 35%+ datacenter revenue growth.</p></div><div class="chips"><span class="chip chip-ticker">AAON</span><span class="chip chip-ticker">FLEX</span><span class="chip chip-ticker">FLNC</span><span class="chip chip-ticker">DDOG</span><span class="chip chip-ticker">VRT</span><span class="chip chip-ticker">ETN</span><span class="chip chip-ticker">STRL</span><span class="chip chip-ticker">PWR</span><span class="chip">AAON</span><span class="chip">FLEX</span><span class="chip">FLNC</span><span class="chip">DDOG</span><span class="chip">Data Center: Cooling &amp; Thermal Management</span><span class="chip">AI2: Cooling &amp; Thermal Management</span><span class="chip">Data Center: Servers, Storage &amp; ODM/EMS</span><span class="chip">AI2: Liquid Cooling / QDs, Two-Phase &amp; Fluid Handling</span><span class="chip">Technology &gt; Hardware, Equipment &amp; Parts &gt; Electronic Manufacturing Services</span><span class="chip">Data Center: Backup Generators, Fuel Cells &amp; BESS</span><span class="chip">SAAS Tier 1 / Fortress Infrastructure</span><span class="chip">Data Center: Software, Observability &amp; Cybersecurity</span><span class="chip">TechCollapse: Data / Analytics / Observability</span><span class="chip">NATGAS: Equipment / Data Center Power &amp; Cooling</span><span class="chip">Data Center: Power Equipment &amp; Grid Infrastructure</span><span class="chip">AI2: Power Generation &amp; Grid / Switchgear &amp; Transformers</span><span class="chip">NATGAS: EPC / Data Center MEP Contractors</span><span class="chip">NUCLEAR: EPC / Engineering &amp; Construction</span><span class="chip">Data Center: Construction, Engineering &amp; EPC</span><span class="chip">AI2: Construction, MEP &amp; Site Development</span><span class="chip">NATGAS: EPC / Power &amp; Energy Mega-Projects</span></div></header><section class="visuals visuals-lede"><div class="strip"><table style="width:100%;border-collapse:collapse;font-size:0.86rem;line-height:1.35"><thead><tr style="color:#94a3b8;font-size:0.74rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Ticker</th><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Company</th><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Segment</th><th style="text-align:left;padding:0 8px 3px;font-weight:600">Trend · 13mo</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">30D</th><th style="text-align:right;padding:0 0 3px 6px;font-weight:600;white-space:nowrap">1Y</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">AAON</code></td><td style="padding:4px 8px 4px 0">AAON</td><td style="padding:4px 8px 4px 0;color:#64748b">HVAC Systems</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#10b9811a;color:#10b981;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🌱 Emerging Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+53.9%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+40.0%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">FLEX</code></td><td style="padding:4px 8px 4px 0">Flex</td><td style="padding:4px 8px 4px 0;color:#64748b">Electronic Manufacturing Services</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+89.5%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+269.5%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">FLNC</code></td><td style="padding:4px 8px 4px 0">Fluence Energy</td><td style="padding:4px 8px 4px 0;color:#64748b">Energy Storage Systems</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#f973161a;color:#f97316;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">⚠️ Emerging Bear</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+78.2%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+427.5%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">DDOG</code></td><td style="padding:4px 8px 4px 0">Datadog</td><td style="padding:4px 8px 4px 0;color:#64748b">Data &amp; Analytics Platforms</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#f973161a;color:#f97316;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">⚠️ Emerging Bear</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+83.7%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+85.5%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">VRT</code></td><td style="padding:4px 8px 4px 0">Vertiv</td><td style="padding:4px 8px 4px 0;color:#64748b">Data Center Power &amp; Thermal</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+18.2%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+261.9%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">ETN</code></td><td style="padding:4px 8px 4px 0">Eaton</td><td style="padding:4px 8px 4px 0;color:#64748b">Power &amp; Propulsion Systems</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+0.3%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+30.7%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">STRL</code></td><td style="padding:4px 8px 4px 0">Sterling Infrastructure</td><td style="padding:4px 8px 4px 0;color:#64748b">Infrastructure &amp; Civil Construction</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+93.9%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+375.3%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">PWR</code></td><td style="padding:4px 8px 4px 0">Quanta Services</td><td style="padding:4px 8px 4px 0;color:#64748b">Electrical &amp; Power Infrastructure</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+28.0%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+128.8%</span></td></tr></tbody></table></div><h3 class="vis-head">12-month price &amp; trend</h3><div class="chart-grid"><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">AAON</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">AAON</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">140</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−8.21 (−5.56%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-AAON-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="AAON 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">HVAC Systems</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">FLEX</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Flex</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">142</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+7.54 (+5.60%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-FLEX-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="FLEX 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Electronic Manufacturing Services</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">FLNC</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Fluence Energy</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">24.16</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+6.79 (+39.10%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#e11d48;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-FLNC-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="FLNC 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Energy Storage Systems</div></div></div><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px;font-weight:600;white-space:nowrap">Ticker</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">Mkt cap</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">EV/EBITDA</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FCF yld</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">AAON</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$11.1B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">93.8x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">61.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">6.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">5.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">26.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">21.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">44.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">-1.3%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">FLEX</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$48.0B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">50.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">27.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.6x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.4x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">17.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">14.6x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">26.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.2%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">FLNC</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$3.8B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">—</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">12.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">9.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">-7.1%</td></tr></tbody></table></div><div class="chart-grid"><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">DDOG</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Datadog</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">200</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+15.34 (+8.30%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#e11d48;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-DDOG-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="DDOG 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Data &amp; Analytics Platforms</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">VRT</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Vertiv</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">340</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−7.70 (−2.21%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-VRT-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="VRT 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Data Center Power &amp; Thermal</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">ETN</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Eaton</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">402</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−8.12 (−1.98%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-ETN-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="ETN 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Power &amp; Propulsion Systems</div></div></div><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px;font-weight:600;white-space:nowrap">Ticker</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">Mkt cap</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">EV/EBITDA</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FCF yld</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">DDOG</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$88.0B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">497.4x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">101.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">22.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">20.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">27.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">25.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">337.6x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.3%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">VRT</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$142.5B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">91.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">57.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">13.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">10.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">36.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">28.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">61.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.6%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">ETN</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$178.2B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">46.6x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">34.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">5.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">5.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">16.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">15.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">32.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.5%</td></tr></tbody></table></div><div class="chart-grid"><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">STRL</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Sterling Infrastructure</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">845</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−9.68 (−1.13%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-STRL-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="STRL 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Infrastructure &amp; Civil Construction</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">PWR</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Quanta Services</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">745</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−9.11 (−1.21%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-PWR-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="PWR 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Electrical &amp; Power Infrastructure</div></div></div><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px;font-weight:600;white-space:nowrap">Ticker</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">Mkt cap</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">EV/EBITDA</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FCF yld</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">STRL</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$18.3B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">52.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">31.6x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">6.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">4.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">27.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">21.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">30.8x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.4%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">PWR</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$100.3B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">75.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">42.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">3.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">21.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">18.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">35.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.4%</td></tr></tbody></table></div></section><section class="visuals visuals-tables"><h3 class="vis-head">Consensus projections</h3><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px 0;font-weight:600">Ticker</th><th style="text-align:left;padding:0 6px 3px;font-weight:600"></th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2026E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2027E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2028E</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">AAON</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+44.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+15.1%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+21.9%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+55.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+53.8%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+35.7%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">FLEX</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+6.8%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+26.3%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+30.0%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+24.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+44.7%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+51.5%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">FLNC</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+29.7%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+23.6%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+18.1%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−61.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−292.6%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+127.2%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">DDOG</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+28.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+21.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+23.5%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+20.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+17.3%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+23.1%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">VRT</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+35.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+25.8%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+19.4%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+55.6%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+33.8%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+25.8%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">ETN</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+18.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+10.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+8.9%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+11.6%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+18.3%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+16.9%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">STRL</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+58.0%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+18.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+26.4%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+82.4%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+27.3%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+20.2%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">PWR</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+34.0%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+15.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+13.1%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+46.4%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+16.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+17.3%</span></td></tr></tbody></table></div><p class="vis-note">Forward fiscal years only. Blank means no analyst coverage for that year.</p></section><div class="body"><h2>What happened on May 7</h2>
+<p>The second-tier datacenter buildout cohort repriced sharply and simultaneously as Q1/fiscal Q4 2026 earnings hit. AAON reported Q1 2026 revenue of $496.9M — a 54.3% YoY surge that crushed the $381M consensus — with its BASX data-center cooling brand growing 72.4% to $228.6M and total backlog up 107% to $2.13B, its sixth consecutive quarterly record. AAON then raised full-year 2026 revenue guidance to 40–45% growth (from a prior 18–20% guide), implying roughly $1B in BASX revenue for the year. The stock moved from ~$98 pre-earnings to ~$148 at the close, a ~50% single-session jump, and stands ~72% above its April 6 low of $81.25.</p>
+<p>Flex posted fiscal Q4 2026 revenue of $7.48B (+16.9% YoY) and confirmed its data center business is growing at least 35% annually, representing approximately $6.5B in revenue — roughly 25% of the total company. Flex also disclosed a new partnership with Amazon Web Services and a collaboration with NVIDIA on next-generation 800V DC AI factory infrastructure, alongside power manufacturing expansions in Dallas, Poland, Fontana (California), and Colombia. The stock surged from $96.45 to $134.73 on the earnings release and reached $142.17 by May 8, up ~110% from its April 6 low of $67.70.</p>
+<p>Fluence Energy (FLNC) disclosed two Master Supply Agreements with major hyperscalers for data center energy storage — selected from 26 competing vendors — plus a 12-gigawatt-hour hyperscaler-specific pipeline and a record $5.6B total backlog as of March 31, 2026, with order intake doubling year-to-date. FLNC surged ~78% in two sessions following the announcements, now up ~98% from its 35-day low.</p>
+<p>Datadog crossed $1B in quarterly revenue for the first time ($1.006B, +32% YoY) and raised FY2026 guidance to $4.3–4.34B. The company disclosed 8-figure annualized deals with AI research divisions of two of the world's largest technology companies for GPU monitoring on hyperscale training workloads, signaling expansion into training observability. DDOG cleared $200 by May 8, up ~90% from its 35-day low.</p>
+<h2>The macro anchor: $725B in hyperscaler capex</h2>
+<p><a href="https://alcapitaladvisory.com/research/intelligence/ai-infrastructure.html" rel="noopener noreferrer">Q1 2026 hyperscaler earnings confirmed combined Big-5 capex of approximately $725B for 2026 — up ~64% YoY</a>, with Alphabet raising to $180–190B, Meta to $125–145B, Microsoft guiding to ~$190B, and Amazon reaffirming $200B. Critically, <a href="https://finance.yahoo.com/sectors/technology/articles/hyperscalers-hit-700-billion-2026-111243744.html" rel="noopener noreferrer">all four hyperscalers characterized conditions as supply-constrained rather than demand-constrained: Microsoft confirmed Azure AI at a $37B annual run-rate (+123% YoY), Google Cloud's backlog exceeded $460B, and AWS grew 28% — its fastest pace in 15 quarters</a>. The supply-constrained framing is the single most important macro variable for the second-tier names: it means backlogs should convert, not evaporate.</p>
+<h2>Valuation dispersion within the cohort</h2>
+<p>Post-surge, valuations have diverged sharply and the runway question is no longer uniform across the four names.</p>
+<p><strong>FLEX</strong> remains the most attractively valued on a risk-adjusted basis. Its trailing EV/EBITDA of 28.4x and forward P/E of 35.5x sit well below the Tier-1 comp set, and the company has sustained 6%+ operating margins for four consecutive quarters with strong free cash flow conversion. At roughly $6.5B in data center revenue growing 35%+, the datacenter segment alone is approaching the size of many pure-play peers — yet FLEX still carries the multiple of a diversified contract manufacturer.</p>
+<p><strong>AAON</strong> trades at 46.3x trailing EV/EBITDA and 89.5x trailing P/E (forward P/E ~65.6x). <a href="https://stockanalysis.com/stocks/vrt/statistics/" rel="noopener noreferrer">Vertiv (VRT), the Tier-1 thermal management peer, trades at ~52x trailing EV/EBITDA and ~45x forward P/E after raising its FY2026 guidance to $13.5–14.0B in net sales, with a backlog exceeding $15B</a>. AAON's relative discount to VRT on trailing EV/EBITDA (~46x vs. ~52x) is narrowing, but AAON's 40–45% revenue guide compares favorably to VRT's 34%. The key variable is gross margin recovery: AAON margins compressed from 33% (FY2024) to 25.1% in Q1 2026, with management attributing the gap to outsourcing costs, Memphis ramp inefficiencies, and tariffs — all characterized as transitory and already addressed in backlog pricing. Management's stated facility revenue potential exceeds $2B with the heavy Memphis capex phase largely complete, implying a path to operating leverage.</p>
+<p><strong>FLNC</strong> is pre-profitability (FY2026 EBITDA guided to just $40–60M on $3.2–3.6B revenue), making traditional multiple comparisons less meaningful. The investment thesis here is option-like: two confirmed hyperscaler MSAs, a $5.6B backlog, a $12B data-center-specific pipeline, and Fluence's specific technical differentiation — sub-10ms power response for AI datacenter load fluctuations, derived from European grid markets — at a market cap that remains small relative to the pipeline. The stock has already moved ~98% from its low, and margin execution will determine whether the MSA wins translate to durable earnings power.</p>
+<p><strong>DDOG</strong> is the most extended at 386x trailing EV/EBITDA and 86x forward P/E. The premium reflects 79%+ gross margins, 32% revenue acceleration, and structural positioning as the observability standard for AI-era cloud and training workloads. New logo ARR more than doubled YoY in Q1, setting an all-time record. The valuation leaves little room for execution variance.</p>
+<h2>Context from Tier-1 peers</h2>
+<p>The second-tier cohort's moves look less extreme against the Tier-1 backdrop. Sterling Infrastructure (STRL) reported Q1 2026 revenue up 92% with E-Infrastructure margins of 25% and raised its 2026 guide to &gt;50% revenue growth; the stock rose ~115% from its 35-day low to ~$844 and now trades at ~79x P/E. Quanta Services (PWR) surged from $554 (35d low) to a $785 peak on a record $48.5B backlog and 1.5x book-to-bill, pulling back to ~$745 with a forward P/E of ~57x. By those standards, FLEX's 35.5x forward P/E and AAON's 65.6x forward P/E represent the more moderate end of the cohort spectrum.</p>
+<h2>What the runway looks like from here</h2>
+<p>The earnings prints resolved the primary uncertainty — demand is real and accelerating — but introduced a new set of variables: margin recovery timelines at AAON, conversion of multi-billion backlogs at FLNC, tariff and supply-chain execution at FLEX, and DDOG's ability to sustain 30%+ growth against increasingly difficult year-over-year comparisons. The supply-constrained hyperscaler posture argues that backlog conversion risk is lower than in a demand-constrained cycle. But the second-tier names are no longer operating in valuation obscurity — each has now been discovered, priced, and partially re-rated toward its Tier-1 peers. The question of remaining runway is primarily an execution question, not a demand question.</p></div><footer class="art-foot"><details class="disclosure"><summary>Sources (26)</summary><ul class="sources"><li><a href="https://alcapitaladvisory.com/research/intelligence/ai-infrastructure.html" target="_blank" rel="noopener noreferrer">Q1 2026 hyperscaler capex confirmed at ~$725B</a> <span class="src-domain">alcapitaladvisory.com</span></li><li><a href="https://finance.yahoo.com/sectors/technology/articles/hyperscalers-hit-700-billion-2026-111243744.html" target="_blank" rel="noopener noreferrer">Hyperscalers Hit $700 Billion in 2026 AI Spending Plans</a> <span class="src-domain">yahoo.com</span></li><li><a href="https://stockanalysis.com/stocks/vrt/statistics/" target="_blank" rel="noopener noreferrer">VRT valuation statistics</a> <span class="src-domain">stockanalysis.com</span></li></ul><p class="src-internal">Also checked against 13 company-fundamentals reads, 6 price-database queries, 4 prior recommendations in the author's own data.</p></details></footer></article></div></main><nav class="pager" aria-label="More"><a href="index.html">← More from DK Street Journal</a></nav><footer class="site-foot"><p class="short-notice">Not investment advice. Written by software, unreviewed, and possibly wrong. The author may hold positions. No liability accepted. <a href="index.html#disclaimer">Read the full disclaimer ›</a></p><p class="built">May 9, 2026 · 6:41 PM PDT</p></footer></div>
+</body>
+</html>

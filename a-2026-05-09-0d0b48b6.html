@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AI Interconnect Sub-Layer: NVT, CRDO, and APH Emerge as Runway Names</title>
+<meta name="description" content="With optical peers AAOI and LITE already blown off 200–300% in 90 days, the actionable gradual-uptrend stories in the AI server/interconnect sub-layer are narrowing to three: NVT (power/cooling…"/>
+<meta property="og:site_name" content="DK Street Journal"/>
+<meta property="og:title" content="AI Interconnect Sub-Layer: NVT, CRDO, and APH Emerge as Runway Names"/>
+<meta property="og:description" content="With optical peers AAOI and LITE already blown off 200–300% in 90 days, the actionable gradual-uptrend stories in the AI server/interconnect sub-layer are narrowing to three: NVT (power/cooling…"/>
+<meta property="og:type" content="article"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://dkstreetjournal.com/a-2026-05-09-0d0b48b6.html"/>
+<link rel="canonical" href="https://dkstreetjournal.com/a-2026-05-09-0d0b48b6.html"/>
+<meta property="article:published_time" content="2026-05-10T03:30:20Z"/>
+<meta property="og:image" content="https://dkstreetjournal.com/assets/chart-NVT-2026-05-09.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="AI Interconnect Sub-Layer: NVT, CRDO, and APH Emerge as Runway Names"/>
+<meta name="twitter:description" content="With optical peers AAOI and LITE already blown off 200–300% in 90 days, the actionable gradual-uptrend stories in the AI server/interconnect sub-layer are narrowing to three: NVT (power/cooling…"/>
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48 64x64" href="assets/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png"/><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"/><link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png"/>
+<style>
+:root{
+  --ink:#111418; --ink-soft:#454b54; --muted:#6b7280; --hair:#e3e6ea;
+  --bg:#fbfbfa; --card:#ffffff; --accent:#2563eb;
+  --bull:#15803d; --bear:#e11d48;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,
+    "Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,
+    Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:17px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1120px; margin:0 auto; padding:0 22px 72px}
+
+/* masthead */
+.masthead{text-align:center; padding:56px 0 26px; border-bottom:3px double var(--ink)}
+.lockup{
+  display:flex; align-items:center; justify-content:center;
+  gap:clamp(.34rem,1.2vw,.75rem); flex-wrap:nowrap;
+}
+/* The mark scales with the name it sits beside, so the lockup keeps
+   its proportions from phone to desktop instead of the monogram
+   swelling as the type shrinks. It now stands IN the wordline in
+   place of the word "DK", so it is sized against cap height. */
+.mark{display:block; flex:0 0 auto; line-height:0}
+.mark img{display:block; height:clamp(2.05rem,5.8vw,3.5rem); width:auto}
+/* ⚠️ Specificity, not just order. `.mark img` is (0,1,1) and a bare
+   `.mark-dark` is (0,1,0), so `display:block` won and BOTH marks
+   rendered — the cream one over white read as a ghosted second
+   monogram. The selectors below match `.mark img`'s weight and add a
+   class, so the toggle actually wins. */
+.mark img.mark-dark{display:none}
+.wordmark{
+  font-family:var(--serif); font-weight:700; letter-spacing:.02em;
+  font-size:clamp(1.9rem,5.4vw,3.6rem); line-height:1.05; margin:0;
+  text-transform:uppercase;
+}
+.wordmark-text{display:inline-block}
+/* Available to a screen reader, absent from the page. */
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+.tagline{
+  margin:.55rem 0 0; color:var(--muted); font-size:.82rem;
+  letter-spacing:.18em; text-transform:uppercase;
+}
+.masthead-meta{margin:.7rem 0 0; color:var(--muted); font-size:.8rem}
+
+/* ⚠️ An article page's nameplate is a LINK, and a link needs its own
+   rules. Without these the anchor fell back to browser defaults —
+   blue and underlined — and `.mark`'s `display:block` broke the line,
+   so the monogram sat alone above a centred blue "DK Street Journal".
+   It shipped that way because the front page uses `<h1 class="wordmark
+   lockup">` and I reused `.masthead` around a different element,
+   assuming the styling would carry. */
+.masthead-slim{padding:34px 0 22px}
+.masthead-slim .back{
+  display:inline-flex; align-items:center; justify-content:center;
+  gap:clamp(.3rem,1.1vw,.62rem);
+  font-family:var(--serif); font-weight:700; letter-spacing:.02em;
+  font-size:clamp(1.15rem,2.4vw,1.6rem); line-height:1;
+  color:var(--ink); text-decoration:none;
+}
+.masthead-slim .back:hover{color:var(--accent)}
+/* Smaller than the front page's nameplate: this one sits above a
+   single article, not over the whole paper. */
+.masthead-slim .mark img{height:clamp(1.45rem,3.2vw,2.1rem)}
+
+/* disclaimer — must not be skimmable past */
+.disclaimer{
+  margin:26px auto 0; max-width:82ch; padding:20px 22px; background:#fff8f1;
+  border:1px solid #f0d9c0; border-left:4px solid #c2410c; border-radius:6px;
+}
+.disc-head{
+  margin:0 0 .6rem; font-family:var(--sans); font-size:.78rem;
+  letter-spacing:.14em; text-transform:uppercase; color:#9a3412;
+}
+.disclaimer p{margin:.5rem 0; font-size:.86rem; line-height:1.6; color:var(--ink-soft)}
+.disclaimer strong{color:var(--ink)}
+.disc-closer{margin-top:.9rem !important; font-weight:600; color:var(--ink) !important}
+
+/* how it works */
+.how{margin:34px auto 0}
+.how h2{
+  font-family:var(--sans); font-size:.78rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 .8rem;
+}
+.how{max-width:74ch; margin-left:auto; margin-right:auto}
+.how p{margin:.6rem 0; font-size:.94rem; color:var(--ink-soft)}
+.how-lede strong{color:var(--ink)}
+.agents{margin:.6rem 0; padding-left:1.25rem}
+.agents li{margin:.4rem 0; font-size:.94rem; color:var(--ink-soft)}
+.agents strong{color:var(--ink)}
+.rule{border:0; border-top:1px solid var(--hair); margin:40px 0 0}
+
+/* articles
+   Text sits in a centred reading measure; the visuals break out to
+   the full width. Left-aligning the prose inside a 1120px wrap left a
+   dead gutter down the whole right-hand side of every article. */
+.article{padding:44px 0; border-bottom:1px solid var(--hair)}
+.article:last-child{border-bottom:0}
+.art-head,.dek,.body,.art-foot{max-width:68ch; margin-left:auto; margin-right:auto}
+.dateline{
+  margin:0 0 .5rem; color:var(--muted); font-size:.75rem;
+  letter-spacing:.1em; text-transform:uppercase;
+}
+.headline{
+  font-family:var(--serif); font-weight:700; margin:0;
+  font-size:clamp(1.6rem,3.6vw,2.3rem); line-height:1.18;
+  letter-spacing:-.008em;
+}
+/* The table of contents. Full-width like the visuals rather than
+   inside the 68ch measure — it is a scanning surface, not prose, and
+   at ~8 themes a single column would push the first article a screen
+   and a half down the page. `auto-fit` + `minmax` gives 3 columns on a
+   desktop and 1 on a phone with no media query and no JavaScript (the
+   site's CSP is `script-src 'none'`). */
+.toc{margin:1.6rem 0 0}
+.toc-head{
+  font-family:var(--sans); font-size:.72rem; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
+  margin:0 0 .9rem; display:flex; align-items:baseline; gap:.6rem;
+  border-bottom:1px solid var(--hair); padding-bottom:.5rem;
+}
+.toc-total{
+  font-weight:400; letter-spacing:.02em; text-transform:none;
+  font-size:.75rem;
+}
+.toc-grid{
+  display:grid; gap:1rem 1.6rem;
+  grid-template-columns:repeat(auto-fit,minmax(255px,1fr));
+}
+.toc-card{min-width:0}
+.toc-name{
+  font-family:var(--serif); font-size:1.02rem; font-weight:700;
+  margin:0 0 .4rem; line-height:1.25; color:var(--ink);
+  display:flex; align-items:baseline; gap:.45rem;
+}
+.toc-count{
+  font-family:var(--sans); font-size:.68rem; font-weight:600;
+  color:var(--muted); background:var(--hair); border-radius:999px;
+  padding:1px 7px; flex:none;
+}
+.toc-list{list-style:none; margin:0; padding:0}
+.toc-list li{
+  font-size:.86rem; line-height:1.4; margin:0 0 .35rem;
+  display:flex; gap:.5rem;
+}
+.toc-when{color:var(--muted); font-size:.72rem; flex:none; padding-top:.12rem}
+.toc-list a{color:var(--ink-soft); text-decoration:none}
+.toc-list a:hover{color:var(--accent); text-decoration:underline}
+/* The disclosure for the rest of a theme. Styled as a quiet control
+   rather than a label, because the old "+17 more below" read as a
+   statement and this is a button. */
+.toc-rest{margin:.1rem 0 0}
+.toc-rest > summary{
+  cursor:pointer; color:var(--muted); font-size:.75rem;
+  list-style:none; display:inline-flex; align-items:center; gap:.3rem;
+  padding:.15rem 0;
+}
+.toc-rest > summary::-webkit-details-marker{display:none}
+.toc-rest > summary::before{content:"▸"; font-size:.65rem}
+.toc-rest[open] > summary::before{content:"▾"}
+.toc-rest > summary:hover{color:var(--accent)}
+.toc-rest[open] > summary{margin-bottom:.35rem}
+/* The unsorted group is a holding pen, not a theme — it should read as
+   pending rather than as a peer of the real ones. */
+.toc-unsorted .toc-name{color:var(--muted); font-style:italic}
+
+/* The summary is a standfirst, not a caption. Editor v1.2 writes
+   ~120-150 words here, where v1.1 wrote ~50 — a size that reads as one
+   emphatic line collapses into a grey slab at three times the length.
+   So it takes a rule and a little indent: enough to stay distinct from
+   the body without competing with the headline above it. Briefs
+   published before v1.2 keep their short summary and simply occupy
+   less of the same frame. */
+/* Provenance sits between the headline and the summary — close enough
+   to the headline to be read as a byline, quiet enough not to compete
+   with it. Sized below the dateline above it so the header reads
+   top-down in decreasing weight. */
+.provenance{
+  margin:.55rem 0 0; font-family:var(--sans); font-size:.72rem;
+  color:var(--muted); letter-spacing:.01em; line-height:1.5;
+}
+.prov-role{
+  text-transform:uppercase; letter-spacing:.08em; font-size:.64rem;
+  color:var(--hair-ink,#9aa3ad); font-weight:600;
+}
+
+.dek{
+  margin:1rem 0 0; padding:0 0 0 .95rem;
+  border-left:3px solid var(--hair);
+}
+.dek p{
+  margin:0 0 .55rem; font-size:1.02rem; line-height:1.6;
+  color:var(--ink-soft);
+}
+.dek p:last-child{margin-bottom:0}
+
+/* The permalink sits above the dateline, right-aligned and quiet. It
+   is a utility, not part of the article — it exists so a reader can
+   right-click and send the piece to someone. */
+.entry{position:relative}
+.permabar{
+  max-width:68ch; margin:0 auto; text-align:right;
+  font-size:.72rem; line-height:1; height:0;
+}
+.permalink{
+  color:var(--muted); text-decoration:none; letter-spacing:.03em;
+  position:relative; top:.15rem;
+}
+.permalink:hover{color:var(--accent); text-decoration:underline}
+.entry:target .headline{
+  /* Landing from a shared link should show you WHICH article you
+     were sent, or the jump reads as an ordinary scroll position. */
+  box-shadow:-.6rem 0 0 var(--accent);
+}
+
+.pager{
+  display:flex; flex-wrap:wrap; align-items:center; gap:.4rem;
+  justify-content:center; margin:2.5rem auto 0; max-width:68ch;
+  padding-top:1.4rem; border-top:1px solid var(--hair);
+}
+.pager a,.pager span{
+  font-size:.82rem; padding:.36rem .6rem; border-radius:4px;
+  text-decoration:none; color:var(--ink-soft);
+}
+.pager a:hover{background:var(--hair); color:var(--accent)}
+.pg-num{min-width:2rem; text-align:center}
+.pg-here{background:var(--accent); color:#fff; font-weight:600}
+.pg-off{color:var(--hair)}
+.pg-gap{padding:.36rem .2rem; color:var(--muted)}
+.short-notice{margin:0 0 .5rem}
+.short-notice a{color:var(--muted); white-space:nowrap}
+.chips{display:flex; flex-wrap:wrap; gap:6px; margin:1rem 0 0}
+.chip{
+  font-size:.7rem; letter-spacing:.04em; color:var(--muted);
+  background:#f1f3f5; border:1px solid var(--hair);
+  border-radius:999px; padding:2px 9px; white-space:nowrap;
+}
+.chip-ticker{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-weight:600; color:var(--ink); background:#fff;
+}
+.body{margin:1.6rem auto 0}
+.body p{margin:0 0 1.05rem}
+.body h2,.body h3{
+  font-family:var(--serif); margin:2rem 0 .6rem; line-height:1.25;
+}
+.body h2{font-size:1.28rem}
+.body h3{font-size:1.1rem}
+.body a{color:var(--accent); text-decoration:underline;
+  text-underline-offset:2px; text-decoration-thickness:1px}
+.body a:hover{background:#eff4ff}
+.body ul,.body ol{margin:0 0 1.05rem; padding-left:1.3rem}
+.body li{margin:.3rem 0}
+.body blockquote{
+  margin:1.2rem 0; padding:.2rem 0 .2rem 1rem;
+  border-left:3px solid var(--hair); color:var(--ink-soft);
+}
+.body table{border-collapse:collapse; width:100%; font-size:.9rem; margin:1.2rem 0}
+.body th,.body td{border-bottom:1px solid var(--hair); padding:6px 8px; text-align:left}
+
+/* visuals */
+.visuals{margin:2.2rem 0 0}
+.visuals-lede{margin:1.5rem 0 0}
+.visuals-lede .vis-head{margin-top:1.3rem}
+.vis-head{
+  font-family:var(--sans); font-size:.72rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted);
+  margin:1.8rem 0 .7rem; padding-bottom:.4rem;
+  border-bottom:1px solid var(--hair);
+}
+.vis-note{margin:.5rem 0 0; font-size:.76rem; color:var(--muted)}
+.strip,.table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch}
+.strip table,.table-wrap table{min-width:520px}
+.chart-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+@media (max-width:900px){.chart-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.chart-grid{grid-template-columns:1fr}}
+
+/* disclosures */
+.art-foot{margin:1.8rem auto 0; display:flex; flex-direction:column; gap:.5rem}
+.disclosure{
+  border:1px solid var(--hair); border-radius:6px;
+  background:var(--card); padding:0;
+}
+.disclosure summary{
+  cursor:pointer; padding:9px 13px; font-size:.78rem; color:var(--muted);
+  letter-spacing:.06em; text-transform:uppercase; list-style:none;
+}
+.disclosure summary::-webkit-details-marker{display:none}
+.disclosure summary::before{content:"\25B8  "; color:var(--muted)}
+.disclosure[open] summary::before{content:"\25BE  "}
+.disclosure[open] summary{border-bottom:1px solid var(--hair)}
+.sources{margin:0; padding:10px 13px 12px 30px; font-size:.82rem}
+.sources li{margin:.3rem 0; color:var(--ink-soft)}
+.src-internal{
+  margin:0; padding:8px 13px 12px; color:var(--muted);
+  font-size:.78rem; line-height:1.5; border-top:1px solid var(--hair);
+}
+.src-domain{color:var(--muted); font-size:.74rem}
+.sources a{color:var(--accent)}
+.hyp{margin:0; padding:10px 15px; color:var(--ink-soft); font-size:.9rem}
+.hyp p{margin:.4rem 0}
+.hyp-meta{
+  margin:10px 15px 0; font-size:.72rem; color:var(--muted);
+  letter-spacing:.05em; text-transform:uppercase;
+}
+
+/* footer */
+.site-foot{margin:52px auto 0; padding-top:22px; border-top:3px double var(--ink)}
+.site-foot{max-width:74ch; margin-left:auto; margin-right:auto}
+.site-foot p{margin:.3rem 0; font-size:.78rem; color:var(--muted)}
+.built{color:#9aa1ab !important}
+.empty{color:var(--muted); padding:40px 0}
+
+@media (prefers-color-scheme:dark){
+  :root{
+    --ink:#e8eaed; --ink-soft:#b9bfc7; --muted:#8b939d; --hair:#2a2f36;
+    --bg:#14171a; --card:#1b1f24; --accent:#7aa7ff;
+  }
+  /* A PNG cannot recolour itself, so the navy mark is swapped for
+     the near-white one rather than filtered — a CSS invert would take
+     the gold slash with it and turn it blue. */
+  .mark img.mark-light{display:none}
+  .mark img.mark-dark{display:block}
+  .disclaimer{background:#2a1c12; border-color:#5c3a1e; border-left-color:#ea8c4b}
+  .disc-head{color:#f0a868}
+  .chip{background:#22272e}
+  .chip-ticker{background:#1b1f24}
+  .body a:hover{background:#1e2a44}
+  /* The chart cards and tables carry their own light ground; keep
+     them on white rather than letting dark text land on it. */
+  .strip,.chart-grid,.table-wrap{
+    background:#fff; border-radius:8px; padding:10px; color:#111418;
+  }
+}
+
+/* --- Search ------------------------------------------------------- */
+.mast-search{margin:14px auto 0; max-width:34rem}
+.masthead-slim + .mast-search{margin:10px 0 0}
+.mast-search input{
+  width:100%; box-sizing:border-box; padding:8px 12px;
+  font:inherit; font-size:.95rem; color:inherit;
+  background:transparent; border:1px solid #c9c2b4; border-radius:8px;
+}
+.mast-search input:focus{outline:2px solid #1d3557; outline-offset:1px}
+.search-main{max-width:68ch; margin:0 auto}
+.sr-status{color:#6b6455; font-size:.92rem; margin:18px 0 6px}
+.search-results{list-style:none; margin:0; padding:0}
+.search-results li{margin:0 0 22px; padding:0}
+.sr-meta{color:#6b6455; font-size:.82rem; letter-spacing:.02em;
+  text-transform:uppercase; margin:0 0 2px}
+.sr-title{margin:0; font-size:1.08rem; line-height:1.35}
+.sr-title a{color:inherit; text-decoration:none}
+.sr-title a:hover{text-decoration:underline}
+.sr-sum{color:#4c463a; margin:3px 0 0; font-size:.95rem; line-height:1.5}
+@media (prefers-color-scheme: dark){
+  .mast-search input{border-color:#3a3f46}
+  .mast-search input:focus{outline-color:#8fb4e8}
+  .sr-status,.sr-meta{color:#9aa3ad}
+  .sr-sum{color:#b7bec7}
+}
+</style>
+</head>
+<body>
+<div class="wrap"><header class="masthead masthead-slim"><a class="back" href="index.html"><span class="mark" aria-hidden="true"><img class="mark-light" src="assets/mark-navy.png" alt=""/><img class="mark-dark" src="assets/mark-cream.png" alt=""/></span><span>DK Street Journal</span></a></header><form class="mast-search" action="search.html" method="get" role="search"><input type="search" name="q" placeholder="Search companies, tickers, sectors…" aria-label="Search articles" maxlength="200"/></form><hr class="rule"/><main class="feed"><div class="entry"><article class="article" id="a-0d0b48b6630343e69b504fda13578f7c"><header class="art-head"><p class="dateline"><time datetime="2026-05-10T03:30:20Z">May 9, 2026 · 8:30 PM PDT</time></p><h2 class="headline">AI Interconnect Sub-Layer: NVT, CRDO, and APH Emerge as Runway Names</h2><p class="provenance"><span class="prov-role">Prompt</span> v1.0</p><div class="dek"><p>With optical peers AAOI and LITE already blown off 200–300% in 90 days, the actionable gradual-uptrend stories in the AI server/interconnect sub-layer are narrowing to three: NVT (power/cooling infrastructure, 48% 90-day move with 6–18% PT upside still intact), CRDO (PCIe/AEC retimer franchise, 53% 90-day move with ~10% PT upside and DustPhotonics optical optionality), and APH (connector compounder, -11% 90-day pullback against record fundamentals, ~32% upside to median PT). DELL is confirmed blown-off (+115% in 90 days), SMCI remains structurally impaired, and ALAB is high-quality but re-rated.</p></div><div class="chips"><span class="chip chip-ticker">NVT</span><span class="chip chip-ticker">CRDO</span><span class="chip chip-ticker">ALAB</span><span class="chip chip-ticker">DELL</span><span class="chip chip-ticker">APH</span><span class="chip chip-ticker">SMCI</span><span class="chip chip-ticker">AAOI</span><span class="chip chip-ticker">LITE</span><span class="chip">AI2: Optical &amp; Networking</span><span class="chip">AI2: Power &amp; Electrical Infrastructure</span><span class="chip">Data Center: Power Equipment &amp; Grid Infrastructure</span><span class="chip">AI2: Cooling &amp; Thermal Management</span><span class="chip">Data Center: Networking Silicon &amp; Photonic Chips</span><span class="chip">SEMI: Fabless / AI &amp; Compute Designers</span><span class="chip">Gavin Baker May 2026: Other Notable Holdings</span><span class="chip">Gavin Baker May 2026: Top Holdings</span><span class="chip">Data Center: Servers, Storage &amp; ODM/EMS</span><span class="chip">Barron&#x27;s Jan 2026: Tech / AI Infrastructure &amp; Software</span><span class="chip">Data Center: Optical Transceivers, Fiber &amp; Interconnect</span><span class="chip">AI2: Networking, Optics &amp; Connectivity</span><span class="chip">Technology &gt; Semiconductors &gt; RF &amp; Wireless</span></div></header><section class="visuals visuals-lede"><div class="strip"><table style="width:100%;border-collapse:collapse;font-size:0.86rem;line-height:1.35"><thead><tr style="color:#94a3b8;font-size:0.74rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Ticker</th><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Company</th><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Segment</th><th style="text-align:left;padding:0 8px 3px;font-weight:600">Trend · 13mo</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">30D</th><th style="text-align:right;padding:0 0 3px 6px;font-weight:600;white-space:nowrap">1Y</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">NVT</code></td><td style="padding:4px 8px 4px 0">nVent Electric</td><td style="padding:4px 8px 4px 0;color:#64748b">Data Center Power &amp; Thermal</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+32.3%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+178.6%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">CRDO</code></td><td style="padding:4px 8px 4px 0">Credo Technology</td><td style="padding:4px 8px 4px 0;color:#64748b">Optical Transport &amp; Switching</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#f973161a;color:#f97316;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">⚠️ Emerging Bear</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+74.7%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+271.1%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">ALAB</code></td><td style="padding:4px 8px 4px 0">Astera Labs</td><td style="padding:4px 8px 4px 0;color:#64748b">Specialty Semiconductors</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#f973161a;color:#f97316;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">⚠️ Emerging Bear</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+54.3%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+180.6%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">DELL</code></td><td style="padding:4px 8px 4px 0">Dell Technologies</td><td style="padding:4px 8px 4px 0;color:#64748b">Enterprise Storage &amp; Software</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+44.0%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+175.7%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">APH</code></td><td style="padding:4px 8px 4px 0">Amphenol</td><td style="padding:4px 8px 4px 0;color:#64748b">Connectors &amp; Interconnect Systems</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−7.0%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+59.4%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">SMCI</code></td><td style="padding:4px 8px 4px 0">Super Micro Computer</td><td style="padding:4px 8px 4px 0;color:#64748b">Server &amp; Infrastructure Systems</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#f973161a;color:#f97316;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">⚠️ Emerging Bear</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+52.3%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+10.6%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">AAOI</code></td><td style="padding:4px 8px 4px 0">Applied Optoelectronics</td><td style="padding:4px 8px 4px 0;color:#64748b">RF &amp; Wireless</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+11.7%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+915.3%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">LITE</code></td><td style="padding:4px 8px 4px 0">Lumentum</td><td style="padding:4px 8px 4px 0;color:#64748b">Optical Transport &amp; Switching</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+1.0%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+1292.7%</span></td></tr></tbody></table></div><h3 class="vis-head">12-month price &amp; trend</h3><div class="chart-grid"><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">NVT</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">nVent Electric</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">170</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+1.03 (+0.61%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-NVT-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="NVT 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Data Center Power &amp; Thermal</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">CRDO</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Credo Technology</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">189</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−4.97 (−2.57%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#e11d48;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-CRDO-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="CRDO 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Optical Transport &amp; Switching</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">ALAB</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Astera Labs</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">200</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+4.14 (+2.12%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#e11d48;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-ALAB-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="ALAB 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Specialty Semiconductors</div></div></div><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px;font-weight:600;white-space:nowrap">Ticker</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">Mkt cap</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">EV/EBITDA</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FCF yld</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">NVT</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$27.3B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">55.8x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">37.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">6.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">5.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">17.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">14.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">31.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.4%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">CRDO</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$52.7B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">107.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">46.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">39.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">21.6x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">58.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">31.8x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">101.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.8%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">ALAB</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$54.9B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">147.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">81.4x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">45.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">29.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">60.8x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">39.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">164.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.5%</td></tr></tbody></table></div><div class="chart-grid"><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">DELL</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Dell Technologies</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">260</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+28.78 (+12.42%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-DELL-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="DELL 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Enterprise Storage &amp; Software</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">APH</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Amphenol</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">128</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−7.80 (−5.74%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-APH-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="APH 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Connectors &amp; Interconnect Systems</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">SMCI</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Super Micro Computer</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">35.37</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+0.80 (+2.31%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#e11d48;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-SMCI-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="SMCI 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Server &amp; Infrastructure Systems</div></div></div><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px;font-weight:600;white-space:nowrap">Ticker</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">Mkt cap</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">EV/EBITDA</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FCF yld</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">DELL</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$311.3B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">36.6x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">25.4x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.8x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">12.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">9.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">22.4x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">3.0%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">APH</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$206.0B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">39.8x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">31.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">7.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">5.8x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">18.4x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">15.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">23.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.3%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">SMCI</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$25.8B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">10.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">12.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">6.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">4.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">8.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">-27.1%</td></tr></tbody></table></div><div class="chart-grid"><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">AAOI</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Applied Optoelectronics</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">149</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−19.54 (−11.60%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-AAOI-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="AAOI 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">RF &amp; Wireless</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">LITE</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Lumentum</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">903</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+4.45 (+0.50%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-LITE-2026-05-09.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="LITE 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Optical Transport &amp; Switching</div></div></div><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px;font-weight:600;white-space:nowrap">Ticker</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">Mkt cap</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">EV/EBITDA</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FCF yld</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">AAOI</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$12.4B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">149.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">20.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">11.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">72.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">41.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">-3.3%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">LITE</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$75.4B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">52.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">25.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">13.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">60.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">31.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.7%</td></tr></tbody></table></div></section><section class="visuals visuals-tables"><h3 class="vis-head">Consensus projections</h3><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px 0;font-weight:600">Ticker</th><th style="text-align:left;padding:0 6px 3px;font-weight:600"></th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2026E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2027E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2028E</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">NVT</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+29.7%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+14.7%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+13.2%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+36.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+22.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+16.5%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">CRDO</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+211.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+83.3%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+49.4%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+423.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+85.0%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+47.8%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">ALAB</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+123.4%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+59.4%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+26.8%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+121.0%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+61.4%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+25.0%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">DELL</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+16.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+53.6%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+14.2%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+27.3%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+85.4%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+21.0%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">APH</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+54.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+17.7%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+12.2%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+59.4%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+22.0%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+13.0%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">SMCI</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+77.7%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+34.0%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+19.7%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+33.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+15.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+13.7%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">AAOI</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+129.8%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+169.3%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+48.7%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−417.3%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+454.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+102.6%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">LITE</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+83.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+89.0%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+54.6%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+314.0%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+125.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+58.9%</span></td></tr></tbody></table></div><p class="vis-note">Forward fiscal years only. Blank means no analyst coverage for that year.</p></section><div class="body"><h2>What's Happening</h2>
+<p>The AI server/interconnect investment landscape has bifurcated sharply over the past 90 days. Optical leaders have already captured their largest moves — AAOI surged from ~$48 to ~$149 (+211%) and LITE from ~$577 to ~$904 (+57%) over the same window, leaving little "gradual uptrend" thesis remaining. Meanwhile, several power-delivery, connector, and retimer names have been moving in a more measured cadence — or pulling back outright — even as their fundamental underpinnings accelerate.</p>
+<h2>NVT: The Clearest Gradual Follower</h2>
+<p>nVent Electric posted a historically strong Q1 2026: record sales of $1.242B (+53% YoY, +34% organic), adjusted EPS of $1.09 versus $0.64 consensus — a 70% beat — and a backlog that tripled year-over-year to $2.6B. The company raised full-year 2026 EPS guidance to $4.45–$4.55 on $4.9–$5.0B revenue. Data center infrastructure (liquid cooling, enclosures, power management) now represents over 55% of total sales, up from 12% at spin-off, with that segment growing 80%+ organically in Q1.</p>
+<p>The price response has been sustained but not parabolic: NVT moved from $114.62 to $169.95 over 90 days (+48.3%), including a 30-day surge of +32.1% following earnings. <a href="https://finance.yahoo.com/markets/stocks/articles/nvent-nvt-best-european-stock-113258335.html" rel="noopener noreferrer">After the blowout Q1 report, at least six Wall Street firms raised price targets, with RBC lifting to $180, UBS to $200, and Roth Capital to $185</a>, all citing AI data center demand and backlog momentum. At ~$170, <a href="https://tickernerd.com/stock/nvt-forecast/" rel="noopener noreferrer">consensus post-earnings PT range of $180–$200 implies 6–18% further upside</a>. Forward P/E of ~37x is premium but grounded in 21–23% organic growth guidance — well below the multiples commanded by optical blowoff peers.</p>
+<h2>CRDO: Parabolic but Thesis Intact</h2>
+<p>Credo Technology has delivered the group's strongest 90-day move (+53%, from $123 to $188), yet the fundamental thesis continues to expand rather than exhaust. Q3 FY26 revenue came in at $407M (+201% YoY) with non-GAAP gross margins of 68.5%, and Q4 guidance of $335–$345M implies the company remains on track for &gt;170% full-year FY26 growth exceeding $1.3B.</p>
+<p>On the product side, <a href="https://www.stocktitan.net/news/CRDO/credo-s-toucan-pc-ie-retimer-achieves-pci-sig-1ys26dvlj00q.html" rel="noopener noreferrer">Credo's Toucan PCIe retimer achieved PCI-SIG compliance at 32.0 GT/s for PCIe 6.0 in February 2026</a>, and the Blue Heron 224G AI scale-up retimer launched targeting UALink, ESUN, and Ethernet protocols on a 3nm process. The company confirmed PCIe Gen 5 and Gen 6 retimer design wins across five hyperscaler AEC customers, each representing &gt;10% of revenue. <a href="https://finance.yahoo.com/news/crdo-eyes-growth-retimer-business-131200998.html" rel="noopener noreferrer">The PCIe retimer market is projected to reach $2.8B by 2033 at an 11.5% CAGR, while CRDO's scale-up networking TAM could top $40B by 2030</a>.</p>
+<p>The $750M DustPhotonics acquisition adds silicon photonics PIC capability in-house, with <a href="https://www.theglobeandmail.com/investing/markets/stocks/CRDO/pressreleases/1688875/credo-technology-stock-up-28-ytd-is-there-more-upside-ahead/" rel="noopener noreferrer">optical revenues expected to exceed $500M in fiscal 2027; Needham maintained its Buy/$220 PT post-announcement</a>. Consensus PT of ~$208 implies ~10% further upside from current $188 — modest, but the DustPhotonics optionality is not yet in most models.</p>
+<h2>APH: Pulled Back, Fundamentals Unbroken</h2>
+<p>Amphenol is the outlier in this set: the stock has declined 11.2% over 90 days (from $144 to $128) even as its fundamental metrics hit records. Q1 2026 saw sales of $7.62B (+58% YoY, +33% organic), adjusted EPS of $1.06 (+68% YoY), and a book-to-bill of 1.24x — indicating orders outpacing shipments. IT datacom (primarily AI-driven) accounted for 41% of revenue, up 99% YoY.</p>
+<p>The January 2026 acquisition of CommScope's CCS business for ~$14.8B materially expanded APH's fiber optic interconnect and data center penetration; CCS is expected to contribute $4.1B in FY2026 sales and $0.15 EPS accretion. <a href="https://tickernerd.com/stock/aph-forecast/" rel="noopener noreferrer">23 Wall Street analysts cover APH with a median price target of $169 (range $135–$210), with an overall Strong Buy consensus</a>, implying ~32% upside from $128 — well above the 15% hurdle set in the hypothesis screen.</p>
+<h2>Exclusions and Why</h2>
+<p><strong>DELL</strong> is a confirmed blown-off name: the stock surged from $121 to $260 (+115%) over 90 days. <a href="https://247wallst.com/investing/2026/04/16/goldman-sachs-raises-dell-price-target-to-215-is-this-ai-server-powerhouse-still-the-best-value-in-tech/" rel="noopener noreferrer">Goldman Sachs raised its Dell price target to $215 with a Buy rating in April 2026</a>, but at $260, the stock has already blown through most targets. <a href="https://www.tikr.com/blog/dell-stock-why-its-50b-ai-server-guide-supports-a-224-bull-case" rel="noopener noreferrer">Dell's Q4 FY26 AI server revenue surged 342% YoY, and the CFO confirmed the pipeline 'has never been higher'</a>, but the upside cadence is no longer "gradual."</p>
+<p><strong>SMCI</strong> remains structurally impaired. The stock is up only 5.5% over 90 days, but that masks a trough of $23.22 in late March before a partial recovery. Gross margins collapsed to 6.4% in Q2 FY26 (vs. historical 14–17% targets), and FY26 full-year guidance remains single-digit. <a href="https://www.tikr.com/blog/dell-closes-fy2026-with-record-113b-revenue-why-analysts-see-a-171-price" rel="noopener noreferrer">SMCI also faces a federal export-control overhang following U.S. charges for allegedly smuggling AI technology to China</a>, adding legal risk to an already-compressed margin structure.</p>
+<p><strong>ALAB</strong> is high-quality but recently re-rated: <a href="https://www.asteralabs.com/news/astera-labs-reports-first-quarter-2026-financial-results/" rel="noopener noreferrer">Astera Labs reported Q1 2026 revenue of $308M (+93% YoY) with Q2 guidance of $355–$365M</a>, but the stock's 90-day path (peak $188 → trough $100 → back to $200) reflects a sharp post-earnings re-rating rather than gradual accumulation. Forward P/E of ~67x and P/S of ~22x leave limited cushion if execution falters.</p>
+<h2>Bottom Line</h2>
+<p>NVT, CRDO, and APH are the three names in the AI server/interconnect sub-layer where the combination of confirmed hyperscaler/platform catalysts, sustained (not single-day) price moves, and intact sell-side PT upside remains most coherent. NVT is the cleanest gradual-uptrend story with the largest backlog acceleration; CRDO has the strongest revenue growth momentum and optical expansion optionality; APH offers the most PT upside from a position of fundamental strength and post-acquisition scope.</p></div><footer class="art-foot"><details class="disclosure"><summary>Sources (28)</summary><ul class="sources"><li><a href="https://finance.yahoo.com/markets/stocks/articles/nvent-nvt-best-european-stock-113258335.html" target="_blank" rel="noopener noreferrer">nVent (NVT): The Best European Stock That Beat Earnings Estimates to Buy</a> <span class="src-domain">yahoo.com</span></li><li><a href="https://tickernerd.com/stock/nvt-forecast/" target="_blank" rel="noopener noreferrer">NVT Stock Forecast 2026 — nVent Price Targets &amp; Predictions</a> <span class="src-domain">tickernerd.com</span></li><li><a href="https://www.stocktitan.net/news/CRDO/credo-s-toucan-pc-ie-retimer-achieves-pci-sig-1ys26dvlj00q.html" target="_blank" rel="noopener noreferrer">Credo Toucan PCIe retimer wins PCI-SIG compliance</a> <span class="src-domain">stocktitan.net</span></li><li><a href="https://www.theglobeandmail.com/investing/markets/stocks/CRDO/pressreleases/1688875/credo-technology-stock-up-28-ytd-is-there-more-upside-ahead/" target="_blank" rel="noopener noreferrer">Credo Technology Stock Up 28% YTD — Is There More Upside Ahead?</a> <span class="src-domain">theglobeandmail.com</span></li><li><a href="https://finance.yahoo.com/news/crdo-eyes-growth-retimer-business-131200998.html" target="_blank" rel="noopener noreferrer">CRDO Eyes Growth: Will Retimer Business Fuel its Revenue Engine?</a> <span class="src-domain">yahoo.com</span></li><li><a href="https://www.asteralabs.com/news/astera-labs-reports-first-quarter-2026-financial-results/" target="_blank" rel="noopener noreferrer">Astera Labs Reports First Quarter 2026 Financial Results</a> <span class="src-domain">asteralabs.com</span></li><li><a href="https://rollingout.com/2026/05/08/dell-record-43b-backlog-117m-deal-nvidia/" target="_blank" rel="noopener noreferrer">Dell&#x27;s massive 342% AI surge and the supercomputer deal</a> <span class="src-domain">rollingout.com</span></li><li><a href="https://247wallst.com/investing/2026/04/16/goldman-sachs-raises-dell-price-target-to-215-is-this-ai-server-powerhouse-still-the-best-value-in-tech/" target="_blank" rel="noopener noreferrer">Goldman Sachs Raises Dell Price Target to $215</a> <span class="src-domain">247wallst.com</span></li><li><a href="https://www.tikr.com/blog/dell-closes-fy2026-with-record-113b-revenue-why-analysts-see-a-171-price" target="_blank" rel="noopener noreferrer">Dell Closes FY2026 With Record $113B Revenue: Why Analysts See a $171 Price</a> <span class="src-domain">tikr.com</span></li><li><a href="https://tickernerd.com/stock/aph-forecast/" target="_blank" rel="noopener noreferrer">APH Stock Forecast 2026 — Amphenol Price Targets &amp; Predictions</a> <span class="src-domain">tickernerd.com</span></li><li><a href="https://www.tikr.com/blog/dell-stock-why-its-50b-ai-server-guide-supports-a-224-bull-case" target="_blank" rel="noopener noreferrer">Dell Stock: Why Its $50B AI Server Guide Supports a $224 Bull Case</a> <span class="src-domain">tikr.com</span></li></ul><p class="src-internal">Also checked against 9 company-fundamentals reads, 7 price-database queries, 1 prior recommendation in the author's own data.</p></details></footer></article></div></main><nav class="pager" aria-label="More"><a href="index.html">← More from DK Street Journal</a></nav><footer class="site-foot"><p class="short-notice">Not investment advice. Written by software, unreviewed, and possibly wrong. The author may hold positions. No liability accepted. <a href="index.html#disclaimer">Read the full disclaimer ›</a></p><p class="built">May 9, 2026 · 8:30 PM PDT</p></footer></div>
+</body>
+</html>
