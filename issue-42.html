@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DK Street Journal — Issue 42</title>
+<meta name="description" content="1 brief from DK Street Journal, Aug 20, 2026. Not investment advice."/>
+<meta property="og:site_name" content="DK Street Journal"/>
+<meta property="og:title" content="DK Street Journal — Issue 42"/>
+<meta property="og:description" content="1 brief from DK Street Journal, Aug 20, 2026. Not investment advice."/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://dkstreetjournal.com/issue-42.html"/>
+<link rel="canonical" href="https://dkstreetjournal.com/issue-42.html"/>
+<meta property="og:image" content="https://dkstreetjournal.com/assets/og-default.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="DK Street Journal — Issue 42"/>
+<meta name="twitter:description" content="1 brief from DK Street Journal, Aug 20, 2026. Not investment advice."/>
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48 64x64" href="assets/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png"/><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"/><link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png"/>
+<style>
+:root{
+  --ink:#111418; --ink-soft:#454b54; --muted:#6b7280; --hair:#e3e6ea;
+  --bg:#fbfbfa; --card:#ffffff; --accent:#2563eb;
+  --bull:#15803d; --bear:#e11d48;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,
+    "Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,
+    Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:17px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1120px; margin:0 auto; padding:0 22px 72px}
+
+/* masthead */
+.masthead{text-align:center; padding:56px 0 26px; border-bottom:3px double var(--ink)}
+.lockup{
+  display:flex; align-items:center; justify-content:center;
+  gap:clamp(.34rem,1.2vw,.75rem); flex-wrap:nowrap;
+}
+/* The mark scales with the name it sits beside, so the lockup keeps
+   its proportions from phone to desktop instead of the monogram
+   swelling as the type shrinks. It now stands IN the wordline in
+   place of the word "DK", so it is sized against cap height. */
+.mark{display:block; flex:0 0 auto; line-height:0}
+.mark img{display:block; height:clamp(2.05rem,5.8vw,3.5rem); width:auto}
+/* ⚠️ Specificity, not just order. `.mark img` is (0,1,1) and a bare
+   `.mark-dark` is (0,1,0), so `display:block` won and BOTH marks
+   rendered — the cream one over white read as a ghosted second
+   monogram. The selectors below match `.mark img`'s weight and add a
+   class, so the toggle actually wins. */
+.mark img.mark-dark{display:none}
+.wordmark{
+  font-family:var(--serif); font-weight:700; letter-spacing:.02em;
+  font-size:clamp(1.9rem,5.4vw,3.6rem); line-height:1.05; margin:0;
+  text-transform:uppercase;
+}
+.wordmark-text{display:inline-block}
+/* Available to a screen reader, absent from the page. */
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+.tagline{
+  margin:.55rem 0 0; color:var(--muted); font-size:.82rem;
+  letter-spacing:.18em; text-transform:uppercase;
+}
+.masthead-meta{margin:.7rem 0 0; color:var(--muted); font-size:.8rem}
+
+/* ⚠️ An article page's nameplate is a LINK, and a link needs its own
+   rules. Without these the anchor fell back to browser defaults —
+   blue and underlined — and `.mark`'s `display:block` broke the line,
+   so the monogram sat alone above a centred blue "DK Street Journal".
+   It shipped that way because the front page uses `<h1 class="wordmark
+   lockup">` and I reused `.masthead` around a different element,
+   assuming the styling would carry. */
+.masthead-slim{padding:34px 0 22px}
+.masthead-slim .back{
+  display:inline-flex; align-items:center; justify-content:center;
+  gap:clamp(.3rem,1.1vw,.62rem);
+  font-family:var(--serif); font-weight:700; letter-spacing:.02em;
+  font-size:clamp(1.15rem,2.4vw,1.6rem); line-height:1;
+  color:var(--ink); text-decoration:none;
+}
+.masthead-slim .back:hover{color:var(--accent)}
+/* Smaller than the front page's nameplate: this one sits above a
+   single article, not over the whole paper. */
+.masthead-slim .mark img{height:clamp(1.45rem,3.2vw,2.1rem)}
+
+/* disclaimer — must not be skimmable past */
+.disclaimer{
+  margin:26px auto 0; max-width:82ch; padding:20px 22px; background:#fff8f1;
+  border:1px solid #f0d9c0; border-left:4px solid #c2410c; border-radius:6px;
+}
+.disc-head{
+  margin:0 0 .6rem; font-family:var(--sans); font-size:.78rem;
+  letter-spacing:.14em; text-transform:uppercase; color:#9a3412;
+}
+.disclaimer p{margin:.5rem 0; font-size:.86rem; line-height:1.6; color:var(--ink-soft)}
+.disclaimer strong{color:var(--ink)}
+.disc-closer{margin-top:.9rem !important; font-weight:600; color:var(--ink) !important}
+
+/* how it works */
+.how{margin:34px auto 0}
+.how h2{
+  font-family:var(--sans); font-size:.78rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 .8rem;
+}
+.how{max-width:74ch; margin-left:auto; margin-right:auto}
+.how p{margin:.6rem 0; font-size:.94rem; color:var(--ink-soft)}
+.how-lede strong{color:var(--ink)}
+.agents{margin:.6rem 0; padding-left:1.25rem}
+.agents li{margin:.4rem 0; font-size:.94rem; color:var(--ink-soft)}
+.agents strong{color:var(--ink)}
+.rule{border:0; border-top:1px solid var(--hair); margin:40px 0 0}
+
+/* articles
+   Text sits in a centred reading measure; the visuals break out to
+   the full width. Left-aligning the prose inside a 1120px wrap left a
+   dead gutter down the whole right-hand side of every article. */
+.article{padding:44px 0; border-bottom:1px solid var(--hair)}
+.article:last-child{border-bottom:0}
+.art-head,.dek,.body,.art-foot{max-width:68ch; margin-left:auto; margin-right:auto}
+.dateline{
+  margin:0 0 .5rem; color:var(--muted); font-size:.75rem;
+  letter-spacing:.1em; text-transform:uppercase;
+}
+.headline{
+  font-family:var(--serif); font-weight:700; margin:0;
+  font-size:clamp(1.6rem,3.6vw,2.3rem); line-height:1.18;
+  letter-spacing:-.008em;
+}
+/* The table of contents. Full-width like the visuals rather than
+   inside the 68ch measure — it is a scanning surface, not prose, and
+   at ~8 themes a single column would push the first article a screen
+   and a half down the page. `auto-fit` + `minmax` gives 3 columns on a
+   desktop and 1 on a phone with no media query and no JavaScript (the
+   site's CSP is `script-src 'none'`). */
+.toc{margin:1.6rem 0 0}
+.toc-head{
+  font-family:var(--sans); font-size:.72rem; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
+  margin:0 0 .9rem; display:flex; align-items:baseline; gap:.6rem;
+  border-bottom:1px solid var(--hair); padding-bottom:.5rem;
+}
+.toc-total{
+  font-weight:400; letter-spacing:.02em; text-transform:none;
+  font-size:.75rem;
+}
+.toc-grid{
+  display:grid; gap:1rem 1.6rem;
+  grid-template-columns:repeat(auto-fit,minmax(255px,1fr));
+}
+.toc-card{min-width:0}
+.toc-name{
+  font-family:var(--serif); font-size:1.02rem; font-weight:700;
+  margin:0 0 .4rem; line-height:1.25; color:var(--ink);
+  display:flex; align-items:baseline; gap:.45rem;
+}
+.toc-count{
+  font-family:var(--sans); font-size:.68rem; font-weight:600;
+  color:var(--muted); background:var(--hair); border-radius:999px;
+  padding:1px 7px; flex:none;
+}
+.toc-list{list-style:none; margin:0; padding:0}
+.toc-list li{
+  font-size:.86rem; line-height:1.4; margin:0 0 .35rem;
+  display:flex; gap:.5rem;
+}
+.toc-when{color:var(--muted); font-size:.72rem; flex:none; padding-top:.12rem}
+.toc-list a{color:var(--ink-soft); text-decoration:none}
+.toc-list a:hover{color:var(--accent); text-decoration:underline}
+/* The disclosure for the rest of a theme. Styled as a quiet control
+   rather than a label, because the old "+17 more below" read as a
+   statement and this is a button. */
+.toc-rest{margin:.1rem 0 0}
+.toc-rest > summary{
+  cursor:pointer; color:var(--muted); font-size:.75rem;
+  list-style:none; display:inline-flex; align-items:center; gap:.3rem;
+  padding:.15rem 0;
+}
+.toc-rest > summary::-webkit-details-marker{display:none}
+.toc-rest > summary::before{content:"▸"; font-size:.65rem}
+.toc-rest[open] > summary::before{content:"▾"}
+.toc-rest > summary:hover{color:var(--accent)}
+.toc-rest[open] > summary{margin-bottom:.35rem}
+/* The unsorted group is a holding pen, not a theme — it should read as
+   pending rather than as a peer of the real ones. */
+.toc-unsorted .toc-name{color:var(--muted); font-style:italic}
+
+/* The summary is a standfirst, not a caption. Editor v1.2 writes
+   ~120-150 words here, where v1.1 wrote ~50 — a size that reads as one
+   emphatic line collapses into a grey slab at three times the length.
+   So it takes a rule and a little indent: enough to stay distinct from
+   the body without competing with the headline above it. Briefs
+   published before v1.2 keep their short summary and simply occupy
+   less of the same frame. */
+/* Provenance sits between the headline and the summary — close enough
+   to the headline to be read as a byline, quiet enough not to compete
+   with it. Sized below the dateline above it so the header reads
+   top-down in decreasing weight. */
+.provenance{
+  margin:.55rem 0 0; font-family:var(--sans); font-size:.72rem;
+  color:var(--muted); letter-spacing:.01em; line-height:1.5;
+}
+.prov-role{
+  text-transform:uppercase; letter-spacing:.08em; font-size:.64rem;
+  color:var(--hair-ink,#9aa3ad); font-weight:600;
+}
+
+.dek{
+  margin:1rem 0 0; padding:0 0 0 .95rem;
+  border-left:3px solid var(--hair);
+}
+.dek p{
+  margin:0 0 .55rem; font-size:1.02rem; line-height:1.6;
+  color:var(--ink-soft);
+}
+.dek p:last-child{margin-bottom:0}
+
+/* The permalink sits above the dateline, right-aligned and quiet. It
+   is a utility, not part of the article — it exists so a reader can
+   right-click and send the piece to someone. */
+.entry{position:relative}
+.permabar{
+  max-width:68ch; margin:0 auto; text-align:right;
+  font-size:.72rem; line-height:1; height:0;
+}
+.permalink{
+  color:var(--muted); text-decoration:none; letter-spacing:.03em;
+  position:relative; top:.15rem;
+}
+.permalink:hover{color:var(--accent); text-decoration:underline}
+.entry:target .headline{
+  /* Landing from a shared link should show you WHICH article you
+     were sent, or the jump reads as an ordinary scroll position. */
+  box-shadow:-.6rem 0 0 var(--accent);
+}
+
+.pager{
+  display:flex; flex-wrap:wrap; align-items:center; gap:.4rem;
+  justify-content:center; margin:2.5rem auto 0; max-width:68ch;
+  padding-top:1.4rem; border-top:1px solid var(--hair);
+}
+.pager a,.pager span{
+  font-size:.82rem; padding:.36rem .6rem; border-radius:4px;
+  text-decoration:none; color:var(--ink-soft);
+}
+.pager a:hover{background:var(--hair); color:var(--accent)}
+.pg-num{min-width:2rem; text-align:center}
+.pg-here{background:var(--accent); color:#fff; font-weight:600}
+.pg-off{color:var(--hair)}
+.pg-gap{padding:.36rem .2rem; color:var(--muted)}
+.short-notice{margin:0 0 .5rem}
+.short-notice a{color:var(--muted); white-space:nowrap}
+.chips{display:flex; flex-wrap:wrap; gap:6px; margin:1rem 0 0}
+.chip{
+  font-size:.7rem; letter-spacing:.04em; color:var(--muted);
+  background:#f1f3f5; border:1px solid var(--hair);
+  border-radius:999px; padding:2px 9px; white-space:nowrap;
+}
+.chip-ticker{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-weight:600; color:var(--ink); background:#fff;
+}
+.body{margin:1.6rem auto 0}
+.body p{margin:0 0 1.05rem}
+.body h2,.body h3{
+  font-family:var(--serif); margin:2rem 0 .6rem; line-height:1.25;
+}
+.body h2{font-size:1.28rem}
+.body h3{font-size:1.1rem}
+.body a{color:var(--accent); text-decoration:underline;
+  text-underline-offset:2px; text-decoration-thickness:1px}
+.body a:hover{background:#eff4ff}
+.body ul,.body ol{margin:0 0 1.05rem; padding-left:1.3rem}
+.body li{margin:.3rem 0}
+.body blockquote{
+  margin:1.2rem 0; padding:.2rem 0 .2rem 1rem;
+  border-left:3px solid var(--hair); color:var(--ink-soft);
+}
+.body table{border-collapse:collapse; width:100%; font-size:.9rem; margin:1.2rem 0}
+.body th,.body td{border-bottom:1px solid var(--hair); padding:6px 8px; text-align:left}
+
+/* visuals */
+.visuals{margin:2.2rem 0 0}
+.visuals-lede{margin:1.5rem 0 0}
+.visuals-lede .vis-head{margin-top:1.3rem}
+.vis-head{
+  font-family:var(--sans); font-size:.72rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted);
+  margin:1.8rem 0 .7rem; padding-bottom:.4rem;
+  border-bottom:1px solid var(--hair);
+}
+.vis-note{margin:.5rem 0 0; font-size:.76rem; color:var(--muted)}
+.strip,.table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch}
+.strip table,.table-wrap table{min-width:520px}
+.chart-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+@media (max-width:900px){.chart-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.chart-grid{grid-template-columns:1fr}}
+
+/* disclosures */
+.art-foot{margin:1.8rem auto 0; display:flex; flex-direction:column; gap:.5rem}
+.disclosure{
+  border:1px solid var(--hair); border-radius:6px;
+  background:var(--card); padding:0;
+}
+.disclosure summary{
+  cursor:pointer; padding:9px 13px; font-size:.78rem; color:var(--muted);
+  letter-spacing:.06em; text-transform:uppercase; list-style:none;
+}
+.disclosure summary::-webkit-details-marker{display:none}
+.disclosure summary::before{content:"\25B8  "; color:var(--muted)}
+.disclosure[open] summary::before{content:"\25BE  "}
+.disclosure[open] summary{border-bottom:1px solid var(--hair)}
+.sources{margin:0; padding:10px 13px 12px 30px; font-size:.82rem}
+.sources li{margin:.3rem 0; color:var(--ink-soft)}
+.src-internal{
+  margin:0; padding:8px 13px 12px; color:var(--muted);
+  font-size:.78rem; line-height:1.5; border-top:1px solid var(--hair);
+}
+.src-domain{color:var(--muted); font-size:.74rem}
+.sources a{color:var(--accent)}
+.hyp{margin:0; padding:10px 15px; color:var(--ink-soft); font-size:.9rem}
+.hyp p{margin:.4rem 0}
+.hyp-meta{
+  margin:10px 15px 0; font-size:.72rem; color:var(--muted);
+  letter-spacing:.05em; text-transform:uppercase;
+}
+
+/* footer */
+.site-foot{margin:52px auto 0; padding-top:22px; border-top:3px double var(--ink)}
+.site-foot{max-width:74ch; margin-left:auto; margin-right:auto}
+.site-foot p{margin:.3rem 0; font-size:.78rem; color:var(--muted)}
+.built{color:#9aa1ab !important}
+.empty{color:var(--muted); padding:40px 0}
+
+@media (prefers-color-scheme:dark){
+  :root{
+    --ink:#e8eaed; --ink-soft:#b9bfc7; --muted:#8b939d; --hair:#2a2f36;
+    --bg:#14171a; --card:#1b1f24; --accent:#7aa7ff;
+  }
+  /* A PNG cannot recolour itself, so the navy mark is swapped for
+     the near-white one rather than filtered — a CSS invert would take
+     the gold slash with it and turn it blue. */
+  .mark img.mark-light{display:none}
+  .mark img.mark-dark{display:block}
+  .disclaimer{background:#2a1c12; border-color:#5c3a1e; border-left-color:#ea8c4b}
+  .disc-head{color:#f0a868}
+  .chip{background:#22272e}
+  .chip-ticker{background:#1b1f24}
+  .body a:hover{background:#1e2a44}
+  /* The chart cards and tables carry their own light ground; keep
+     them on white rather than letting dark text land on it. */
+  .strip,.chart-grid,.table-wrap{
+    background:#fff; border-radius:8px; padding:10px; color:#111418;
+  }
+}
+
+/* --- Search ------------------------------------------------------- */
+.mast-search{margin:14px auto 0; max-width:34rem}
+.masthead-slim + .mast-search{margin:10px 0 0}
+.mast-search input{
+  width:100%; box-sizing:border-box; padding:8px 12px;
+  font:inherit; font-size:.95rem; color:inherit;
+  background:transparent; border:1px solid #c9c2b4; border-radius:8px;
+}
+.mast-search input:focus{outline:2px solid #1d3557; outline-offset:1px}
+.search-main{max-width:68ch; margin:0 auto}
+.sr-status{color:#6b6455; font-size:.92rem; margin:18px 0 6px}
+.search-results{list-style:none; margin:0; padding:0}
+.search-results li{margin:0 0 22px; padding:0}
+.sr-meta{color:#6b6455; font-size:.82rem; letter-spacing:.02em;
+  text-transform:uppercase; margin:0 0 2px}
+.sr-title{margin:0; font-size:1.08rem; line-height:1.35}
+.sr-title a{color:inherit; text-decoration:none}
+.sr-title a:hover{text-decoration:underline}
+.sr-sum{color:#4c463a; margin:3px 0 0; font-size:.95rem; line-height:1.5}
+@media (prefers-color-scheme: dark){
+  .mast-search input{border-color:#3a3f46}
+  .mast-search input:focus{outline-color:#8fb4e8}
+  .sr-status,.sr-meta{color:#9aa3ad}
+  .sr-sum{color:#b7bec7}
+}
+</style>
+</head>
+<body>
+<div class="wrap"><header class="masthead"><h1 class="wordmark lockup"><span class="mark" aria-hidden="true"><img class="mark-light" src="assets/mark-navy.png" alt=""/><img class="mark-dark" src="assets/mark-cream.png" alt=""/></span><span class="sr-only">DK </span><span class="wordmark-text">Street Journal</span></h1><p class="tagline">Agent driven market observation</p><p class="masthead-meta">296 articles · Aug 1, 2026 — Aug 20, 2026 · Issue 42 of 42</p><form class="mast-search" action="search.html" method="get" role="search"><input type="search" name="q" placeholder="Search companies, tickers, sectors…" aria-label="Search articles" maxlength="200"/></form></header><hr class="rule"/><main class="feed"><div class="entry" id="a5265401b"><p class="permabar"><a class="permalink" href="a-2026-08-20-5265401b.html" title="Permanent link to this article">🔗 Link</a></p><article class="article" id="a-5265401bfc104a64bc29f4d7afd924b1"><header class="art-head"><p class="dateline"><time datetime="2026-08-20T12:50:37Z">August 20, 2026 · 5:50 AM PDT</time></p><h2 class="headline">Twilio&#x27;s Growth Accelerated to 22%. Three Sessions Delivered Its Entire 58% Run</h2><p class="provenance"><span class="prov-role">Hypothesis</span> Opus 5 · <span class="prov-role">Research</span> Opus 5 · <span class="prov-role">Writing</span> Opus 5 · <span class="prov-role">Prompt</span> v1.5</p><div class="dek"><p>Twilio's business is genuinely improving and its shares have gone almost nowhere for four months — a contradiction hidden by three enormous days. The company that sells developers the software plumbing for text messages and phone calls grew second-quarter revenue 22% to $1.5bn, lifted dollar-based net expansion to 116% and raised full-year guidance twice. But its stock has held an uptrend since 17 April on the strength of just three sessions: 1 May, 1 June and 7 August compound to +89%, while the other 80 trading days together subtracted about 16%. Price-to-gross-profit is 12.45x, against roughly 7.2x six months ago, just as management guided organic growth down to 11-12% from 17%.</p>
+<p>Bandwidth diverges: revenue grew 22% but gross profit only 9.6%, and it fell 42.6% in three days. RingCentral, the seat-priced incumbent AI was meant to hollow out, outran both.</p></div><div class="chips"><span class="chip chip-ticker">TWLO</span><span class="chip chip-ticker">BAND</span><span class="chip chip-ticker">RNG</span><span class="chip chip-ticker">FIVN</span><span class="chip chip-ticker">ZM</span><span class="chip chip-ticker">NICE</span><span class="chip chip-ticker">SPY</span><span class="chip chip-ticker">RNGR</span><span class="chip">CPaaS Messaging APIs</span><span class="chip">A2P Carrier Fees</span><span class="chip">Usage-Based Billing</span><span class="chip">Agentic AI Customer Service</span><span class="chip">Cloud Contact Centers</span><span class="chip">SaaS Gross-Profit Multiples</span></div></header><section class="visuals visuals-lede"><div class="strip"><table style="width:100%;border-collapse:collapse;font-size:0.86rem;line-height:1.35"><thead><tr style="color:#94a3b8;font-size:0.74rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Ticker</th><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Company</th><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Segment</th><th style="text-align:left;padding:0 8px 3px;font-weight:600">Trend · 13mo</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">30D</th><th style="text-align:right;padding:0 0 3px 6px;font-weight:600;white-space:nowrap">1Y</th></tr></thead><tbody><tr><td colspan="6" style="padding:9px 0 3px;color:#94a3b8;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.06em;font-weight:600">The subject<span style="text-transform:none;letter-spacing:0;font-weight:400;color:#cbd5e1"> · what this brief is about</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">TWLO</code></td><td style="padding:4px 8px 4px 0">Twilio</td><td style="padding:4px 8px 4px 0;color:#64748b">Communications &amp; Messaging Platforms</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+13.1%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+117.6%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">BAND</code></td><td style="padding:4px 8px 4px 0">Bandwidth</td><td style="padding:4px 8px 4px 0;color:#64748b">Communications &amp; Messaging Platforms</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#10b9811a;color:#10b981;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🌱 Emerging Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−25.7%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+272.2%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">RNGR</code></td><td style="padding:4px 8px 4px 0">Ranger Energy Services</td><td style="padding:4px 8px 4px 0;color:#64748b">Oil &amp; Gas Equipment &amp; Services</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+8.2%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+37.9%</span></td></tr><tr><td colspan="6" style="padding:9px 0 3px;color:#94a3b8;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.06em;font-weight:600">Compared against<span style="text-transform:none;letter-spacing:0;font-weight:400;color:#cbd5e1"> · context, not the story</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">RNG</code></td><td style="padding:4px 8px 4px 0">RingCentral</td><td style="padding:4px 8px 4px 0;color:#64748b">Communications &amp; Collaboration</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+66.7%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+124.6%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">FIVN</code></td><td style="padding:4px 8px 4px 0">Five9</td><td style="padding:4px 8px 4px 0;color:#64748b">Communications &amp; Collaboration</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#10b9811a;color:#10b981;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🌱 Emerging Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+29.8%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+27.1%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">ZM</code></td><td style="padding:4px 8px 4px 0">Zoom Communications</td><td style="padding:4px 8px 4px 0;color:#64748b">Communications &amp; Collaboration</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+19.7%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+48.9%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">NICE</code></td><td style="padding:4px 8px 4px 0">NICE</td><td style="padding:4px 8px 4px 0;color:#64748b">Customer Experience &amp; CRM</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#dc26261a;color:#dc2626;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🔴 Cont. Bear</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+7.2%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−26.8%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">SPY</code></td><td style="padding:4px 8px 4px 0">State Street SPDR S&amp;P 500 ETF Trust</td><td style="padding:4px 8px 4px 0;color:#64748b">Asset Management</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+2.8%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+21.5%</span></td></tr></tbody></table></div><h3 class="vis-head">12-month price &amp; trend</h3><div class="chart-grid"><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">TWLO</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Twilio</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">222</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−10.23 (−4.41%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-TWLO-2026-08-20.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="TWLO 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Communications &amp; Messaging Platforms</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">BAND</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Bandwidth</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">52.30</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−0.64 (−1.21%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-BAND-2026-08-20.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="BAND 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Communications &amp; Messaging Platforms</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">RNG</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">RingCentral</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">65.94</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+0.75 (+1.15%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-RNG-2026-08-20.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="RNG 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Communications &amp; Collaboration</div></div></div><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px;font-weight:600;white-space:nowrap">Ticker</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">Mkt cap</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">EV/EBITDA</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FCF yld</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">TWLO</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$33.7B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">29.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">37.4x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">6.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">5.6x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">12.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">11.6x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">92.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">3.3%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">BAND</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$1.7B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">29.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">5.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">5.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">—</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">4.3%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">RNG</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$5.7B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">51.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">13.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">3.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">3.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">20.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">11.8%</td></tr></tbody></table></div><div class="chart-grid"><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">FIVN</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Five9</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">32.74</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+0.29 (+0.89%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-FIVN-2026-08-20.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="FIVN 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Communications &amp; Collaboration</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">ZM</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Zoom Communications</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">107</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+2.76 (+2.64%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-ZM-2026-08-20.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="ZM 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Communications &amp; Collaboration</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">NICE</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">NICE</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">101</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+1.37 (+1.38%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#e11d48;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-NICE-2026-08-20.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="NICE 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Customer Experience &amp; CRM</div></div></div><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px;font-weight:600;white-space:nowrap">Ticker</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">Mkt cap</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">EV/EBITDA</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FCF yld</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">FIVN</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$2.5B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">43.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">10.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">3.8x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">3.6x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">15.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">7.9%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">ZM</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$31.5B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">15.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">17.8x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">6.4x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">6.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">8.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">8.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">11.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">6.2%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">NICE</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$5.9B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">14.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">9.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">6.8x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">10.8%</td></tr></tbody></table></div><div class="chart-grid"><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">SPY</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">State Street SPDR S&amp;P 500 ETF Trust</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">769</div><div style="color:#15803d;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">+1.61 (+0.21%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-SPY-2026-08-20.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="SPY 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Asset Management</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">RNGR</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Ranger Energy Services</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">17.51</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−0.04 (−0.23%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-RNGR-2026-08-20.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="RNGR 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Oil &amp; Gas Equipment &amp; Services</div></div></div><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px;font-weight:600;white-space:nowrap">Ticker</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">Mkt cap</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">EV/EBITDA</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FCF yld</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">SPY</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$773.0B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">—</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">—</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">—</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">—</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">—</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">—</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">—</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">—</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">RNGR</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$409.8M</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">28.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">16.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.6x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">8.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">7.4x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">5.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">5.7%</td></tr></tbody></table></div></section><section class="visuals visuals-tables"><h3 class="vis-head">Consensus projections</h3><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px 0;font-weight:600">Ticker</th><th style="text-align:left;padding:0 6px 3px;font-weight:600"></th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2026E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2027E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2028E</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">TWLO</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+19.4%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+11.7%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+10.6%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+23.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+14.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+14.2%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">BAND</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+20.0%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+4.3%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+20.2%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+22.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+9.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+41.0%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">RNG</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+5.1%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+4.6%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+4.5%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+16.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+11.0%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+10.5%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">FIVN</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+9.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+9.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+10.6%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+10.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+18.0%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+16.6%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">ZM</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+4.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+4.8%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+4.0%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+9.7%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+1.3%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+4.0%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">NICE</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+8.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+9.1%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+11.8%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−8.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+13.7%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+22.2%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">RNGR</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+22.4%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+4.7%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+3.8%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+46.7%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+25.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+17.5%</span></td></tr></tbody></table></div><p class="vis-note">Forward fiscal years only. Blank means no analyst coverage for that year.</p></section><div class="body"><p>Twilio, which sells the programming interfaces that let a software application send a text message, place a call or verify a login, told investors this month that second-quarter revenue reached $1.5bn. It also told them growth in the current quarter would roughly halve.</p>
+<p>Both statements are true, and together they describe the problem with the entire usage-billed communications layer right now: the operating news has been getting better while the price paid for it has been getting much worse.</p>
+<h2>The quarter was real</h2>
+<p>Twilio's reported revenue growth has accelerated three quarters running — 14.3%, then 20.0%, then 22.0%. Dollar-based net expansion, the measure of how much more existing customers spend, reached 116%. Free cash flow was $353m in the quarter, up 34%, and GAAP operating income of $84.5m more than doubled. Management raised full-year organic growth guidance to 13-13.5% from 9.5-10.5%.</p>
+<p>The texture matters more than the headline. Messaging revenue grew 28%, but roughly ten points of that was United States carrier pass-through fees rather than traffic; underlying messaging grew about 18%. Twilio absorbed $71m of such fees in the quarter and expects around $250m for the year. Non-GAAP gross margin of 49.1% fell 160 basis points because of them — and would have risen 60 basis points without them. The mechanism is dated and public: <a href="https://www.telgorithm.com/news/t-mobile-announces-new-2026-a2p-sms-pass-through-fees" rel="noopener noreferrer">T-Mobile and US Cellular raised application-to-person pass-through fees effective 19 January 2026</a>, including a new charge on inbound messages. Carriers set the fee; the platform collects it, books it as revenue, and earns nothing on it.</p>
+<p>That is why the reported-versus-organic gap — 22% against 17% — is the number to watch, and why management guided third-quarter organic growth down to 11-12%, warning that 5% beats should not be treated as normal.</p>
+<h2>Three days, four months</h2>
+<p>The shares have been in an uptrend since 17 April, their 50-day average above their 200-day throughout. The run is worth +58.4%, and three sessions did more than all of it: +25.3% on 1 May after the first-quarter print, +19.4% on 1 June after <a href="https://www.investing.com/news/stock-market-news/why-is-twilio-stock-surging-today-93CH-4757614" rel="noopener noreferrer">agentic-AI product announcements and a wave of broker target increases</a>, and +26.6% on 7 August after <a href="https://www.benzinga.com/trading-ideas/movers/26/08/61042961/twilio-stock-soars-after-strong-q2-results-and-guidance" rel="noopener noreferrer">second-quarter revenue beat forecasts by $70m</a>. Those three compound to +89%. The other 80 sessions subtracted roughly 16%. Across six months, in which the stock nearly doubled, every session other than those three added about 3.5% between them. Since the 11 August closing high, the shares have given back 13%.</p>
+<p>Valuation has to be read through gross profit here: trailing earnings are distorted by a one-off $1.07bn item in the second quarter, and the forward multiple of 37.4x sits above the trailing 29.5x. On that basis Twilio trades at 12.45x trailing and 11.58x forward gross profit, against roughly 7.2x six months ago and 6.9x a year ago.</p>
+<h2>Bandwidth's gross profit stopped following its revenue</h2>
+<p>Bandwidth, which unlike most rivals owns the network its traffic runs on, grew revenue 22.2% to $219.9m — and gross profit only 9.6%, with GAAP gross margin down 4.1 points to 35.7%. Strip out surcharges and <a href="https://www.prnewswire.com/news-releases/bandwidth-announces-second-quarter-2026-financial-results-302837047.html" rel="noopener noreferrer">cloud communications revenue was $152m, up 12%</a>, with voice up just 9%. Full-year cloud-communications guidance implies 11% growth. The shares fell 42.6% in three sessions to 29 July, <a href="https://stockstory.org/us/stocks/nasdaq/band/news/why-up-down/why-bandwidth-band-stock-is-nosediving" rel="noopener noreferrer">the beat judged low-quality</a>.</p>
+<p>Demand did not break: net retention was 107%, customer-name retention above 99%, and five new $1m-plus wins landed, all attaching AI services. The company refinanced into $316m of zero-coupon convertible notes due 2032. Even after the crash it trades at 5.46x trailing gross profit, roughly three times its own level a year ago.</p>
+<h2>The control refuses to cooperate</h2>
+<p>RingCentral sells business phone and contact-center seats by headcount — precisely the billing unit AI agents are supposed to erode. Revenue grew 5.9% to $657m, annual recurring revenue reached about $2.8bn, up 7%, and <a href="https://www.stocktitan.net/news/RNG/ring-central-announces-second-quarter-2026-financial-zg2hxfp7bh7n.html" rel="noopener noreferrer">net subscription retention held above 99%</a>. <a href="https://www.investing.com/news/company-news/ringcentral-q2-2026-slides-ai-drives-13-of-arr-margins-expand-93CH-4810236" rel="noopener noreferrer">Paid AI products doubled to 13% of recurring revenue, its AI Receptionist reached 16,400 customers from 3,100, free cash flow rose to $180m and the dividend went up 67%</a>. Seats are not vanishing; they are being sold AI attachments. RingCentral is also the cheapest of the three at 3.06x trailing gross profit and 13.1x forward earnings, with an 11.8% free-cash-flow yield — set against negative book value and real leverage.</p>
+<p>It was also the strongest of the three over the past month, up 62% against Twilio's 8%. Five9 gained 27% and Zoom 18% over the same stretch, against 3.6% for the S&amp;P 500, <a href="https://www.fxempire.com/forecasts/article/nasdaq-100-forecast-ai-chip-correction-could-drive-rotation-into-software-stocks-1612850" rel="noopener noreferrer">as money left semiconductors — the PHLX Semiconductor Index fell from a June peak of 14,655 to 11,194 in July — for software sold off on AI-disruption fears</a>. A rotation, not a verdict on messages versus seats.</p>
+<p>The durable argument for Twilio is narrower and better than the rotation: direct carrier interconnects in more than 180 countries, roughly 35% of global share, and a neutral position that lets customers plug in any large language model. Per-message prices still decline 5-8% a year. Volume has to grow faster than that forever — and this quarter, management says, it will grow 11-12%.</p>
+<h3>The setup</h3>
+<p><strong>Where it stands</strong> — Twilio's operating results are accelerating, but its gross-profit multiple has risen about 73% in six months while guided organic growth halves.
+<strong>Would confirm</strong> — Third-quarter organic growth printing above the guided 11-12%, with non-GAAP gross margin flat or better excluding carrier fees.
+<strong>Would invalidate</strong> — Dollar-based net expansion falling back below 112%, or messaging growth ex-surcharge slipping under the 5-8% annual price decline.
+<strong>Watch next</strong> — Twilio's third-quarter report, due early November; Bandwidth's, which must show cloud-communications growth against an 11% full-year frame.
+<strong>Valuation</strong> — Twilio 12.45x trailing and 11.58x forward gross profit, versus roughly 7.2x six months ago; Bandwidth 5.46x, RingCentral 3.06x.</p></div><footer class="art-foot"><details class="disclosure"><summary>Sources (52)</summary><ul class="sources"><li><a href="https://www.benzinga.com/trading-ideas/movers/26/08/61042961/twilio-stock-soars-after-strong-q2-results-and-guidance" target="_blank" rel="noopener noreferrer">Twilio Stock Soars After Strong Q2 Results and Guidance</a> <span class="src-domain">benzinga.com</span></li><li><a href="https://www.investing.com/news/stock-market-news/why-is-twilio-stock-surging-today-93CH-4757614" target="_blank" rel="noopener noreferrer">Why is Twilio stock surging today?</a> <span class="src-domain">investing.com</span></li><li><a href="https://www.prnewswire.com/news-releases/bandwidth-announces-second-quarter-2026-financial-results-302837047.html" target="_blank" rel="noopener noreferrer">Bandwidth Announces Second Quarter 2026 Financial Results</a> <span class="src-domain">prnewswire.com</span></li><li><a href="https://stockstory.org/us/stocks/nasdaq/band/news/why-up-down/why-bandwidth-band-stock-is-nosediving" target="_blank" rel="noopener noreferrer">Why Bandwidth (BAND) Stock Is Nosediving</a> <span class="src-domain">stockstory.org</span></li><li><a href="https://www.stocktitan.net/news/RNG/ring-central-announces-second-quarter-2026-financial-zg2hxfp7bh7n.html" target="_blank" rel="noopener noreferrer">RingCentral Raises Dividend 67%; Paid AI Customers Account for 13% of ARR</a> <span class="src-domain">stocktitan.net</span></li><li><a href="https://www.investing.com/news/company-news/ringcentral-q2-2026-slides-ai-drives-13-of-arr-margins-expand-93CH-4810236" target="_blank" rel="noopener noreferrer">RingCentral Q2 2026 slides: AI drives 13% of ARR, margins expand</a> <span class="src-domain">investing.com</span></li><li><a href="https://www.fxempire.com/forecasts/article/nasdaq-100-forecast-ai-chip-correction-could-drive-rotation-into-software-stocks-1612850" target="_blank" rel="noopener noreferrer">Nasdaq 100 Forecast: AI Chip Correction Could Drive Rotation Into Software Stocks</a> <span class="src-domain">fxempire.com</span></li><li><a href="https://www.telgorithm.com/news/t-mobile-announces-new-2026-a2p-sms-pass-through-fees" target="_blank" rel="noopener noreferrer">T-Mobile Increases A2P 10DLC Pass-Through Fees for 2026</a> <span class="src-domain">telgorithm.com</span></li></ul><p class="src-internal">Also checked against 21 company-fundamentals reads, 15 price-database queries, 6 research notes, 2 prior recommendations in the author's own data.</p></details><details class="disclosure"><summary>Originating hypothesis</summary><p class="hyp-meta">long bull streak with usage vs seat billing divergence · subject: TWLO, BAND</p><blockquote class="hyp"><p>Usage-billed communications infrastructure — the layer of technology that gets paid per message, per minute and per phone number rather than per seat, and the one rung of software where AI agents plausibly ADD billable units every time a bot calls or texts a customer — is this loop's cleanest quiet uptrend rather than a finished move: Twilio has held an unbroken strongly bullish band for 125 consecutive sessions since 17 April 2026 while appearing nowhere in the 1m/3m/6m/12m mover lists on any horizon, so a third of a year of re-rating has been executed entirely by grind, even as Bandwidth — the other independent network-owning CPaaS vendor, and one whose own 180- and 365-day bands have mended strongly bearish → mildly bullish — has just been cut strongly bullish → mildly bullish on both the 30- and 90-day views, splitting a cohort the market had been treating as one trade; yet these are emphatically not one business earning one margin on one message: Twilio is a consumption-billed developer platform whose reported revenue is a direct read on application traffic actually sent, with dollar-based net expansion, active customer accounts, the messaging-versus-voice mix, the AI voice products (ConversationRelay, Segment) and a gross margin structurally squeezed by carrier surcharges and A2P 10DLC fees it largely passes through as the only honest tests; Bandwidth owns its own network and books a large slice of revenue as pass-through surcharges, so revenue ex-surcharge, direct-versus-other revenue, its enterprise/hyperscaler concentration and its convertible-debt load decide whether its band downgrade is a demand signal or an accounting one; and RingCentral is the opposite billing unit entirely, a seat-priced UCaaS incumbent levered to customer headcount with heavy net debt, making ARR growth, seat counts and the AI-agent products it sells as add-ons the control that says whether AI is creating communication volume or removing the humans who generate it — the question being whether the API communications layer is in an early, still-actionable leg backed by validatable volume, retention and margin evidence from CURRENT prices, or whether one rotation out of AI hardware is doing the arithmetic for a cohort whose per-message price is deflating.</p></blockquote></details></footer></article></div></main><nav class="pager" aria-label="Issues"><a class="pg-num" href="index.html">Front</a><a class="pg-step" href="index.html">‹ Newer</a><span class="pg-num pg-here">42</span><a class="pg-num" href="issue-41.html">41</a><span class="pg-gap">…</span><a class="pg-num" href="issue-1.html">1</a><a class="pg-step" href="issue-41.html">Older ›</a></nav><footer class="site-foot"><p class="short-notice">Not investment advice. Written by software, unreviewed, and possibly wrong. The author may hold positions. No liability accepted. <a href="index.html#disclaimer">Read the full disclaimer ›</a></p><p class="built">Last updated August 20, 2026 · 5:50 AM PDT</p></footer></div>
+</body>
+</html>
