@@ -23,7 +23,8 @@
     "Markets & Investing",
     "Computer Hardware & Equipment",
     "Government Technology Contractors",
-    "Unclassifiable - Insufficient Content"
+    "Unclassifiable - Insufficient Content",
+    "Toll & Traffic Services"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Shipping & Logistics",
@@ -125,6 +126,7 @@
     "2f0f5d615bc240de99cc6e1d61752968": "AI Data-Center Infrastructure",
     "2fdd6b9ea2344802bc8bb2eab78c3f5b": "Energy, Power & Utilities",
     "30719c27be984dacbe81bb365ea9c79e": "Energy, Power & Utilities",
+    "30a4b2bd42344a59a56e65952f5b5f8b": "Toll & Traffic Services",
     "30abb4a636de4110a92dcf0975186a7d": "Industrial Equipment & Mining",
     "30df431a112440d98a4e63e9bc1b8d1f": "AI Data-Center Infrastructure",
     "30f0a316dd60451c8a2ef163538614fb": "Enterprise Software & Cloud",
