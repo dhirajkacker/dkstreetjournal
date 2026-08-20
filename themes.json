@@ -25,7 +25,8 @@
     "Government Technology Contractors",
     "Unclassifiable - Insufficient Content",
     "Toll & Traffic Services",
-    "Smart Home Security"
+    "Smart Home Security",
+    "Urban Air Mobility"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Shipping & Logistics",
@@ -285,6 +286,7 @@
     "787f63f4c5534f2eb4a7aa871e60fb1b": "AI Data-Center Infrastructure",
     "788b636be43f416180387a21b9d361eb": "Energy, Power & Utilities",
     "79048d89038b4d71972d0a1cf9de507a": "Semiconductors & Chip Manufacturing",
+    "790946820cbd4f2f83f4152ce87f8989": "Urban Air Mobility",
     "792408c6915a4362b12f3b7ee78b5176": "Semiconductors & Chip Manufacturing",
     "7ac68bb19a89466e83d5d22fa457302b": "Enterprise Software & Cloud",
     "7c96fbbaba7a43bfa6a04be50b355f47": "AI Data-Center Infrastructure",
