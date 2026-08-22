@@ -27,7 +27,8 @@
     "Toll & Traffic Services",
     "Smart Home Security",
     "Urban Air Mobility",
-    "AI Data Centers"
+    "AI Data Centers",
+    "HVAC & Building Equipment"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Shipping & Logistics",
@@ -294,6 +295,7 @@
     "6986565da644477598dc3b688410135d": "Financial Services & Payments",
     "6a0989a327324d83b3a135eaae5d74d6": "Markets & Investing",
     "6a6897651e384398882981fddb673fa4": "Quantum Computing",
+    "6a887408be5e408385da6aa02f3fa58a": "HVAC & Building Equipment",
     "6af049604dd948e694312b658a05b2c8": "Energy, Power & Utilities",
     "6b494eef46c449749786bcdef8a77687": "Semiconductors & Chip Manufacturing",
     "6babaa337a8045438c527499a08802ef": "AI Data-Center Infrastructure",
