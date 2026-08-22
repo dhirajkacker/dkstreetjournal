@@ -26,7 +26,8 @@
     "Unclassifiable - Insufficient Content",
     "Toll & Traffic Services",
     "Smart Home Security",
-    "Urban Air Mobility"
+    "Urban Air Mobility",
+    "AI Data Centers"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Shipping & Logistics",
@@ -402,6 +403,7 @@
     "9cca58518e9e484aae37e381a688dbfe": "AI Data-Center Infrastructure",
     "9d0c596e371942e9a5437c15219b7935": "Industrial Equipment & Mining",
     "9e00bb2b5f224ebaa7b1d71cdbb27a35": "Energy, Power & Utilities",
+    "9e02b52c516d47fca309aba1423bfb4f": "AI Data Centers",
     "9e2e199ba6234bc187a6deb69403be54": "AI Data-Center Infrastructure",
     "9ef14700c90b4205abf042ef1b379aba": "Healthcare & Medical",
     "9f416415d0fd4b0791085919df70dd24": "Industrial Equipment & Mining",
