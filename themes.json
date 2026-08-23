@@ -28,7 +28,8 @@
     "Smart Home Security",
     "Urban Air Mobility",
     "AI Data Centers",
-    "HVAC & Building Equipment"
+    "HVAC & Building Equipment",
+    "Telecom Infrastructure"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Shipping & Logistics",
@@ -222,6 +223,7 @@
     "474fb2d10f6f47a3bb58de13b998a38b": "AI Data-Center Infrastructure",
     "47588d8895d04555869e711b37f81de6": "IT Services & Consulting",
     "476789ef95c149deb7e10bc00bb10615": "Energy, Power & Utilities",
+    "47ae38bc310e476b8d9215972bb5a243": "Telecom Infrastructure",
     "47d427b3847e43f8918a5e1398a3b282": "AI Data-Center Infrastructure",
     "4804bc75a3c248a5805608a63a7a6445": "Industrial Equipment & Mining",
     "48c1b0882f924b36a4a66484e22d57e3": "Enterprise Software & Cloud",
