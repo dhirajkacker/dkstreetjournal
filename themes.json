@@ -19,7 +19,8 @@
     "Defense & Aerospace",
     "Digital Media & Content",
     "Markets & Investing",
-    "Computer Hardware & Equipment"
+    "Computer Hardware & Equipment",
+    "Nuclear Fuel"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Shipping & Logistics",
@@ -291,6 +292,7 @@
     "5d8d810a88f049598e4138cc91963367": "Enterprise Software & Cloud",
     "5ed827145cfa42b7b9a107cb989b3b49": "Enterprise Software & Cloud",
     "5fd9681df2ae45c583b2685e40cbb8a4": "AI Data-Center Infrastructure",
+    "5fef0a73017a4ab28d8d02062570f86e": "Nuclear Fuel",
     "61052cf7cfae4de790467686a8f25681": "Energy, Power & Utilities",
     "6144897f7cf74606a08d3cabb9616f23": "Energy, Power & Utilities",
     "61accf08ef8948548c9fa9b724bd6075": "AI Data-Center Infrastructure",
