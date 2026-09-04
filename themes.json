@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T12:55:02Z",
+  "generated_at": "2026-09-04T08:10:56Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -16,8 +16,8 @@
     "Markets & Investing",
     "Defense & Aerospace",
     "Digital Media & Content",
-    "Insurance & Broking",
-    "Transportation Infrastructure"
+    "Transportation Infrastructure",
+    "Consumer Packaged Goods"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -315,6 +315,7 @@
     "5ab1c1dcb5314d8ca5cf67b63c2f0e8a": "Industrial Equipment & Mining",
     "5af67e3cc20f4fd4878f2f852b9b40dc": "AI Data-Center Infrastructure",
     "5b63e0eb0b2b4f80830830458a0a3f5e": "Enterprise Software & Cloud",
+    "5b80554753604e928fd0b7077e15e129": "Consumer Packaged Goods",
     "5b8fcf211c6a4d9fac4a39800950edfe": "Energy, Power & Utilities",
     "5ba748682ad741088e3645e70bb62c8b": "AI Data-Center Infrastructure",
     "5bdae13ba88f4be5822d828f926a0396": "AI Data-Center Infrastructure",
@@ -493,7 +494,7 @@
     "9cca58518e9e484aae37e381a688dbfe": "AI Data-Center Infrastructure",
     "9d0c596e371942e9a5437c15219b7935": "Industrial Equipment & Mining",
     "9d11fe0c3ce84c919b4485034f373da8": "Financial Services & Payments",
-    "9d38edd492c146c9b5a503d130c9099a": "Insurance & Broking",
+    "9d38edd492c146c9b5a503d130c9099a": "Financial Services & Payments",
     "9e00bb2b5f224ebaa7b1d71cdbb27a35": "Energy, Power & Utilities",
     "9e02b52c516d47fca309aba1423bfb4f": "AI Data-Center Infrastructure",
     "9e2e199ba6234bc187a6deb69403be54": "AI Data-Center Infrastructure",
