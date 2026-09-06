@@ -16,7 +16,8 @@
     "Markets & Investing",
     "Defense & Aerospace",
     "Digital Media & Advertising",
-    "Transportation Infrastructure"
+    "Transportation Infrastructure",
+    "Travel & Hospitality"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -429,6 +430,7 @@
     "85e7d32c72e34f1080e6d510e3b6385c": "Enterprise Software & Cloud",
     "85f4a739e1754f11b2e8a7c315144edf": "Semiconductors & Chip Manufacturing",
     "860db638ff0f480e8cef9e963da44694": "AI Data-Center Infrastructure",
+    "8646edc23d504e45bff65702a369f689": "Travel & Hospitality",
     "86660f5843b84b4793b370a4b1a49a67": "AI Data-Center Infrastructure",
     "86ec51af118b4273b9026e1bc95ffd5a": "AI Data-Center Infrastructure",
     "87deb1f65e084a27a3c55dfed9d033d3": "Energy, Power & Utilities",
