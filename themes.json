@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T02:32:15Z",
+  "generated_at": "2026-09-07T03:02:01Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -15,10 +15,7 @@
     "Computer Hardware & Equipment",
     "Markets & Investing",
     "Defense & Aerospace",
-    "Digital Media & Advertising",
-    "Transportation Infrastructure",
-    "Travel & Hospitality",
-    "Display Technology & Materials"
+    "Digital Media & Advertising"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -396,7 +393,7 @@
     "770c471eb19c4945879de3e05ddb091b": "AI Data-Center Infrastructure",
     "7762bec56d4741e7bdc402eeb633da80": "Markets & Investing",
     "776456fee69f40d2a78c2644365dfe5f": "Enterprise Software & Cloud",
-    "7777f362339141ffb01e93687f6113b6": "Transportation Infrastructure",
+    "7777f362339141ffb01e93687f6113b6": "Energy, Power & Utilities",
     "780f25008af84281833f6f79341d2fc4": "Semiconductors & Chip Manufacturing",
     "787f63f4c5534f2eb4a7aa871e60fb1b": "AI Data-Center Infrastructure",
     "788b636be43f416180387a21b9d361eb": "Energy, Power & Utilities",
@@ -439,7 +436,8 @@
     "85e7d32c72e34f1080e6d510e3b6385c": "Enterprise Software & Cloud",
     "85f4a739e1754f11b2e8a7c315144edf": "Semiconductors & Chip Manufacturing",
     "860db638ff0f480e8cef9e963da44694": "AI Data-Center Infrastructure",
-    "8646edc23d504e45bff65702a369f689": "Travel & Hospitality",
+    "861a9f0440204a8a9203b09814a40ce8": "Energy, Power & Utilities",
+    "8646edc23d504e45bff65702a369f689": "Retail & Consumer Services",
     "86660f5843b84b4793b370a4b1a49a67": "AI Data-Center Infrastructure",
     "86ec51af118b4273b9026e1bc95ffd5a": "AI Data-Center Infrastructure",
     "87deb1f65e084a27a3c55dfed9d033d3": "Energy, Power & Utilities",
@@ -521,7 +519,7 @@
     "a0012b987faa43deb0cb2d93be1b921b": "Energy, Power & Utilities",
     "a09d73f686d54d4b9f264edbd27d1775": "Energy, Power & Utilities",
     "a11b413e375543368115c72ca92e0459": "Enterprise Software & Cloud",
-    "a1277d4d18d544169430254a181e212a": "Display Technology & Materials",
+    "a1277d4d18d544169430254a181e212a": "Computer Hardware & Equipment",
     "a138e8fc62364e6fae7a167da98a8895": "Semiconductors & Chip Manufacturing",
     "a1f960ba2f9f472584c41081b22c72ed": "Energy, Power & Utilities",
     "a28fa2f52b9b472596b934e5af9b5739": "Computer Hardware & Equipment",
