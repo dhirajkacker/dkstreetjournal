@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T03:02:01Z",
+  "generated_at": "2026-09-10T07:52:53Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -16,7 +16,6 @@
     "Markets & Investing",
     "Defense & Aerospace",
     "Digital Media & Advertising",
-    "Transportation & Travel",
     "Higher Education"
   ],
   "assignments": {
@@ -131,7 +130,7 @@
     "211e2c6726974dc5a35c7b7c2e71a832": "Semiconductors & Chip Manufacturing",
     "215339a1da5d44a2b1c78faa2b440f63": "AI Data-Center Infrastructure",
     "217fdc2c776c4f7195baf29188227fac": "AI Data-Center Infrastructure",
-    "21bbceb45fe44d0f8076b4f0286953ac": "Transportation & Travel",
+    "21bbceb45fe44d0f8076b4f0286953ac": "Retail & Consumer Services",
     "22355cd607b1411da92d0450d1453745": "Markets & Investing",
     "223aa7e8f79f4ba38806748744cbf3fc": "Enterprise Software & Cloud",
     "223b2ca47f574ec18e1e2ad8e11cd12c": "AI Data-Center Infrastructure",
@@ -291,7 +290,7 @@
     "5030e4bd8823467ab3f3db8d730c97ba": "Semiconductors & Chip Manufacturing",
     "50832333bd08404c94d24750627bd6a8": "Enterprise Software & Cloud",
     "51128a44fe4242a9bbae0de6d1835bea": "Semiconductors & Chip Manufacturing",
-    "5142d180202c4a82928d0ddd714487cd": "Transportation & Travel",
+    "5142d180202c4a82928d0ddd714487cd": "Retail & Consumer Services",
     "51606b8e255c49aaba15737fed6f5abe": "Enterprise Software & Cloud",
     "51a41834fe044a8b9baa9add0e71ab0f": "IT Services & Consulting",
     "51d189befe204ece94dc38c19b9b76ce": "AI Data-Center Infrastructure",
@@ -417,7 +416,7 @@
     "776456fee69f40d2a78c2644365dfe5f": "Enterprise Software & Cloud",
     "7777f362339141ffb01e93687f6113b6": "Energy, Power & Utilities",
     "780f25008af84281833f6f79341d2fc4": "Semiconductors & Chip Manufacturing",
-    "7856f45800644a7f8c11747ff66cc148": "Transportation & Travel",
+    "7856f45800644a7f8c11747ff66cc148": "Retail & Consumer Services",
     "787f63f4c5534f2eb4a7aa871e60fb1b": "AI Data-Center Infrastructure",
     "788b636be43f416180387a21b9d361eb": "Energy, Power & Utilities",
     "79048d89038b4d71972d0a1cf9de507a": "Semiconductors & Chip Manufacturing",
@@ -528,8 +527,9 @@
     "996422ca78e64f21995a24825f42bc4a": "Enterprise Software & Cloud",
     "99b8499325c84f69aab3594a3cad3f64": "Enterprise Software & Cloud",
     "9a3ad65d60ee40dcafdbb3e95ef643d6": "Semiconductors & Chip Manufacturing",
+    "9a3b9eb38aee43f696417cef8c81b268": "Markets & Investing",
     "9a7eccd009264f2198504c7924c45b8c": "AI Data-Center Infrastructure",
-    "9a9ae669412e42a49063dc8b904886e1": "Transportation & Travel",
+    "9a9ae669412e42a49063dc8b904886e1": "Retail & Consumer Services",
     "9ac7511b2d24426ca2c0ad815789d2a6": "AI Data-Center Infrastructure",
     "9ad09d8d48c945ec82c1a3c4297d036e": "Energy, Power & Utilities",
     "9c87b6b7db5749ebb8d9f6fa1648406a": "Energy, Power & Utilities",
