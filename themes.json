@@ -15,7 +15,8 @@
     "Computer Hardware & Equipment",
     "Defense & Aerospace",
     "Digital Media & Advertising",
-    "Higher Education"
+    "Higher Education",
+    "Biotech Equipment & Supplies"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -293,6 +294,7 @@
     "4d7099311f764f97adb18324c682138f": "Semiconductors & Chip Manufacturing",
     "4dc974edc86241bb93e153d939c4adbd": "Digital Media & Advertising",
     "4df8f6108d754521850cc623f122af09": "AI Data-Center Infrastructure",
+    "4e5ab91cb4504f4dbad019f0eb0c6aa0": "Biotech Equipment & Supplies",
     "4e7a892862154572a0208f6d4a84d1f4": "Enterprise Software & Cloud",
     "4ee1f27563794710b9b25ab6171e64ec": "AI Data-Center Infrastructure",
     "4ef2b097aad64f59b7241e631e3dfabb": "Enterprise Software & Cloud",
