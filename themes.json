@@ -16,7 +16,8 @@
     "Defense & Aerospace",
     "Digital Media & Advertising",
     "Higher Education",
-    "Biotech Equipment & Supplies"
+    "Biotech Equipment & Supplies",
+    "Building Services & Contractors"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -582,6 +583,7 @@
     "a29668c8837543019dc6428f6c06ac80": "Semiconductors & Chip Manufacturing",
     "a2bc7df3294b4dbebf717dd5f4cee033": "Financial Services & Payments",
     "a36c70ef764f4db7987a55ffcefcc767": "Enterprise Software & Cloud",
+    "a40023ee5e28452c98d298ed80f755c1": "Building Services & Contractors",
     "a44c9784981b4a488919bd5e18ed7fad": "IT Services & Consulting",
     "a45e408f5ed540c4b0055b4aba7d184f": "IT Services & Consulting",
     "a4857dd8d12342a8a2eff72d207931db": "Digital Media & Advertising",
