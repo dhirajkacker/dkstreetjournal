@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T23:38:37Z",
+  "generated_at": "2026-09-16T18:30:25Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -16,8 +16,8 @@
     "Defense & Aerospace",
     "Digital Media & Advertising",
     "Higher Education",
-    "Biotech Equipment & Supplies",
-    "Building Services & Contractors"
+    "Building Services & Contractors",
+    "Automotive Wholesale"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -298,7 +298,7 @@
     "4d7099311f764f97adb18324c682138f": "Semiconductors & Chip Manufacturing",
     "4dc974edc86241bb93e153d939c4adbd": "Digital Media & Advertising",
     "4df8f6108d754521850cc623f122af09": "AI Data-Center Infrastructure",
-    "4e5ab91cb4504f4dbad019f0eb0c6aa0": "Biotech Equipment & Supplies",
+    "4e5ab91cb4504f4dbad019f0eb0c6aa0": "Healthcare & Medical",
     "4e7a892862154572a0208f6d4a84d1f4": "Enterprise Software & Cloud",
     "4ee1f27563794710b9b25ab6171e64ec": "AI Data-Center Infrastructure",
     "4ef2b097aad64f59b7241e631e3dfabb": "Enterprise Software & Cloud",
@@ -637,6 +637,7 @@
     "adb5c2b5b71e4989bcdad17500a714ca": "AI Data-Center Infrastructure",
     "adc9d8be75e24da687221fc6b06da1e3": "Industrial Equipment & Mining",
     "add909551e754903b593029ca795b49e": "IT Services & Consulting",
+    "aded287050f7406699a7f37a4ab91d6d": "Automotive Wholesale",
     "adf4e8a8ca1e4b5ab43ca2a079c99d74": "Enterprise Software & Cloud",
     "ae5d05d1efa440a8b31e57069b563cda": "Energy, Power & Utilities",
     "ae7b67d7b06546089313826e17b5d7d3": "Digital Media & Advertising",
