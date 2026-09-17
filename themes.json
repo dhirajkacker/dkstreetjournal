@@ -18,7 +18,8 @@
     "Higher Education",
     "Building Services & Contractors",
     "Automotive Wholesale",
-    "Transportation & Logistics"
+    "Transportation & Logistics",
+    "Real Estate & Housing"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -512,6 +513,7 @@
     "8b2f252b898346edb80e8bd79cb3a946": "Enterprise Software & Cloud",
     "8bf1cc2dc7f44b389082f75c0c4133f8": "Enterprise Software & Cloud",
     "8c5f3b750d8b4ecaadce9a2aa61e5fb3": "Semiconductors & Chip Manufacturing",
+    "8c9c8891218549baae72373d61d7ded5": "Real Estate & Housing",
     "8cd99329a1c0475ab5bd8baf76f2eb4f": "Semiconductors & Chip Manufacturing",
     "8d45c877fe0e4bcf90a6bcd2b406b43a": "Energy, Power & Utilities",
     "8defe29c023945f78b8a08253a5efc51": "Energy, Power & Utilities",
