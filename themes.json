@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T18:30:25Z",
+  "generated_at": "2026-09-17T20:01:37Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -16,10 +16,9 @@
     "Defense & Aerospace",
     "Digital Media & Advertising",
     "Higher Education",
-    "Building Services & Contractors",
+    "Real Estate & Housing",
     "Automotive Wholesale",
-    "Transportation & Logistics",
-    "Real Estate & Housing"
+    "Transportation & Logistics"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -393,6 +392,7 @@
     "67339d0bbd864a6a860660b1d898a9aa": "AI Data-Center Infrastructure",
     "685c69f312ea4f88bd738e7275c2ec22": "Telecom & Networking",
     "68a5b0bce5e74dc4b2c6dc6be669fe68": "Retail & Consumer Services",
+    "68ae53cdf08f490ebafedca75404e915": "Defense & Aerospace",
     "68de229dfbb241e0ab079778480b55bc": "AI Data-Center Infrastructure",
     "6944813aaff946b5808f290701f7a871": "Energy, Power & Utilities",
     "6956759e37e74283b58f8f9bfe2b9c9c": "AI Data-Center Infrastructure",
@@ -599,7 +599,7 @@
     "a29668c8837543019dc6428f6c06ac80": "Semiconductors & Chip Manufacturing",
     "a2bc7df3294b4dbebf717dd5f4cee033": "Financial Services & Payments",
     "a36c70ef764f4db7987a55ffcefcc767": "Enterprise Software & Cloud",
-    "a40023ee5e28452c98d298ed80f755c1": "Building Services & Contractors",
+    "a40023ee5e28452c98d298ed80f755c1": "Real Estate & Housing",
     "a44c9784981b4a488919bd5e18ed7fad": "IT Services & Consulting",
     "a45e408f5ed540c4b0055b4aba7d184f": "IT Services & Consulting",
     "a4857dd8d12342a8a2eff72d207931db": "Digital Media & Advertising",
