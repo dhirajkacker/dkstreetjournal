@@ -19,7 +19,8 @@
     "Real Estate & Housing",
     "Transportation & Logistics",
     "Diversified Manufacturers",
-    "Medical Devices"
+    "Medical Devices",
+    "Insurance Brokers"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -872,6 +873,7 @@
     "e8ce656370094c8382bc45ba3d38f53f": "AI Data-Center Infrastructure",
     "e8eeceaae2af4e1ab1ee7dea0cef0026": "Semiconductors & Chip Manufacturing",
     "e90dc15896a2435da690f2d077049dba": "Retail & Consumer Services",
+    "e96abf8bd41f433282cc81089b9a0491": "Insurance Brokers",
     "ea72eed4120e4b65b01176e2219ee399": "Energy, Power & Utilities",
     "ea939680fbb842f89940d7822d7a6ecf": "Enterprise Software & Cloud",
     "eab2eaac0ab94dcb88a1d703035d4033": "Retail & Consumer Services",
