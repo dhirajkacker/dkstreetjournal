@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T20:01:37Z",
+  "generated_at": "2026-09-19T00:19:11Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -17,7 +17,6 @@
     "Digital Media & Advertising",
     "Higher Education",
     "Real Estate & Housing",
-    "Automotive Wholesale",
     "Transportation & Logistics",
     "Diversified Manufacturers"
   ],
@@ -323,6 +322,7 @@
     "51a41834fe044a8b9baa9add0e71ab0f": "IT Services & Consulting",
     "51d189befe204ece94dc38c19b9b76ce": "AI Data-Center Infrastructure",
     "5265401bfc104a64bc29f4d7afd924b1": "Enterprise Software & Cloud",
+    "5288d1f30b1d48eb8823fcfdb5c064a1": "IT Services & Consulting",
     "52c270485ce0473bb476a3aec7f8a43e": "Telecom & Networking",
     "52ecce8e50fd4fe3966cef625efa406a": "Energy, Power & Utilities",
     "5313ceea348f4e0aa979160bcdbb425e": "Energy, Power & Utilities",
@@ -651,7 +651,7 @@
     "adb5c2b5b71e4989bcdad17500a714ca": "AI Data-Center Infrastructure",
     "adc9d8be75e24da687221fc6b06da1e3": "Industrial Equipment & Mining",
     "add909551e754903b593029ca795b49e": "IT Services & Consulting",
-    "aded287050f7406699a7f37a4ab91d6d": "Automotive Wholesale",
+    "aded287050f7406699a7f37a4ab91d6d": "Retail & Consumer Services",
     "adf4e8a8ca1e4b5ab43ca2a079c99d74": "Enterprise Software & Cloud",
     "ae5d05d1efa440a8b31e57069b563cda": "Energy, Power & Utilities",
     "ae7b67d7b06546089313826e17b5d7d3": "Digital Media & Advertising",
