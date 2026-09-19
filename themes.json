@@ -18,7 +18,8 @@
     "Higher Education",
     "Real Estate & Housing",
     "Transportation & Logistics",
-    "Diversified Manufacturers"
+    "Diversified Manufacturers",
+    "Medical Devices"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -399,6 +400,7 @@
     "68de229dfbb241e0ab079778480b55bc": "AI Data-Center Infrastructure",
     "6944813aaff946b5808f290701f7a871": "Energy, Power & Utilities",
     "6956759e37e74283b58f8f9bfe2b9c9c": "AI Data-Center Infrastructure",
+    "695c86f9a5be45b085cb35cbd834da36": "Medical Devices",
     "6986565da644477598dc3b688410135d": "Financial Services & Payments",
     "6a0989a327324d83b3a135eaae5d74d6": "Financial Services & Payments",
     "6a6897651e384398882981fddb673fa4": "Computer Hardware & Equipment",
