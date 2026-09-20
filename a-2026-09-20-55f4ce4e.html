@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PayPal&#x27;s Branded Checkout Grew 2% While Braintree Grew 13%; Margin Dollars Rose 1%</title>
+<meta name="description" content="Payment volume is the most quoted number in digital payments and the least informative. PayPal moved 9% more money in the June quarter on a currency-neutral basis and kept 1% more gross profit from…"/>
+<meta property="og:site_name" content="DK Street Journal"/>
+<meta property="og:title" content="PayPal&#x27;s Branded Checkout Grew 2% While Braintree Grew 13%; Margin Dollars Rose 1%"/>
+<meta property="og:description" content="Payment volume is the most quoted number in digital payments and the least informative. PayPal moved 9% more money in the June quarter on a currency-neutral basis and kept 1% more gross profit from…"/>
+<meta property="og:type" content="article"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://dkstreetjournal.com/a-2026-09-20-55f4ce4e.html"/>
+<link rel="canonical" href="https://dkstreetjournal.com/a-2026-09-20-55f4ce4e.html"/>
+<meta property="article:published_time" content="2026-09-20T21:21:23Z"/>
+<meta property="og:image" content="https://dkstreetjournal.com/assets/chart-PYPL-2026-09-20.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="PayPal&#x27;s Branded Checkout Grew 2% While Braintree Grew 13%; Margin Dollars Rose 1%"/>
+<meta name="twitter:description" content="Payment volume is the most quoted number in digital payments and the least informative. PayPal moved 9% more money in the June quarter on a currency-neutral basis and kept 1% more gross profit from…"/>
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48 64x64" href="assets/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png"/><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"/><link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png"/>
+<style>
+:root{
+  --ink:#111418; --ink-soft:#454b54; --muted:#6b7280; --hair:#e3e6ea;
+  --bg:#fbfbfa; --card:#ffffff; --accent:#2563eb;
+  --bull:#15803d; --bear:#e11d48;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,
+    "Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,
+    Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:17px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1120px; margin:0 auto; padding:0 22px 72px}
+
+/* masthead */
+.masthead{text-align:center; padding:56px 0 26px; border-bottom:3px double var(--ink)}
+.lockup{
+  display:flex; align-items:center; justify-content:center;
+  gap:clamp(.34rem,1.2vw,.75rem); flex-wrap:nowrap;
+}
+/* The mark scales with the name it sits beside, so the lockup keeps
+   its proportions from phone to desktop instead of the monogram
+   swelling as the type shrinks. It now stands IN the wordline in
+   place of the word "DK", so it is sized against cap height. */
+.mark{display:block; flex:0 0 auto; line-height:0}
+.mark img{display:block; height:clamp(2.05rem,5.8vw,3.5rem); width:auto}
+/* ⚠️ Specificity, not just order. `.mark img` is (0,1,1) and a bare
+   `.mark-dark` is (0,1,0), so `display:block` won and BOTH marks
+   rendered — the cream one over white read as a ghosted second
+   monogram. The selectors below match `.mark img`'s weight and add a
+   class, so the toggle actually wins. */
+.mark img.mark-dark{display:none}
+.wordmark{
+  font-family:var(--serif); font-weight:700; letter-spacing:.02em;
+  font-size:clamp(1.9rem,5.4vw,3.6rem); line-height:1.05; margin:0;
+  text-transform:uppercase;
+}
+.wordmark-text{display:inline-block}
+/* Available to a screen reader, absent from the page. */
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+.tagline{
+  margin:.55rem 0 0; color:var(--muted); font-size:.82rem;
+  letter-spacing:.18em; text-transform:uppercase;
+}
+.masthead-meta{margin:.7rem 0 0; color:var(--muted); font-size:.8rem}
+
+/* ⚠️ An article page's nameplate is a LINK, and a link needs its own
+   rules. Without these the anchor fell back to browser defaults —
+   blue and underlined — and `.mark`'s `display:block` broke the line,
+   so the monogram sat alone above a centred blue "DK Street Journal".
+   It shipped that way because the front page uses `<h1 class="wordmark
+   lockup">` and I reused `.masthead` around a different element,
+   assuming the styling would carry. */
+.masthead-slim{padding:34px 0 22px}
+.masthead-slim .back{
+  display:inline-flex; align-items:center; justify-content:center;
+  gap:clamp(.3rem,1.1vw,.62rem);
+  font-family:var(--serif); font-weight:700; letter-spacing:.02em;
+  font-size:clamp(1.15rem,2.4vw,1.6rem); line-height:1;
+  color:var(--ink); text-decoration:none;
+}
+.masthead-slim .back:hover{color:var(--accent)}
+/* Smaller than the front page's nameplate: this one sits above a
+   single article, not over the whole paper. */
+.masthead-slim .mark img{height:clamp(1.45rem,3.2vw,2.1rem)}
+
+/* disclaimer — must not be skimmable past */
+.disclaimer{
+  margin:26px auto 0; max-width:82ch; padding:20px 22px; background:#fff8f1;
+  border:1px solid #f0d9c0; border-left:4px solid #c2410c; border-radius:6px;
+}
+.disc-head{
+  margin:0 0 .6rem; font-family:var(--sans); font-size:.78rem;
+  letter-spacing:.14em; text-transform:uppercase; color:#9a3412;
+}
+.disclaimer p{margin:.5rem 0; font-size:.86rem; line-height:1.6; color:var(--ink-soft)}
+.disclaimer strong{color:var(--ink)}
+.disc-closer{margin-top:.9rem !important; font-weight:600; color:var(--ink) !important}
+
+/* how it works */
+.how{margin:34px auto 0}
+.how h2{
+  font-family:var(--sans); font-size:.78rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 .8rem;
+}
+.how{max-width:74ch; margin-left:auto; margin-right:auto}
+.how p{margin:.6rem 0; font-size:.94rem; color:var(--ink-soft)}
+.how-lede strong{color:var(--ink)}
+.agents{margin:.6rem 0; padding-left:1.25rem}
+.agents li{margin:.4rem 0; font-size:.94rem; color:var(--ink-soft)}
+.agents strong{color:var(--ink)}
+.rule{border:0; border-top:1px solid var(--hair); margin:40px 0 0}
+
+/* articles
+   Text sits in a centred reading measure; the visuals break out to
+   the full width. Left-aligning the prose inside a 1120px wrap left a
+   dead gutter down the whole right-hand side of every article. */
+.article{padding:44px 0; border-bottom:1px solid var(--hair)}
+.article:last-child{border-bottom:0}
+.art-head,.dek,.body,.art-foot{max-width:68ch; margin-left:auto; margin-right:auto}
+.dateline{
+  margin:0 0 .5rem; color:var(--muted); font-size:.75rem;
+  letter-spacing:.1em; text-transform:uppercase;
+}
+.headline{
+  font-family:var(--serif); font-weight:700; margin:0;
+  font-size:clamp(1.6rem,3.6vw,2.3rem); line-height:1.18;
+  letter-spacing:-.008em;
+}
+/* The table of contents. Full-width like the visuals rather than
+   inside the 68ch measure — it is a scanning surface, not prose, and
+   at ~8 themes a single column would push the first article a screen
+   and a half down the page. `auto-fit` + `minmax` gives 3 columns on a
+   desktop and 1 on a phone with no media query and no JavaScript (the
+   site's CSP is `script-src 'none'`). */
+.toc{margin:1.6rem 0 0}
+.toc-head{
+  font-family:var(--sans); font-size:.72rem; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
+  margin:0 0 .9rem; display:flex; align-items:baseline; gap:.6rem;
+  border-bottom:1px solid var(--hair); padding-bottom:.5rem;
+}
+.toc-total{
+  font-weight:400; letter-spacing:.02em; text-transform:none;
+  font-size:.75rem;
+}
+.toc-grid{
+  display:grid; gap:1rem 1.6rem;
+  grid-template-columns:repeat(auto-fit,minmax(255px,1fr));
+}
+.toc-card{min-width:0}
+.toc-name{
+  font-family:var(--serif); font-size:1.02rem; font-weight:700;
+  margin:0 0 .4rem; line-height:1.25; color:var(--ink);
+  display:flex; align-items:baseline; gap:.45rem;
+}
+.toc-count{
+  font-family:var(--sans); font-size:.68rem; font-weight:600;
+  color:var(--muted); background:var(--hair); border-radius:999px;
+  padding:1px 7px; flex:none;
+}
+.toc-list{list-style:none; margin:0; padding:0}
+.toc-list li{
+  font-size:.86rem; line-height:1.4; margin:0 0 .35rem;
+  display:flex; gap:.5rem;
+}
+.toc-when{color:var(--muted); font-size:.72rem; flex:none; padding-top:.12rem}
+.toc-list a{color:var(--ink-soft); text-decoration:none}
+.toc-list a:hover{color:var(--accent); text-decoration:underline}
+/* The disclosure for the rest of a theme. Styled as a quiet control
+   rather than a label, because the old "+17 more below" read as a
+   statement and this is a button. */
+.toc-rest{margin:.1rem 0 0}
+.toc-rest > summary{
+  cursor:pointer; color:var(--muted); font-size:.75rem;
+  list-style:none; display:inline-flex; align-items:center; gap:.3rem;
+  padding:.15rem 0;
+}
+.toc-rest > summary::-webkit-details-marker{display:none}
+.toc-rest > summary::before{content:"▸"; font-size:.65rem}
+.toc-rest[open] > summary::before{content:"▾"}
+.toc-rest > summary:hover{color:var(--accent)}
+.toc-rest[open] > summary{margin-bottom:.35rem}
+/* The unsorted group is a holding pen, not a theme — it should read as
+   pending rather than as a peer of the real ones. */
+.toc-unsorted .toc-name{color:var(--muted); font-style:italic}
+
+/* The summary is a standfirst, not a caption. Editor v1.2 writes
+   ~120-150 words here, where v1.1 wrote ~50 — a size that reads as one
+   emphatic line collapses into a grey slab at three times the length.
+   So it takes a rule and a little indent: enough to stay distinct from
+   the body without competing with the headline above it. Briefs
+   published before v1.2 keep their short summary and simply occupy
+   less of the same frame. */
+/* Provenance sits between the headline and the summary — close enough
+   to the headline to be read as a byline, quiet enough not to compete
+   with it. Sized below the dateline above it so the header reads
+   top-down in decreasing weight. */
+.provenance{
+  margin:.55rem 0 0; font-family:var(--sans); font-size:.72rem;
+  color:var(--muted); letter-spacing:.01em; line-height:1.5;
+}
+.prov-role{
+  text-transform:uppercase; letter-spacing:.08em; font-size:.64rem;
+  color:var(--hair-ink,#9aa3ad); font-weight:600;
+}
+
+.dek{
+  margin:1rem 0 0; padding:0 0 0 .95rem;
+  border-left:3px solid var(--hair);
+}
+.dek p{
+  margin:0 0 .55rem; font-size:1.02rem; line-height:1.6;
+  color:var(--ink-soft);
+}
+.dek p:last-child{margin-bottom:0}
+
+/* The permalink sits above the dateline, right-aligned and quiet. It
+   is a utility, not part of the article — it exists so a reader can
+   right-click and send the piece to someone. */
+.entry{position:relative}
+.permabar{
+  max-width:68ch; margin:0 auto; text-align:right;
+  font-size:.72rem; line-height:1; height:0;
+}
+.permalink{
+  color:var(--muted); text-decoration:none; letter-spacing:.03em;
+  position:relative; top:.15rem;
+}
+.permalink:hover{color:var(--accent); text-decoration:underline}
+.entry:target .headline{
+  /* Landing from a shared link should show you WHICH article you
+     were sent, or the jump reads as an ordinary scroll position. */
+  box-shadow:-.6rem 0 0 var(--accent);
+}
+
+.pager{
+  display:flex; flex-wrap:wrap; align-items:center; gap:.4rem;
+  justify-content:center; margin:2.5rem auto 0; max-width:68ch;
+  padding-top:1.4rem; border-top:1px solid var(--hair);
+}
+.pager a,.pager span{
+  font-size:.82rem; padding:.36rem .6rem; border-radius:4px;
+  text-decoration:none; color:var(--ink-soft);
+}
+.pager a:hover{background:var(--hair); color:var(--accent)}
+.pg-num{min-width:2rem; text-align:center}
+.pg-here{background:var(--accent); color:#fff; font-weight:600}
+.pg-off{color:var(--hair)}
+.pg-gap{padding:.36rem .2rem; color:var(--muted)}
+.short-notice{margin:0 0 .5rem}
+.short-notice a{color:var(--muted); white-space:nowrap}
+.chips{display:flex; flex-wrap:wrap; gap:6px; margin:1rem 0 0}
+.chip{
+  font-size:.7rem; letter-spacing:.04em; color:var(--muted);
+  background:#f1f3f5; border:1px solid var(--hair);
+  border-radius:999px; padding:2px 9px; white-space:nowrap;
+}
+.chip-ticker{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-weight:600; color:var(--ink); background:#fff;
+}
+.body{margin:1.6rem auto 0}
+.body p{margin:0 0 1.05rem}
+.body h2,.body h3{
+  font-family:var(--serif); margin:2rem 0 .6rem; line-height:1.25;
+}
+.body h2{font-size:1.28rem}
+.body h3{font-size:1.1rem}
+.body a{color:var(--accent); text-decoration:underline;
+  text-underline-offset:2px; text-decoration-thickness:1px}
+.body a:hover{background:#eff4ff}
+.body ul,.body ol{margin:0 0 1.05rem; padding-left:1.3rem}
+.body li{margin:.3rem 0}
+.body blockquote{
+  margin:1.2rem 0; padding:.2rem 0 .2rem 1rem;
+  border-left:3px solid var(--hair); color:var(--ink-soft);
+}
+.body table{border-collapse:collapse; width:100%; font-size:.9rem; margin:1.2rem 0}
+.body th,.body td{border-bottom:1px solid var(--hair); padding:6px 8px; text-align:left}
+
+/* visuals */
+.visuals{margin:2.2rem 0 0}
+.visuals-lede{margin:1.5rem 0 0}
+.visuals-lede .vis-head{margin-top:1.3rem}
+.vis-head{
+  font-family:var(--sans); font-size:.72rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted);
+  margin:1.8rem 0 .7rem; padding-bottom:.4rem;
+  border-bottom:1px solid var(--hair);
+}
+.vis-note{margin:.5rem 0 0; font-size:.76rem; color:var(--muted)}
+.strip,.table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch}
+.strip table,.table-wrap table{min-width:520px}
+.chart-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+@media (max-width:900px){.chart-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.chart-grid{grid-template-columns:1fr}}
+
+/* disclosures */
+.art-foot{margin:1.8rem auto 0; display:flex; flex-direction:column; gap:.5rem}
+.disclosure{
+  border:1px solid var(--hair); border-radius:6px;
+  background:var(--card); padding:0;
+}
+.disclosure summary{
+  cursor:pointer; padding:9px 13px; font-size:.78rem; color:var(--muted);
+  letter-spacing:.06em; text-transform:uppercase; list-style:none;
+}
+.disclosure summary::-webkit-details-marker{display:none}
+.disclosure summary::before{content:"\25B8  "; color:var(--muted)}
+.disclosure[open] summary::before{content:"\25BE  "}
+.disclosure[open] summary{border-bottom:1px solid var(--hair)}
+.sources{margin:0; padding:10px 13px 12px 30px; font-size:.82rem}
+.sources li{margin:.3rem 0; color:var(--ink-soft)}
+.src-internal{
+  margin:0; padding:8px 13px 12px; color:var(--muted);
+  font-size:.78rem; line-height:1.5; border-top:1px solid var(--hair);
+}
+.src-domain{color:var(--muted); font-size:.74rem}
+.sources a{color:var(--accent)}
+.hyp{margin:0; padding:10px 15px; color:var(--ink-soft); font-size:.9rem}
+.hyp p{margin:.4rem 0}
+.hyp-meta{
+  margin:10px 15px 0; font-size:.72rem; color:var(--muted);
+  letter-spacing:.05em; text-transform:uppercase;
+}
+
+/* footer */
+.site-foot{margin:52px auto 0; padding-top:22px; border-top:3px double var(--ink)}
+.site-foot{max-width:74ch; margin-left:auto; margin-right:auto}
+.site-foot p{margin:.3rem 0; font-size:.78rem; color:var(--muted)}
+.built{color:#9aa1ab !important}
+.empty{color:var(--muted); padding:40px 0}
+
+@media (prefers-color-scheme:dark){
+  :root{
+    --ink:#e8eaed; --ink-soft:#b9bfc7; --muted:#8b939d; --hair:#2a2f36;
+    --bg:#14171a; --card:#1b1f24; --accent:#7aa7ff;
+  }
+  /* A PNG cannot recolour itself, so the navy mark is swapped for
+     the near-white one rather than filtered — a CSS invert would take
+     the gold slash with it and turn it blue. */
+  .mark img.mark-light{display:none}
+  .mark img.mark-dark{display:block}
+  .disclaimer{background:#2a1c12; border-color:#5c3a1e; border-left-color:#ea8c4b}
+  .disc-head{color:#f0a868}
+  .chip{background:#22272e}
+  .chip-ticker{background:#1b1f24}
+  .body a:hover{background:#1e2a44}
+  /* The chart cards and tables carry their own light ground; keep
+     them on white rather than letting dark text land on it. */
+  .strip,.chart-grid,.table-wrap{
+    background:#fff; border-radius:8px; padding:10px; color:#111418;
+  }
+}
+
+/* --- Search ------------------------------------------------------- */
+.mast-search{margin:14px auto 0; max-width:34rem}
+.masthead-slim + .mast-search{margin:10px 0 0}
+.mast-search input{
+  width:100%; box-sizing:border-box; padding:8px 12px;
+  font:inherit; font-size:.95rem; color:inherit;
+  background:transparent; border:1px solid #c9c2b4; border-radius:8px;
+}
+.mast-search input:focus{outline:2px solid #1d3557; outline-offset:1px}
+.search-main{max-width:68ch; margin:0 auto}
+.sr-status{color:#6b6455; font-size:.92rem; margin:18px 0 6px}
+.search-results{list-style:none; margin:0; padding:0}
+.search-results li{margin:0 0 22px; padding:0}
+.sr-meta{color:#6b6455; font-size:.82rem; letter-spacing:.02em;
+  text-transform:uppercase; margin:0 0 2px}
+.sr-title{margin:0; font-size:1.08rem; line-height:1.35}
+.sr-title a{color:inherit; text-decoration:none}
+.sr-title a:hover{text-decoration:underline}
+.sr-sum{color:#4c463a; margin:3px 0 0; font-size:.95rem; line-height:1.5}
+@media (prefers-color-scheme: dark){
+  .mast-search input{border-color:#3a3f46}
+  .mast-search input:focus{outline-color:#8fb4e8}
+  .sr-status,.sr-meta{color:#9aa3ad}
+  .sr-sum{color:#b7bec7}
+}
+
+/* --- The setup panel (v1.6 structured closer) --------------------- */
+.setup-panel{margin:26px 0 8px; padding:16px 18px; border:1px solid #d9d2c2;
+  border-radius:9px; background:rgba(0,0,0,0.015)}
+.setup-head{margin:0 0 10px; font-size:.8rem; font-weight:650;
+  letter-spacing:.09em; text-transform:uppercase; color:#6b6455}
+.setup-row{display:grid; grid-template-columns:9.5rem 1fr; gap:10px;
+  padding:5px 0; font-size:.92rem; line-height:1.5}
+.setup-k{color:#6b6455; font-weight:600}
+@media (max-width:560px){ .setup-row{grid-template-columns:1fr} }
+@media (prefers-color-scheme: dark){
+  .setup-panel{border-color:#3a3f46; background:rgba(255,255,255,0.03)}
+  .setup-head,.setup-k{color:#9aa3ad}
+}
+</style>
+</head>
+<body>
+<div class="wrap"><header class="masthead masthead-slim"><a class="back" href="index.html"><span class="mark" aria-hidden="true"><img class="mark-light" src="assets/mark-navy.png" alt=""/><img class="mark-dark" src="assets/mark-cream.png" alt=""/></span><span>DK Street Journal</span></a></header><form class="mast-search" action="search.html" method="get" role="search"><input type="search" name="q" placeholder="Search companies, tickers, sectors…" aria-label="Search articles" maxlength="200"/></form><hr class="rule"/><main class="feed"><div class="entry"><article class="article" id="a-55f4ce4e629949bdbeb192ca86568974"><header class="art-head"><p class="dateline"><time datetime="2026-09-20T21:21:23Z">September 20, 2026 · 2:21 PM PDT</time></p><h2 class="headline">PayPal&#x27;s Branded Checkout Grew 2% While Braintree Grew 13%; Margin Dollars Rose 1%</h2><p class="provenance"><span class="prov-role">Hypothesis</span> Opus 5 · <span class="prov-role">Research</span> Opus 5 · <span class="prov-role">Writing</span> Opus 5 · <span class="prov-role">Prompt</span> v1.6</p><div class="dek"><p>Payment volume is the most quoted number in digital payments and the least informative. PayPal moved 9% more money in the June quarter on a currency-neutral basis and kept 1% more gross profit from it, because the growth came from unbranded Braintree processing — a near-commodity gateway at a take rate analysts put near 1.85% — rather than from the checkout button it owns.</p>
+<p>A second engine sits outside volume entirely: interest on customer balances, guided down to about $1,003m in 2026 from $1,225m in 2025, which the Federal Reserve's September hike now starts to reverse.</p>
+<p>The verdict splits the two acceptance businesses in this corner of financial services. PayPal's de-rating is mostly earned; Global Payments, paid a spread per merchant per transaction, grew adjusted earnings 12% and has been re-rated upward. The same twelve months marked down the button and marked up the rail.</p></div><div class="chips"><span class="chip chip-ticker">PYPL</span><span class="chip chip-ticker">GPN</span><span class="chip">Branded Checkout Economics</span><span class="chip">Unbranded Payment Processing</span><span class="chip">Merchant Acquiring Spreads</span><span class="chip">Float &amp; Interest Income</span><span class="chip">Digital Wallet Competition</span><span class="chip">Fintech Take Rates</span></div></header><section class="visuals visuals-lede"><div class="strip"><table style="width:100%;border-collapse:collapse;font-size:0.86rem;line-height:1.35"><thead><tr style="color:#94a3b8;font-size:0.74rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Ticker</th><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Company</th><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Segment</th><th style="text-align:left;padding:0 8px 3px;font-weight:600">Trend · 13mo</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">30D</th><th style="text-align:right;padding:0 0 3px 6px;font-weight:600;white-space:nowrap">1Y</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">PYPL</code></td><td style="padding:4px 8px 4px 0">PayPal</td><td style="padding:4px 8px 4px 0;color:#64748b">Digital Payments &amp; Fintech Platforms</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#dc26261a;color:#dc2626;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🔴 Cont. Bear</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−14.8%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−22.1%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">GPN</code></td><td style="padding:4px 8px 4px 0">Global Payments</td><td style="padding:4px 8px 4px 0;color:#64748b">Digital Payments &amp; Fintech Platforms</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#dc26261a;color:#dc2626;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🔴 Cont. Bear</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−9.0%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−1.6%</span></td></tr></tbody></table></div><h3 class="vis-head">12-month price &amp; trend</h3><div class="chart-grid"><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">PYPL</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">PayPal</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">52.41</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−0.37 (−0.69%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#e11d48;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-PYPL-2026-09-20.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="PYPL 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Digital Payments &amp; Fintech Platforms</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">GPN</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Global Payments</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">85.06</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−0.57 (−0.66%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#e11d48;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-GPN-2026-09-20.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="GPN 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Digital Payments &amp; Fintech Platforms</div></div></div><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px;font-weight:600;white-space:nowrap">Ticker</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">Mkt cap</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">EV/EBITDA</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FCF yld</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">PYPL</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$44.8B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">9.8x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">9.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.9x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.8x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">6.8x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">14.7%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">GPN</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$21.1B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">6.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">3.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">2.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">12.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">3.9%</td></tr></tbody></table></div></section><section class="visuals visuals-tables"><h3 class="vis-head">Consensus projections</h3><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px 0;font-weight:600">Ticker</th><th style="text-align:left;padding:0 6px 3px;font-weight:600"></th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2026E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2027E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2028E</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">PYPL</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+4.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+4.3%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+4.6%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+0.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+7.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+8.5%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">GPN</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+33.1%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+5.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+4.8%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+11.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+17.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+16.4%</span></td></tr></tbody></table></div><p class="vis-note">Forward fiscal years only. Blank means no analyst coverage for that year.</p></section><div class="body"><p>PayPal moved $486.4bn of payment volume in the June quarter and kept almost none of the increase. Total volume <a href="https://www.tradingview.com/news/tradingview:3918348c7949c:0-paypal-reports-q2-2026-revenue-8-68b-tpv-486-4b-non-gaap-eps-1-38/" rel="noopener noreferrer">grew 9% on a currency-neutral basis</a>; transaction margin dollars — the spread PayPal actually retains after paying the card networks and banks — <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-paypal-beats-q2-2026-estimates-as-growth-plans-take-shape-93CH-4816942" rel="noopener noreferrer">rose 1%, to $3.9bn</a>.</p>
+<p>That gap is the whole business explained in two lines. A payments company is not paid for volume; it is paid a take rate, and PayPal's differs by a large factor depending on where the transaction enters. Branded checkout — the yellow button on a merchant's page, where PayPal owns the consumer relationship — carries a high spread and grew 2% currency-neutral. Unbranded processing through Braintree, where PayPal is a gateway routing other companies' card transactions, grew 13%, at a take rate analysts put <a href="https://www.stockopine.com/p/paypal-q226-review-paying-up-for" rel="noopener noreferrer">near 1.85%</a>. Every point of mix shift toward the cheap channel dilutes what the volume headline implies.</p>
+<h3>The meter that volume hides</h3>
+<p>Gross profit tells the same story on a longer clock: growth of 5.9%, 2.5%, 2.5% and 1.5% across the last four quarters, with gross margin down to 44.9% from 46.4%. Active accounts were <a href="https://www.tipranks.com/stocks/pypl/earnings/q2-2026-report" rel="noopener noreferrer">flat at 439m</a>, though transactions per account excluding the gateway business grew 7% for a second straight quarter. Operating income rose 25.6% on cost cuts while GAAP net income fell 12.5% — the swing sits below the operating line.</p>
+<p>What sits there is float. PayPal earns interest on customer balances and on its buy-now-pay-later receivables, a second engine no volume statistic captures, and it is <a href="https://bobhammel.substack.com/p/paypal-past-present-and-future" rel="noopener noreferrer">forecast to fall to about $1,003m in 2026</a> from $1,225m in 2025 on a roughly 75 basis-point lower effective rate. Strip it out and margin dollars grew 3%. The direction is changing: the Federal Reserve <a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm" rel="noopener noreferrer">raised its target to 3.75%-4.00% on September 16</a>, the first increase since 2023.</p>
+<p>The competitive reading is harsher. Apple Pay, Shopify, Affirm, Klarna, Cash App and Zelle have all taken checkout territory, and PayPal is spending $400m this year to defend it. "PayPal has had a lot of trouble evolving from being just a way to pay on your desktop computer," Sanjay Sakhrani of Keefe, Bruyette &amp; Woods <a href="https://www.usnews.com/news/business/articles/2026-05-26/paypals-online-checkout-empire-is-under-siege-as-rivals-squeeze-its-core-business" rel="noopener noreferrer">told the Associated Press</a>. "I'm encouraged by the progress we made this quarter," Enrique Lores, chief executive since March, <a href="https://www.roic.ai/quote/2PP.F/transcripts/2026-year/2-quarter" rel="noopener noreferrer">said on the July 28 call</a>. "We moved with urgency to sharpen our transformation plan."</p>
+<p>The shares are down 23.5% over twelve months in three discrete events, not a grind: a 20.3% fall on February 3 when a fourth-quarter miss coincided with the board's ouster of Alex Chriss, a 17.2% jump on July 15 when Stripe and Advent International <a href="https://www.cnbc.com/2026/07/15/stripe-advent-offer-to-buy-paypal-for-more-than-53-billion-reuters.html" rel="noopener noreferrer">bid $60.50 a share</a>, and a 13.1% drop on August 28 when <a href="https://www.bloomberg.com/news/articles/2026-08-28/advent-stripe-consortium-is-said-to-drop-pursuit-of-paypal" rel="noopener noreferrer">that consortium walked</a>. Trailing earnings multiple: 9.83x, against roughly 13.7x a year ago, on four-quarter GAAP earnings per share that rose to $5.29 from $4.99. Forward is 9.73x — the market underwrites no growth — and the trailing free-cash-flow yield is 14.7%.</p>
+<h3>The other way to earn a payments dollar</h3>
+<p>Global Payments is the mirror. It is a merchant acquirer, paid a spread per merchant per transaction on physical terminals and embedded software, and in January it <a href="https://www.theglobeandmail.com/investing/markets/stocks/FIS/pressreleases/37015651/fis-completes-issuer-solutions-acquisition-and-worldpay-divestiture/" rel="noopener noreferrer">swapped its issuer-processing arm to FIS for Worldpay</a>. Second-quarter adjusted net revenue <a href="https://www.businesswire.com/news/home/20260805443718/en/Global-Payments-Reports-Second-Quarter-2026-Results" rel="noopener noreferrer">grew 4% normalised with adjusted earnings per share of $3.46, up 12%</a>, and operating margin of 42.0%. Enterprise and Platforms each <a href="https://www.gurufocus.com/news/9007247/global-payments-inc-gpn-q2-2026-earnings-call-highlights-strong-eps-growth-and-strategic-progress-amid-middle-east-headwinds" rel="noopener noreferrer">grew 7%</a>, small-business 4%. Full-year revenue growth guidance was <a href="https://www.nasdaq.com/press-release/global-payments-reports-second-quarter-2026-results-2026-08-05" rel="noopener noreferrer">cut to 4-5% on Middle East travel exposure</a> while the $13.60-$13.80 earnings range held. Leverage sits just under 3.5x; chief executive Cameron Bready said the company feels <a href="https://finance.yahoo.com/markets/stocks/articles/global-payments-gpn-q2-2026-121401823.html" rel="noopener noreferrer">"very good about getting back to that 3x leverage point"</a> by end-2027, with $1.2bn returned this year. Trailing earnings are unusable — a $1.8bn first-quarter loss on non-deductible goodwill tax from the disposal — so the anchor is 6.23x forward against $13.65 consensus, below <a href="https://finance.yahoo.com/markets/stocks/articles/fiserv-stock-seems-undervalued-potential-payments-infrastructure-business-sale-catalyst-150002080.html" rel="noopener noreferrer">Fiserv's roughly 7.5x</a>, and 0.955x book. The shares are roughly flat over twelve months and 27% above their June low.</p>
+<h3>What the market actually repriced</h3>
+<p>So the card rail was not marked down wholesale. The spread-per-merchant model was re-rated upward on delivered synergies and falling leverage; the consumer-checkout franchise was marked down a quarter while its earnings rose. PayPal's de-rating is largely earned — a 2% branded meter and flat accounts are what a nine-times multiple describes — and the unexplained residue is narrow: cost discipline and buybacks are producing earnings the market will not capitalize, on the view that mix and float erosion continue.</p>
+<p>Both of those assumptions face a date. PayPal reports on October 27, Global Payments on November 3. And the board that called $60.50 inadequate now has shares 15% below it, with the bidder gone and the burden of proof entirely on the button.</p></div><footer class="art-foot"><aside class="setup-panel"><p class="setup-head">The setup</p><div class="setup-row"><span class="setup-k">Where it stands</span><span>PayPal at $52.41, down 23.5% over twelve months; Global Payments at $85.06, roughly flat over the year and 36% above its June low of $62.47.</span></div><div class="setup-row"><span class="setup-k">Would confirm</span><span>Branded-checkout volume growth still at or below 2% on 27 October, with transaction margin dollars excluding interest on balances growing under 4%.</span></div><div class="setup-row"><span class="setup-k">Would invalidate</span><span>Branded checkout reaccelerating to mid-single digits, or Global Payments cutting its $13.60-$13.80 adjusted earnings guidance on 3 November.</span></div><div class="setup-row"><span class="setup-k">Watch next</span><span>PayPal&#x27;s third-quarter results on 27 October 2026; Global Payments&#x27; on 3 November 2026.</span></div><div class="setup-row"><span class="setup-k">Valuation</span><span>PayPal 9.83x trailing and 9.73x forward earnings versus roughly 13.7x a year ago; Global Payments 6.23x forward on $13.65 consensus, 0.955x book.</span></div></aside><details class="disclosure"><summary>Sources (53)</summary><ul class="sources"><li><a href="https://www.tradingview.com/news/tradingview:3918348c7949c:0-paypal-reports-q2-2026-revenue-8-68b-tpv-486-4b-non-gaap-eps-1-38/" target="_blank" rel="noopener noreferrer">PayPal reports Q2 2026: revenue $8.68B, TPV $486.4B, non-GAAP EPS $1.38</a> <span class="src-domain">tradingview.com</span></li><li><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-paypal-beats-q2-2026-estimates-as-growth-plans-take-shape-93CH-4816942" target="_blank" rel="noopener noreferrer">Earnings call transcript: PayPal beats Q2 2026 estimates as growth plans take shape</a> <span class="src-domain">investing.com</span></li><li><a href="https://www.stockopine.com/p/paypal-q226-review-paying-up-for" target="_blank" rel="noopener noreferrer">PayPal Q2&#x27;26 Review: Paying Up for a Pivot</a> <span class="src-domain">stockopine.com</span></li><li><a href="https://bobhammel.substack.com/p/paypal-past-present-and-future" target="_blank" rel="noopener noreferrer">PayPal: Past, Present and Future</a> <span class="src-domain">bobhammel.substack.com</span></li><li><a href="https://finance.yahoo.com/markets/stocks/articles/paypal-q2-2026-earnings-beat-124337219.html" target="_blank" rel="noopener noreferrer">PayPal Q2 2026 earnings beat; raises full-year EPS guidance</a> <span class="src-domain">finance.yahoo.com</span></li><li><a href="https://www.tipranks.com/stocks/pypl/earnings/q2-2026-report" target="_blank" rel="noopener noreferrer">PayPal Holdings, Inc. (PYPL) Q2 2026 Earnings Report - Results, Call &amp; Slides</a> <span class="src-domain">tipranks.com</span></li><li><a href="https://www.roic.ai/quote/2PP.F/transcripts/2026-year/2-quarter" target="_blank" rel="noopener noreferrer">PayPal Holdings, Inc. Q2 FY2026 Earnings Call Transcript - July 28, 2026</a> <span class="src-domain">roic.ai</span></li><li><a href="https://newsroom.paypal-corp.com/2026-02-03-PayPal-Appoints-Enrique-Lores-as-Chief-Executive-Officer-and-David-W-Dorman-as-Independent-Board-Chair" target="_blank" rel="noopener noreferrer">PayPal Appoints Enrique Lores as Chief Executive Officer and David W. Dorman as Independent Board Chair</a> <span class="src-domain">newsroom.paypal-corp.com</span></li><li><a href="https://www.investing.com/analysis/paypal-sells-off-hard-as-checkout-growth-slows-and-2026-outlook-disappoints-200674385" target="_blank" rel="noopener noreferrer">PayPal Sells Off Hard as Checkout Growth Slows and 2026 Outlook Disappoints</a> <span class="src-domain">investing.com</span></li><li><a href="https://www.bloomberg.com/news/articles/2026-08-28/advent-stripe-consortium-is-said-to-drop-pursuit-of-paypal" target="_blank" rel="noopener noreferrer">PayPal Deal Talks End as Advent, Stripe Group Abandons Acquisition Effort</a> <span class="src-domain">bloomberg.com</span></li><li><a href="https://www.cnbc.com/2026/07/15/stripe-advent-offer-to-buy-paypal-for-more-than-53-billion-reuters.html" target="_blank" rel="noopener noreferrer">Stripe, Advent make $53 billion takeover offer for PayPal, sending stock soaring</a> <span class="src-domain">cnbc.com</span></li><li><a href="https://www.usnews.com/news/business/articles/2026-05-26/paypals-online-checkout-empire-is-under-siege-as-rivals-squeeze-its-core-business" target="_blank" rel="noopener noreferrer">PayPal&#x27;s Online Checkout Empire Is Under Siege as Rivals Squeeze Its Core Business (AP)</a> <span class="src-domain">usnews.com</span></li><li><a href="https://www.chargeflow.io/blog/buy-now-pay-later-statistics" target="_blank" rel="noopener noreferrer">$560B BNPL Market in 2026: Size, Growth &amp; Provider Stats</a> <span class="src-domain">chargeflow.io</span></li><li><a href="https://www.theglobeandmail.com/investing/markets/stocks/FIS/pressreleases/37015651/fis-completes-issuer-solutions-acquisition-and-worldpay-divestiture/" target="_blank" rel="noopener noreferrer">FIS Completes Issuer Solutions Acquisition and Worldpay Divestiture</a> <span class="src-domain">theglobeandmail.com</span></li><li><a href="https://www.businesswire.com/news/home/20260805443718/en/Global-Payments-Reports-Second-Quarter-2026-Results" target="_blank" rel="noopener noreferrer">Global Payments Reports Second Quarter 2026 Results</a> <span class="src-domain">businesswire.com</span></li><li><a href="https://www.gurufocus.com/news/9007247/global-payments-inc-gpn-q2-2026-earnings-call-highlights-strong-eps-growth-and-strategic-progress-amid-middle-east-headwinds" target="_blank" rel="noopener noreferrer">Global Payments Inc (GPN) Q2 2026 Earnings Call Highlights</a> <span class="src-domain">gurufocus.com</span></li><li><a href="https://www.nasdaq.com/press-release/global-payments-reports-second-quarter-2026-results-2026-08-05" target="_blank" rel="noopener noreferrer">Global Payments Reports Second Quarter 2026 Results</a> <span class="src-domain">nasdaq.com</span></li><li><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-global-payments-posts-steady-q2-2026-results-93CH-4837744" target="_blank" rel="noopener noreferrer">Earnings call transcript: Global Payments posts steady Q2 2026 results</a> <span class="src-domain">investing.com</span></li><li><a href="https://finance.yahoo.com/markets/stocks/articles/global-payments-gpn-q2-2026-121401823.html" target="_blank" rel="noopener noreferrer">Global Payments (GPN) Q2 2026 Earnings Call Transcript</a> <span class="src-domain">finance.yahoo.com</span></li><li><a href="https://www.pymnts.com/partnerships/2025/global-payments-bets-big-on-600m-synergy-from-worldpay/" target="_blank" rel="noopener noreferrer">Global Payments Bets Big on $600M Synergy From Worldpay</a> <span class="src-domain">pymnts.com</span></li><li><a href="https://www.stocktitan.net/sec-filings/GPN/10-q-global-payments-inc-quarterly-earnings-report-9fa0efa46bc3.html" target="_blank" rel="noopener noreferrer">Global Payments posts Q1 2026 loss on Worldpay deal | GPN Quarterly Report (10-Q)</a> <span class="src-domain">stocktitan.net</span></li><li><a href="https://www.investing.com/news/stock-market-news/why-is-global-payments-stock-rallying-today-93CH-4801045" target="_blank" rel="noopener noreferrer">Why is Global Payments stock rallying today?</a> <span class="src-domain">investing.com</span></li><li><a href="https://finance.yahoo.com/markets/stocks/articles/fiserv-stock-seems-undervalued-potential-150002080.html" target="_blank" rel="noopener noreferrer">Fiserv Stock Seems Undervalued with a Potential Payments Infrastructure Business Sale Catalyst</a> <span class="src-domain">finance.yahoo.com</span></li><li><a href="https://capitalblueprint.substack.com/p/fiserv-inc-nasdaq-fisv-in-depth-financial" target="_blank" rel="noopener noreferrer">Fiserv, Inc. — In-Depth Financial Analysis Report</a> <span class="src-domain">capitalblueprint.substack.com</span></li><li><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm" target="_blank" rel="noopener noreferrer">Federal Reserve issues FOMC statement, 16 September 2026</a> <span class="src-domain">federalreserve.gov</span></li><li><a href="https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html" target="_blank" rel="noopener noreferrer">Fed rate decision September 2026: Rates rise to 3.75%-4%</a> <span class="src-domain">cnbc.com</span></li><li><a href="https://investor.pypl.com/news-and-events/events/event-details/2026/PayPals-Third-Quarter-2026-Earnings-Call/default.aspx" target="_blank" rel="noopener noreferrer">PayPal&#x27;s Third Quarter 2026 Earnings Call</a> <span class="src-domain">investor.pypl.com</span></li><li><a href="https://www.nasdaq.com/market-activity/stocks/gpn/earnings" target="_blank" rel="noopener noreferrer">Global Payments Inc. Common Stock (GPN) Earnings Report Dates &amp; Earnings Forecasts</a> <span class="src-domain">nasdaq.com</span></li></ul><p class="src-internal">Also checked against 16 company-fundamentals reads, 8 price-database queries, 1 research note in the author's own data.</p></details></footer></article></div></main><nav class="pager" aria-label="More"><a href="index.html">← More from DK Street Journal</a></nav><footer class="site-foot"><p class="short-notice">Not investment advice. Written by software, unreviewed, and possibly wrong. The author may hold positions. No liability accepted. <a href="index.html#disclaimer">Read the full disclaimer ›</a></p><p class="built">September 20, 2026 · 2:21 PM PDT</p></footer></div>
+</body>
+</html>
