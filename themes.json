@@ -19,7 +19,8 @@
     "Real Estate & Housing",
     "Transportation & Logistics",
     "Oil & Gas Services",
-    "Sports Entertainment"
+    "Sports Entertainment",
+    "Professional Information Services"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -298,6 +299,7 @@
     "4804bc75a3c248a5805608a63a7a6445": "Industrial Equipment & Mining",
     "48c1b0882f924b36a4a66484e22d57e3": "Enterprise Software & Cloud",
     "48c5812bd60f43248d7fb0de012f4bff": "IT Services & Consulting",
+    "48fe9e3dff6e442b96ac1c073a2e50f2": "Professional Information Services",
     "4944af59214c470ba4ee641ea919cc80": "Energy, Power & Utilities",
     "49880c6a3cda47748481dc45d942a08f": "AI Data-Center Infrastructure",
     "49b4b6401bb24a9d9b4255d8dc4c1359": "Enterprise Software & Cloud",
