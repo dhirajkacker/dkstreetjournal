@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T00:51:29Z",
+  "generated_at": "2026-09-22T05:56:52Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -18,9 +18,9 @@
     "Higher Education",
     "Real Estate & Housing",
     "Transportation & Logistics",
-    "Oil & Gas Services",
     "Sports Entertainment",
-    "Professional Information Services"
+    "Professional Information Services",
+    "Packaged Foods"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -28,7 +28,7 @@
     "011453380bb5496184d616d82060e4b8": "AI Data-Center Infrastructure",
     "0258c1e93e6340ad80cd17390b57c5b8": "Energy, Power & Utilities",
     "02936310661c43bab0b5cc9dc9426cf8": "Energy, Power & Utilities",
-    "0344e47927e848c6a819cc92a1cde498": "Oil & Gas Services",
+    "0344e47927e848c6a819cc92a1cde498": "Energy, Power & Utilities",
     "034c8063394f44b5b9468a6e4de13691": "Semiconductors & Chip Manufacturing",
     "036f84b616854aed9668caa0fa1c792a": "AI Data-Center Infrastructure",
     "040449d0aab34e1cbc6eea77ca368a18": "Energy, Power & Utilities",
@@ -609,6 +609,7 @@
     "9ad09d8d48c945ec82c1a3c4297d036e": "Energy, Power & Utilities",
     "9b0d3022de4c4b2eb34c9c9c4911847c": "Energy, Power & Utilities",
     "9c87b6b7db5749ebb8d9f6fa1648406a": "Energy, Power & Utilities",
+    "9c9b61ea1b974deaa0a9bedddb601a39": "Packaged Foods",
     "9cca58518e9e484aae37e381a688dbfe": "AI Data-Center Infrastructure",
     "9d0c596e371942e9a5437c15219b7935": "IT Services & Consulting",
     "9d11fe0c3ce84c919b4485034f373da8": "Financial Services & Payments",
