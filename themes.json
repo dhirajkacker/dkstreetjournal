@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T05:56:52Z",
+  "generated_at": "2026-09-23T07:03:55Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -18,9 +18,7 @@
     "Higher Education",
     "Real Estate & Housing",
     "Transportation & Logistics",
-    "Sports Entertainment",
-    "Professional Information Services",
-    "Packaged Foods"
+    "Professional Information Services"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -209,7 +207,7 @@
     "30719c27be984dacbe81bb365ea9c79e": "Energy, Power & Utilities",
     "30a4b2bd42344a59a56e65952f5b5f8b": "Retail & Consumer Services",
     "30abb4a636de4110a92dcf0975186a7d": "Industrial Equipment & Mining",
-    "30b1ad8747a4479db160c3d308478bbb": "Sports Entertainment",
+    "30b1ad8747a4479db160c3d308478bbb": "Digital Media & Advertising",
     "30df431a112440d98a4e63e9bc1b8d1f": "AI Data-Center Infrastructure",
     "30f0a316dd60451c8a2ef163538614fb": "Enterprise Software & Cloud",
     "31125fe80db247e08c3e712a20eed88a": "AI Data-Center Infrastructure",
@@ -600,6 +598,7 @@
     "98b22f083e9847e599de2b513ac59745": "Computer Hardware & Equipment",
     "98b4ff4dc38942c1b4dd68a133e68800": "Retail & Consumer Services",
     "98c439168ac148aeaf86417c049db303": "Retail & Consumer Services",
+    "98cde7b0f00c4a2b9139790d05ead917": "Energy, Power & Utilities",
     "98d4f1c14d5a4535bd6c8391420b4ed4": "Energy, Power & Utilities",
     "98f6ee07ed064aa7ac532272b7035c55": "AI Data-Center Infrastructure",
     "991cde3dc927407da9699f011461443d": "AI Data-Center Infrastructure",
@@ -614,7 +613,7 @@
     "9ad09d8d48c945ec82c1a3c4297d036e": "Energy, Power & Utilities",
     "9b0d3022de4c4b2eb34c9c9c4911847c": "Energy, Power & Utilities",
     "9c87b6b7db5749ebb8d9f6fa1648406a": "Energy, Power & Utilities",
-    "9c9b61ea1b974deaa0a9bedddb601a39": "Packaged Foods",
+    "9c9b61ea1b974deaa0a9bedddb601a39": "Retail & Consumer Services",
     "9cca58518e9e484aae37e381a688dbfe": "AI Data-Center Infrastructure",
     "9d0c596e371942e9a5437c15219b7935": "IT Services & Consulting",
     "9d11fe0c3ce84c919b4485034f373da8": "Financial Services & Payments",
