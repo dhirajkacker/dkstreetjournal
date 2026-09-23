@@ -18,7 +18,8 @@
     "Higher Education",
     "Real Estate & Housing",
     "Transportation & Logistics",
-    "Professional Information Services"
+    "Professional Information Services",
+    "Gaming & Betting"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -652,6 +653,7 @@
     "a5724daf3b4b4f64bee1cf6506dfb44c": "Industrial Equipment & Mining",
     "a5840d2191414c28ae1b4ae731101fb3": "AI Data-Center Infrastructure",
     "a589a6f31c974eda960680f4bf64b82f": "Enterprise Software & Cloud",
+    "a5aca143c60a46f1bbd647ab78e6b552": "Gaming & Betting",
     "a5d5412ea0e541e69652ccc71f0c4230": "AI Data-Center Infrastructure",
     "a636aaf6666046138bee40f3f2532fa6": "AI Data-Center Infrastructure",
     "a6679194cd234fd6ba8c0eab4a01ea98": "Enterprise Software & Cloud",
