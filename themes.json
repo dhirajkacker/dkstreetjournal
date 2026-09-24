@@ -19,7 +19,8 @@
     "Real Estate & Housing",
     "Transportation & Logistics",
     "Professional Information Services",
-    "Gaming & Betting"
+    "Gaming & Betting",
+    "Life Sciences Equipment"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -991,6 +992,7 @@
     "fa611078852b474c8a950d6b5dffd18e": "Financial Services & Payments",
     "fa853d87fa9d4ea8942369597d020ee2": "Energy, Power & Utilities",
     "fafe8e065bc14e0ebfe5b764767fa9f0": "Semiconductors & Chip Manufacturing",
+    "fb27ea97f8504a23a6818408cc0c50f2": "Life Sciences Equipment",
     "fb28ad7a050a48a5860c37ba2033452f": "Retail & Consumer Services",
     "fb3d1e942107412ab5b06a421b08895f": "Enterprise Software & Cloud",
     "fb7f1f185571436bb57f49c58b10189b": "Retail & Consumer Services",
