@@ -19,7 +19,8 @@
     "Real Estate & Housing",
     "Transportation & Logistics",
     "Waste Management",
-    "Private Credit & Lending"
+    "Private Credit & Lending",
+    "Gaming & Resorts"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -460,6 +461,7 @@
     "6f442bae7ea74709bef231a4565c3dd3": "AI Data-Center Infrastructure",
     "6f8bc00ca243495aa371513934121eac": "Enterprise Software & Cloud",
     "6fcc793e2bb14ea5a9403a031b44d857": "AI Data-Center Infrastructure",
+    "7009e990c1d144ad8deb5a4dcc6a05e2": "Gaming & Resorts",
     "709b50ae1c4a4e21820c76bb8e3ba8ef": "Energy, Power & Utilities",
     "70c2ea3129ba4cfe9afa53cc946e359e": "Energy, Power & Utilities",
     "70c4720916394e39a92fb15ab0a5f254": "Energy, Power & Utilities",
