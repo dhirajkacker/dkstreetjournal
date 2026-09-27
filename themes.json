@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T19:32:40Z",
+  "generated_at": "2026-09-27T20:38:54Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -18,7 +18,6 @@
     "Higher Education",
     "Real Estate & Housing",
     "Transportation & Logistics",
-    "Health Insurance",
     "Vehicle Salvage & Auctions"
   ],
   "assignments": {
@@ -323,7 +322,7 @@
     "4a93f9dca5bf43f29aa8cd9bcb4aa356": "Industrial Equipment & Mining",
     "4ac08bbeed4a492ca2cbd06c49e3cf42": "Healthcare & Medical",
     "4b4ace4813994606b28e819ca2f45ee2": "IT Services & Consulting",
-    "4b61f5ec77d646279ecf9b37339fdfd2": "Health Insurance",
+    "4b61f5ec77d646279ecf9b37339fdfd2": "Healthcare & Medical",
     "4b633043b90f4f10874e88787d8d18bd": "Industrial Equipment & Mining",
     "4b8e360c4a01428eb43aa7a6888c8aae": "Enterprise Software & Cloud",
     "4bdbe5738101463e91f1a37b92d24e54": "Enterprise Software & Cloud",
@@ -497,6 +496,7 @@
     "7762bec56d4741e7bdc402eeb633da80": "Financial Services & Payments",
     "776456fee69f40d2a78c2644365dfe5f": "Enterprise Software & Cloud",
     "7777f362339141ffb01e93687f6113b6": "Energy, Power & Utilities",
+    "77a558dc067e47d696d61e07b25a349d": "Enterprise Software & Cloud",
     "77b3170b37044296b5cb56ea61b6b942": "Energy, Power & Utilities",
     "780f25008af84281833f6f79341d2fc4": "Semiconductors & Chip Manufacturing",
     "7856f45800644a7f8c11747ff66cc148": "Retail & Consumer Services",
