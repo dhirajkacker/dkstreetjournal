@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T20:38:54Z",
+  "generated_at": "2026-09-28T23:30:02Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -17,8 +17,7 @@
     "Digital Media & Advertising",
     "Higher Education",
     "Real Estate & Housing",
-    "Transportation & Logistics",
-    "Vehicle Salvage & Auctions"
+    "Transportation & Logistics"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -234,6 +233,7 @@
     "32bd90f8ceff4308a40d27bc78626ae2": "Computer Hardware & Equipment",
     "32c4feab0f804bc9b8e2c53b4e400d73": "Retail & Consumer Services",
     "32ca361fc87e4cdb9e82278e78750bd9": "Enterprise Software & Cloud",
+    "33332e58fe4141028ebc7f8a941e8c03": "Enterprise Software & Cloud",
     "3372a1130e7143cdbc64f5e078aa778d": "IT Services & Consulting",
     "3404df09ee244eda98270e5f908ab742": "AI Data-Center Infrastructure",
     "344cd76e07464d5d8891fbac92f1b40d": "AI Data-Center Infrastructure",
@@ -530,7 +530,7 @@
     "8033c6f1770a4d19a44d689ab5fea27b": "Financial Services & Payments",
     "8077bb1219ca4ad99f8c12a774c5246c": "Financial Services & Payments",
     "80b2153fefea4f9da2f71344c782d167": "Retail & Consumer Services",
-    "80b72fb5a045432eb10a46a45b2fc962": "Vehicle Salvage & Auctions",
+    "80b72fb5a045432eb10a46a45b2fc962": "Transportation & Logistics",
     "81218198273c4cd1a37ff3b7084a573a": "Defense & Aerospace",
     "819e30b68c1542f683905ad0663608f9": "Energy, Power & Utilities",
     "81c8a662ab6c4082b37b12509bb41a23": "Defense & Aerospace",
