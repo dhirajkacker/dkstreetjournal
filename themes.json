@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T00:21:03Z",
+  "generated_at": "2026-10-04T07:00:05Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -16,8 +16,7 @@
     "Defense & Aerospace",
     "Higher Education",
     "Real Estate & Housing",
-    "Transportation & Logistics",
-    "Law Enforcement Equipment"
+    "Transportation & Logistics"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -941,9 +940,10 @@
     "dc933a14435245a194b322bf545015f8": "Financial Services & Payments",
     "dc9637999b154c43a34ef5241440a9c8": "AI Data-Center Infrastructure",
     "dc9cb7391a2f448ea79134bf6550caab": "Telecom & Networking",
-    "dd0ee6cab3a74aa6b6fdc0083ef09bec": "Law Enforcement Equipment",
+    "dd0ee6cab3a74aa6b6fdc0083ef09bec": "Defense & Aerospace",
     "dd137e6b59134914867907685dcaf481": "AI Data-Center Infrastructure",
     "dd18a0fa98bd47d68d3403e459b11ae3": "AI Data-Center Infrastructure",
+    "dd1c4e1c53084eae9be4958d8403bb02": "Energy, Power & Utilities",
     "dd3364b5067044d6a8d3fa3ccfc200fd": "Retail & Consumer Services",
     "dd4480af738d496cb2a506ededf6444a": "Healthcare & Medical",
     "dd7c7b44a2eb4bb9af035222ce3f1549": "Energy, Power & Utilities",
