@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T07:17:49Z",
+  "generated_at": "2026-10-07T00:56:13Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -20,10 +20,7 @@
     "Engineering & Construction",
     "Packaging & Materials",
     "Music & Streaming",
-    "Packaged Foods",
-    "Mining & Royalties",
-    "Metals & Mining",
-    "Industrial Real Estate"
+    "Metals & Mining"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -38,7 +35,7 @@
     "04399230dfbb473c8673608d31b9b9bc": "Semiconductors & Chip Manufacturing",
     "044e2dafe99d47e5a00335a0aee88a0a": "Enterprise Software & Cloud",
     "04d3f9b450704e7abe0da96d263b0043": "Industrial Equipment & Mining",
-    "05068925dfaa440597b23b75fa43a64c": "Industrial Real Estate",
+    "05068925dfaa440597b23b75fa43a64c": "Real Estate & Housing",
     "059bfae7d8704596b6c5f008a0afd237": "Financial Services & Payments",
     "05a9a063045845c395174be7c406af26": "Energy, Power & Utilities",
     "05d6ceb503864d2f9b302bb0d5c688dc": "Semiconductors & Chip Manufacturing",
@@ -84,7 +81,7 @@
     "0d0b48b6630343e69b504fda13578f7c": "AI Data-Center Infrastructure",
     "0d923c60be4d4f079b259da8fe473859": "Retail & Consumer Services",
     "0e625ea1855c44eaad51e94603585c52": "Semiconductors & Chip Manufacturing",
-    "0e9667e183dc43ac8cea9d5873a3ba4a": "Packaged Foods",
+    "0e9667e183dc43ac8cea9d5873a3ba4a": "Retail & Consumer Services",
     "0eb96487076448439b7e93581ac7bfb2": "AI Data-Center Infrastructure",
     "0ef192ad463e40cd84cb02df0249fc27": "Defense & Aerospace",
     "0f30891412c84349b8fd4f85c2537906": "AI Data-Center Infrastructure",
@@ -207,6 +204,7 @@
     "2a391efe593649e2ba01c01aef815b49": "Enterprise Software & Cloud",
     "2ab77d90bcb145239b39eb96283fc749": "Industrial Equipment & Mining",
     "2b1e5120e0d742e587eec81bf2564ae8": "Energy, Power & Utilities",
+    "2b4ae115dc374ec7b6a4686378d44510": "Financial Services & Payments",
     "2b7827088fd443eb85e63fa06e03b795": "Enterprise Software & Cloud",
     "2badd4697d7f471387c8f69f4283384e": "Real Estate & Housing",
     "2bcf8da0872d41ef961887e73d38080f": "AI Data-Center Infrastructure",
@@ -652,7 +650,7 @@
     "94d4d8505cd54b13af9eb4c1f82de8ed": "AI Data-Center Infrastructure",
     "94f8c19247704f90beabee330a12d7e5": "AI Data-Center Infrastructure",
     "95148396d306485285a737c77ecc8868": "AI Data-Center Infrastructure",
-    "95987062bce04b449f5e3e543b34e134": "Mining & Royalties",
+    "95987062bce04b449f5e3e543b34e134": "Metals & Mining",
     "959aa400d056430080b482fa9b259656": "Semiconductors & Chip Manufacturing",
     "95d22cf223a14f7a836affb8e05eff53": "Enterprise Software & Cloud",
     "95e0f704ba0c44ceb9e6b6cd2dfa4676": "Energy, Power & Utilities",
