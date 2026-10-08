@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T00:56:13Z",
+  "generated_at": "2026-10-08T14:52:17Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -19,9 +19,7 @@
     "Transportation & Logistics",
     "Engineering & Construction",
     "Packaging & Materials",
-    "Music & Streaming",
-    "Metals & Mining",
-    "Oil & Gas Services"
+    "Music & Streaming"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -596,7 +594,7 @@
     "862523602c87440585ee6821dab0b23d": "Retail & Consumer Services",
     "8646edc23d504e45bff65702a369f689": "Retail & Consumer Services",
     "86660f5843b84b4793b370a4b1a49a67": "AI Data-Center Infrastructure",
-    "8673fe02ad79494a8f10c2cb0caee112": "Metals & Mining",
+    "8673fe02ad79494a8f10c2cb0caee112": "Industrial Equipment & Mining",
     "86a21da84ebf43fe95515c80ece4319f": "Financial Services & Payments",
     "86ec51af118b4273b9026e1bc95ffd5a": "AI Data-Center Infrastructure",
     "87a915927878496a8ce2ca0961e5896f": "Packaging & Materials",
@@ -622,6 +620,7 @@
     "8c5f3b750d8b4ecaadce9a2aa61e5fb3": "Semiconductors & Chip Manufacturing",
     "8c9c8891218549baae72373d61d7ded5": "Real Estate & Housing",
     "8c9f654971ed4d14a076b142d92d2b5f": "Computer Hardware & Equipment",
+    "8cb0b37a28d447b1b8e36f28bc3cbc70": "IT Services & Consulting",
     "8cd99329a1c0475ab5bd8baf76f2eb4f": "Semiconductors & Chip Manufacturing",
     "8ce60431412b4b7094ab1a3324b4df82": "Retail & Consumer Services",
     "8d45c877fe0e4bcf90a6bcd2b406b43a": "Energy, Power & Utilities",
@@ -652,7 +651,7 @@
     "94d4d8505cd54b13af9eb4c1f82de8ed": "AI Data-Center Infrastructure",
     "94f8c19247704f90beabee330a12d7e5": "AI Data-Center Infrastructure",
     "95148396d306485285a737c77ecc8868": "AI Data-Center Infrastructure",
-    "95987062bce04b449f5e3e543b34e134": "Metals & Mining",
+    "95987062bce04b449f5e3e543b34e134": "Industrial Equipment & Mining",
     "959aa400d056430080b482fa9b259656": "Semiconductors & Chip Manufacturing",
     "95d22cf223a14f7a836affb8e05eff53": "Enterprise Software & Cloud",
     "95e0f704ba0c44ceb9e6b6cd2dfa4676": "Energy, Power & Utilities",
@@ -720,7 +719,7 @@
     "a23ae549978243d09224cf0d845fdd57": "Energy, Power & Utilities",
     "a28fa2f52b9b472596b934e5af9b5739": "Computer Hardware & Equipment",
     "a29668c8837543019dc6428f6c06ac80": "Semiconductors & Chip Manufacturing",
-    "a2b9c505dfaa4a9e80287ef63169b253": "Oil & Gas Services",
+    "a2b9c505dfaa4a9e80287ef63169b253": "Energy, Power & Utilities",
     "a2bc7df3294b4dbebf717dd5f4cee033": "Financial Services & Payments",
     "a36c70ef764f4db7987a55ffcefcc767": "Enterprise Software & Cloud",
     "a40023ee5e28452c98d298ed80f755c1": "Real Estate & Housing",
