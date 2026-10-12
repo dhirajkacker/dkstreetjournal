@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hertz&#x27;s Per-Car Depreciation Is Rising Twice as Fast as the Rate It Charges to Rent Them</title>
+<meta name="description" content="A car rental company&#x27;s revenue line cannot say whether renting cars is profitable, and at Hertz the two halves of the answer are now moving in opposite directions. Revenue per day reached $62.11 in…"/>
+<meta property="og:site_name" content="DK Street Journal"/>
+<meta property="og:title" content="Hertz&#x27;s Per-Car Depreciation Is Rising Twice as Fast as the Rate It Charges to Rent Them"/>
+<meta property="og:description" content="A car rental company&#x27;s revenue line cannot say whether renting cars is profitable, and at Hertz the two halves of the answer are now moving in opposite directions. Revenue per day reached $62.11 in…"/>
+<meta property="og:type" content="article"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://dkstreetjournal.com/a-2026-10-12-3709040f.html"/>
+<link rel="canonical" href="https://dkstreetjournal.com/a-2026-10-12-3709040f.html"/>
+<meta property="article:published_time" content="2026-10-12T23:14:51Z"/>
+<meta property="og:image" content="https://dkstreetjournal.com/assets/chart-HTZ-2026-10-12.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Hertz&#x27;s Per-Car Depreciation Is Rising Twice as Fast as the Rate It Charges to Rent Them"/>
+<meta name="twitter:description" content="A car rental company&#x27;s revenue line cannot say whether renting cars is profitable, and at Hertz the two halves of the answer are now moving in opposite directions. Revenue per day reached $62.11 in…"/>
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48 64x64" href="assets/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png"/><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"/><link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png"/>
+<style>
+:root{
+  --ink:#111418; --ink-soft:#454b54; --muted:#6b7280; --hair:#e3e6ea;
+  --bg:#fbfbfa; --card:#ffffff; --accent:#2563eb;
+  --bull:#15803d; --bear:#e11d48;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,
+    "Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,
+    Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:17px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1120px; margin:0 auto; padding:0 22px 72px}
+
+/* masthead */
+.masthead{text-align:center; padding:56px 0 26px; border-bottom:3px double var(--ink)}
+.lockup{
+  display:flex; align-items:center; justify-content:center;
+  gap:clamp(.34rem,1.2vw,.75rem); flex-wrap:nowrap;
+}
+/* The mark scales with the name it sits beside, so the lockup keeps
+   its proportions from phone to desktop instead of the monogram
+   swelling as the type shrinks. It now stands IN the wordline in
+   place of the word "DK", so it is sized against cap height. */
+.mark{display:block; flex:0 0 auto; line-height:0}
+.mark img{display:block; height:clamp(2.05rem,5.8vw,3.5rem); width:auto}
+/* ⚠️ Specificity, not just order. `.mark img` is (0,1,1) and a bare
+   `.mark-dark` is (0,1,0), so `display:block` won and BOTH marks
+   rendered — the cream one over white read as a ghosted second
+   monogram. The selectors below match `.mark img`'s weight and add a
+   class, so the toggle actually wins. */
+.mark img.mark-dark{display:none}
+.wordmark{
+  font-family:var(--serif); font-weight:700; letter-spacing:.02em;
+  font-size:clamp(1.9rem,5.4vw,3.6rem); line-height:1.05; margin:0;
+  text-transform:uppercase;
+}
+.wordmark-text{display:inline-block}
+/* Available to a screen reader, absent from the page. */
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+.tagline{
+  margin:.55rem 0 0; color:var(--muted); font-size:.82rem;
+  letter-spacing:.18em; text-transform:uppercase;
+}
+.masthead-meta{margin:.7rem 0 0; color:var(--muted); font-size:.8rem}
+
+/* ⚠️ An article page's nameplate is a LINK, and a link needs its own
+   rules. Without these the anchor fell back to browser defaults —
+   blue and underlined — and `.mark`'s `display:block` broke the line,
+   so the monogram sat alone above a centred blue "DK Street Journal".
+   It shipped that way because the front page uses `<h1 class="wordmark
+   lockup">` and I reused `.masthead` around a different element,
+   assuming the styling would carry. */
+.masthead-slim{padding:34px 0 22px}
+.masthead-slim .back{
+  display:inline-flex; align-items:center; justify-content:center;
+  gap:clamp(.3rem,1.1vw,.62rem);
+  font-family:var(--serif); font-weight:700; letter-spacing:.02em;
+  font-size:clamp(1.15rem,2.4vw,1.6rem); line-height:1;
+  color:var(--ink); text-decoration:none;
+}
+.masthead-slim .back:hover{color:var(--accent)}
+/* Smaller than the front page's nameplate: this one sits above a
+   single article, not over the whole paper. */
+.masthead-slim .mark img{height:clamp(1.45rem,3.2vw,2.1rem)}
+
+/* disclaimer — must not be skimmable past */
+.disclaimer{
+  margin:26px auto 0; max-width:82ch; padding:20px 22px; background:#fff8f1;
+  border:1px solid #f0d9c0; border-left:4px solid #c2410c; border-radius:6px;
+}
+.disc-head{
+  margin:0 0 .6rem; font-family:var(--sans); font-size:.78rem;
+  letter-spacing:.14em; text-transform:uppercase; color:#9a3412;
+}
+.disclaimer p{margin:.5rem 0; font-size:.86rem; line-height:1.6; color:var(--ink-soft)}
+.disclaimer strong{color:var(--ink)}
+.disc-closer{margin-top:.9rem !important; font-weight:600; color:var(--ink) !important}
+
+/* how it works */
+.how{margin:34px auto 0}
+.how h2{
+  font-family:var(--sans); font-size:.78rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 .8rem;
+}
+.how{max-width:74ch; margin-left:auto; margin-right:auto}
+.how p{margin:.6rem 0; font-size:.94rem; color:var(--ink-soft)}
+.how-lede strong{color:var(--ink)}
+.agents{margin:.6rem 0; padding-left:1.25rem}
+.agents li{margin:.4rem 0; font-size:.94rem; color:var(--ink-soft)}
+.agents strong{color:var(--ink)}
+.rule{border:0; border-top:1px solid var(--hair); margin:40px 0 0}
+
+/* articles
+   Text sits in a centred reading measure; the visuals break out to
+   the full width. Left-aligning the prose inside a 1120px wrap left a
+   dead gutter down the whole right-hand side of every article. */
+.article{padding:44px 0; border-bottom:1px solid var(--hair)}
+.article:last-child{border-bottom:0}
+.art-head,.dek,.body,.art-foot{max-width:68ch; margin-left:auto; margin-right:auto}
+.dateline{
+  margin:0 0 .5rem; color:var(--muted); font-size:.75rem;
+  letter-spacing:.1em; text-transform:uppercase;
+}
+.headline{
+  font-family:var(--serif); font-weight:700; margin:0;
+  font-size:clamp(1.6rem,3.6vw,2.3rem); line-height:1.18;
+  letter-spacing:-.008em;
+}
+/* The table of contents. Full-width like the visuals rather than
+   inside the 68ch measure — it is a scanning surface, not prose, and
+   at ~8 themes a single column would push the first article a screen
+   and a half down the page. `auto-fit` + `minmax` gives 3 columns on a
+   desktop and 1 on a phone with no media query and no JavaScript (the
+   site's CSP is `script-src 'none'`). */
+.toc{margin:1.6rem 0 0}
+.toc-head{
+  font-family:var(--sans); font-size:.72rem; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
+  margin:0 0 .9rem; display:flex; align-items:baseline; gap:.6rem;
+  border-bottom:1px solid var(--hair); padding-bottom:.5rem;
+}
+.toc-total{
+  font-weight:400; letter-spacing:.02em; text-transform:none;
+  font-size:.75rem;
+}
+.toc-grid{
+  display:grid; gap:1rem 1.6rem;
+  grid-template-columns:repeat(auto-fit,minmax(255px,1fr));
+}
+.toc-card{min-width:0}
+.toc-name{
+  font-family:var(--serif); font-size:1.02rem; font-weight:700;
+  margin:0 0 .4rem; line-height:1.25; color:var(--ink);
+  display:flex; align-items:baseline; gap:.45rem;
+}
+.toc-count{
+  font-family:var(--sans); font-size:.68rem; font-weight:600;
+  color:var(--muted); background:var(--hair); border-radius:999px;
+  padding:1px 7px; flex:none;
+}
+.toc-list{list-style:none; margin:0; padding:0}
+.toc-list li{
+  font-size:.86rem; line-height:1.4; margin:0 0 .35rem;
+  display:flex; gap:.5rem;
+}
+.toc-when{color:var(--muted); font-size:.72rem; flex:none; padding-top:.12rem}
+.toc-list a{color:var(--ink-soft); text-decoration:none}
+.toc-list a:hover{color:var(--accent); text-decoration:underline}
+/* The disclosure for the rest of a theme. Styled as a quiet control
+   rather than a label, because the old "+17 more below" read as a
+   statement and this is a button. */
+.toc-rest{margin:.1rem 0 0}
+.toc-rest > summary{
+  cursor:pointer; color:var(--muted); font-size:.75rem;
+  list-style:none; display:inline-flex; align-items:center; gap:.3rem;
+  padding:.15rem 0;
+}
+.toc-rest > summary::-webkit-details-marker{display:none}
+.toc-rest > summary::before{content:"▸"; font-size:.65rem}
+.toc-rest[open] > summary::before{content:"▾"}
+.toc-rest > summary:hover{color:var(--accent)}
+.toc-rest[open] > summary{margin-bottom:.35rem}
+/* The unsorted group is a holding pen, not a theme — it should read as
+   pending rather than as a peer of the real ones. */
+.toc-unsorted .toc-name{color:var(--muted); font-style:italic}
+
+/* The summary is a standfirst, not a caption. Editor v1.2 writes
+   ~120-150 words here, where v1.1 wrote ~50 — a size that reads as one
+   emphatic line collapses into a grey slab at three times the length.
+   So it takes a rule and a little indent: enough to stay distinct from
+   the body without competing with the headline above it. Briefs
+   published before v1.2 keep their short summary and simply occupy
+   less of the same frame. */
+/* Provenance sits between the headline and the summary — close enough
+   to the headline to be read as a byline, quiet enough not to compete
+   with it. Sized below the dateline above it so the header reads
+   top-down in decreasing weight. */
+.provenance{
+  margin:.55rem 0 0; font-family:var(--sans); font-size:.72rem;
+  color:var(--muted); letter-spacing:.01em; line-height:1.5;
+}
+.prov-role{
+  text-transform:uppercase; letter-spacing:.08em; font-size:.64rem;
+  color:var(--hair-ink,#9aa3ad); font-weight:600;
+}
+
+.dek{
+  margin:1rem 0 0; padding:0 0 0 .95rem;
+  border-left:3px solid var(--hair);
+}
+.dek p{
+  margin:0 0 .55rem; font-size:1.02rem; line-height:1.6;
+  color:var(--ink-soft);
+}
+.dek p:last-child{margin-bottom:0}
+
+/* The permalink sits above the dateline, right-aligned and quiet. It
+   is a utility, not part of the article — it exists so a reader can
+   right-click and send the piece to someone. */
+.entry{position:relative}
+.permabar{
+  max-width:68ch; margin:0 auto; text-align:right;
+  font-size:.72rem; line-height:1; height:0;
+}
+.permalink{
+  color:var(--muted); text-decoration:none; letter-spacing:.03em;
+  position:relative; top:.15rem;
+}
+.permalink:hover{color:var(--accent); text-decoration:underline}
+.entry:target .headline{
+  /* Landing from a shared link should show you WHICH article you
+     were sent, or the jump reads as an ordinary scroll position. */
+  box-shadow:-.6rem 0 0 var(--accent);
+}
+
+.pager{
+  display:flex; flex-wrap:wrap; align-items:center; gap:.4rem;
+  justify-content:center; margin:2.5rem auto 0; max-width:68ch;
+  padding-top:1.4rem; border-top:1px solid var(--hair);
+}
+.pager a,.pager span{
+  font-size:.82rem; padding:.36rem .6rem; border-radius:4px;
+  text-decoration:none; color:var(--ink-soft);
+}
+.pager a:hover{background:var(--hair); color:var(--accent)}
+.pg-num{min-width:2rem; text-align:center}
+.pg-here{background:var(--accent); color:#fff; font-weight:600}
+.pg-off{color:var(--hair)}
+.pg-gap{padding:.36rem .2rem; color:var(--muted)}
+.short-notice{margin:0 0 .5rem}
+.short-notice a{color:var(--muted); white-space:nowrap}
+.chips{display:flex; flex-wrap:wrap; gap:6px; margin:1rem 0 0}
+.chip{
+  font-size:.7rem; letter-spacing:.04em; color:var(--muted);
+  background:#f1f3f5; border:1px solid var(--hair);
+  border-radius:999px; padding:2px 9px; white-space:nowrap;
+}
+.chip-ticker{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-weight:600; color:var(--ink); background:#fff;
+}
+.body{margin:1.6rem auto 0}
+.body p{margin:0 0 1.05rem}
+.body h2,.body h3{
+  font-family:var(--serif); margin:2rem 0 .6rem; line-height:1.25;
+}
+.body h2{font-size:1.28rem}
+.body h3{font-size:1.1rem}
+.body a{color:var(--accent); text-decoration:underline;
+  text-underline-offset:2px; text-decoration-thickness:1px}
+.body a:hover{background:#eff4ff}
+.body ul,.body ol{margin:0 0 1.05rem; padding-left:1.3rem}
+.body li{margin:.3rem 0}
+.body blockquote{
+  margin:1.2rem 0; padding:.2rem 0 .2rem 1rem;
+  border-left:3px solid var(--hair); color:var(--ink-soft);
+}
+.body table{border-collapse:collapse; width:100%; font-size:.9rem; margin:1.2rem 0}
+.body th,.body td{border-bottom:1px solid var(--hair); padding:6px 8px; text-align:left}
+
+/* visuals */
+.visuals{margin:2.2rem 0 0}
+.visuals-lede{margin:1.5rem 0 0}
+.visuals-lede .vis-head{margin-top:1.3rem}
+.vis-head{
+  font-family:var(--sans); font-size:.72rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted);
+  margin:1.8rem 0 .7rem; padding-bottom:.4rem;
+  border-bottom:1px solid var(--hair);
+}
+.vis-note{margin:.5rem 0 0; font-size:.76rem; color:var(--muted)}
+.strip,.table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch}
+.strip table,.table-wrap table{min-width:520px}
+.chart-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+@media (max-width:900px){.chart-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.chart-grid{grid-template-columns:1fr}}
+
+/* disclosures */
+.art-foot{margin:1.8rem auto 0; display:flex; flex-direction:column; gap:.5rem}
+.disclosure{
+  border:1px solid var(--hair); border-radius:6px;
+  background:var(--card); padding:0;
+}
+.disclosure summary{
+  cursor:pointer; padding:9px 13px; font-size:.78rem; color:var(--muted);
+  letter-spacing:.06em; text-transform:uppercase; list-style:none;
+}
+.disclosure summary::-webkit-details-marker{display:none}
+.disclosure summary::before{content:"\25B8  "; color:var(--muted)}
+.disclosure[open] summary::before{content:"\25BE  "}
+.disclosure[open] summary{border-bottom:1px solid var(--hair)}
+.sources{margin:0; padding:10px 13px 12px 30px; font-size:.82rem}
+.sources li{margin:.3rem 0; color:var(--ink-soft)}
+.src-internal{
+  margin:0; padding:8px 13px 12px; color:var(--muted);
+  font-size:.78rem; line-height:1.5; border-top:1px solid var(--hair);
+}
+.src-domain{color:var(--muted); font-size:.74rem}
+.sources a{color:var(--accent)}
+.hyp{margin:0; padding:10px 15px; color:var(--ink-soft); font-size:.9rem}
+.hyp p{margin:.4rem 0}
+.hyp-meta{
+  margin:10px 15px 0; font-size:.72rem; color:var(--muted);
+  letter-spacing:.05em; text-transform:uppercase;
+}
+
+/* footer */
+.site-foot{margin:52px auto 0; padding-top:22px; border-top:3px double var(--ink)}
+.site-foot{max-width:74ch; margin-left:auto; margin-right:auto}
+.site-foot p{margin:.3rem 0; font-size:.78rem; color:var(--muted)}
+.built{color:#9aa1ab !important}
+.empty{color:var(--muted); padding:40px 0}
+
+@media (prefers-color-scheme:dark){
+  :root{
+    --ink:#e8eaed; --ink-soft:#b9bfc7; --muted:#8b939d; --hair:#2a2f36;
+    --bg:#14171a; --card:#1b1f24; --accent:#7aa7ff;
+  }
+  /* A PNG cannot recolour itself, so the navy mark is swapped for
+     the near-white one rather than filtered — a CSS invert would take
+     the gold slash with it and turn it blue. */
+  .mark img.mark-light{display:none}
+  .mark img.mark-dark{display:block}
+  .disclaimer{background:#2a1c12; border-color:#5c3a1e; border-left-color:#ea8c4b}
+  .disc-head{color:#f0a868}
+  .chip{background:#22272e}
+  .chip-ticker{background:#1b1f24}
+  .body a:hover{background:#1e2a44}
+  /* The chart cards and tables carry their own light ground; keep
+     them on white rather than letting dark text land on it. */
+  .strip,.chart-grid,.table-wrap{
+    background:#fff; border-radius:8px; padding:10px; color:#111418;
+  }
+}
+
+/* --- Search ------------------------------------------------------- */
+.mast-search{margin:14px auto 0; max-width:34rem}
+.masthead-slim + .mast-search{margin:10px 0 0}
+.mast-search input{
+  width:100%; box-sizing:border-box; padding:8px 12px;
+  font:inherit; font-size:.95rem; color:inherit;
+  background:transparent; border:1px solid #c9c2b4; border-radius:8px;
+}
+.mast-search input:focus{outline:2px solid #1d3557; outline-offset:1px}
+.search-main{max-width:68ch; margin:0 auto}
+.sr-status{color:#6b6455; font-size:.92rem; margin:18px 0 6px}
+.search-results{list-style:none; margin:0; padding:0}
+.search-results li{margin:0 0 22px; padding:0}
+.sr-meta{color:#6b6455; font-size:.82rem; letter-spacing:.02em;
+  text-transform:uppercase; margin:0 0 2px}
+.sr-title{margin:0; font-size:1.08rem; line-height:1.35}
+.sr-title a{color:inherit; text-decoration:none}
+.sr-title a:hover{text-decoration:underline}
+.sr-sum{color:#4c463a; margin:3px 0 0; font-size:.95rem; line-height:1.5}
+@media (prefers-color-scheme: dark){
+  .mast-search input{border-color:#3a3f46}
+  .mast-search input:focus{outline-color:#8fb4e8}
+  .sr-status,.sr-meta{color:#9aa3ad}
+  .sr-sum{color:#b7bec7}
+}
+
+/* --- The setup panel (v1.6 structured closer) --------------------- */
+.setup-panel{margin:26px 0 8px; padding:16px 18px; border:1px solid #d9d2c2;
+  border-radius:9px; background:rgba(0,0,0,0.015)}
+.setup-head{margin:0 0 10px; font-size:.8rem; font-weight:650;
+  letter-spacing:.09em; text-transform:uppercase; color:#6b6455}
+.setup-row{display:grid; grid-template-columns:9.5rem 1fr; gap:10px;
+  padding:5px 0; font-size:.92rem; line-height:1.5}
+.setup-k{color:#6b6455; font-weight:600}
+@media (max-width:560px){ .setup-row{grid-template-columns:1fr} }
+@media (prefers-color-scheme: dark){
+  .setup-panel{border-color:#3a3f46; background:rgba(255,255,255,0.03)}
+  .setup-head,.setup-k{color:#9aa3ad}
+}
+</style>
+</head>
+<body>
+<div class="wrap"><header class="masthead masthead-slim"><a class="back" href="index.html"><span class="mark" aria-hidden="true"><img class="mark-light" src="assets/mark-navy.png" alt=""/><img class="mark-dark" src="assets/mark-cream.png" alt=""/></span><span>DK Street Journal</span></a></header><form class="mast-search" action="search.html" method="get" role="search"><input type="search" name="q" placeholder="Search companies, tickers, sectors…" aria-label="Search articles" maxlength="200"/></form><hr class="rule"/><main class="feed"><div class="entry"><article class="article" id="a-3709040f729642518c6891f23a10ce67"><header class="art-head"><p class="dateline"><time datetime="2026-10-12T23:14:51Z">October 12, 2026 · 4:14 PM PDT</time></p><h2 class="headline">Hertz&#x27;s Per-Car Depreciation Is Rising Twice as Fast as the Rate It Charges to Rent Them</h2><p class="provenance"><span class="prov-role">Hypothesis</span> Opus 5 · <span class="prov-role">Research</span> Opus 5 · <span class="prov-role">Writing</span> Opus 5 · <span class="prov-role">Prompt</span> v1.7</p><div class="dek"><p>A car rental company's revenue line cannot say whether renting cars is profitable, and at Hertz the two halves of the answer are now moving in opposite directions. Revenue per day reached $62.11 in the June quarter, up 9% from a year earlier, while the monthly depreciation charge on each vehicle rose 18% to $302 — a cost that is management's own estimate of what a car bought a year or two ago will fetch second-hand, revised prospectively.</p>
+<p>The June guidance cut that turned April gains on vehicle sales into May losses forced a $100m equity sale at $2.70 and drew a securities class action. The unit economics explain Hertz. They do not explain Avis Budget, whose per-unit fleet cost fell 4% to $290 a month while utilisation hit a second-quarter record of 72.6%, or Ryder, where used-truck prices still sit above the residuals it books.</p></div><div class="chips"><span class="chip chip-ticker">HTZ</span><span class="chip chip-ticker">CAR</span><span class="chip chip-ticker">R</span><span class="chip">Used Vehicle Residuals</span><span class="chip">Rental Fleet Economics</span><span class="chip">Wholesale Auto Auctions</span><span class="chip">Fleet Debt Leverage</span></div></header><section class="visuals visuals-lede"><div class="strip"><table style="width:100%;border-collapse:collapse;font-size:0.86rem;line-height:1.35"><thead><tr style="color:#94a3b8;font-size:0.74rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Ticker</th><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Company</th><th style="text-align:left;padding:0 8px 3px 0;font-weight:600">Segment</th><th style="text-align:left;padding:0 8px 3px;font-weight:600">Trend · 13mo</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">30D</th><th style="text-align:right;padding:0 0 3px 6px;font-weight:600;white-space:nowrap">1Y</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">HTZ</code></td><td style="padding:4px 8px 4px 0">Hertz Global</td><td style="padding:4px 8px 4px 0;color:#64748b">Vehicle &amp; Truck Rental</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#dc26261a;color:#dc2626;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🔴 Cont. Bear</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−6.1%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−66.3%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">CAR</code></td><td style="padding:4px 8px 4px 0">Avis Budget</td><td style="padding:4px 8px 4px 0;color:#64748b">Vehicle &amp; Truck Rental</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#dc26261a;color:#dc2626;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🔴 Cont. Bear</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−11.5%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−29.7%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:4px 8px 4px 0;white-space:nowrap"><code style="font-weight:600">R</code></td><td style="padding:4px 8px 4px 0">Ryder System</td><td style="padding:4px 8px 4px 0;color:#64748b">Vehicle &amp; Truck Rental</td><td style="padding:4px 8px;white-space:nowrap"><span style="background:#16a34a1a;color:#16a34a;padding:2px 8px;border-radius:999px;font-size:0.85em;font-weight:600;white-space:nowrap;">🟢 Cont. Bull</span></td><td style="padding:4px 6px;text-align:right;white-space:nowrap"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−1.5%</span></td><td style="padding:4px 0 4px 6px;text-align:right;white-space:nowrap"><span style="color:#15803d;font-variant-numeric:tabular-nums">+33.4%</span></td></tr></tbody></table></div><h3 class="vis-head">12-month price &amp; trend</h3><div class="chart-grid"><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">HTZ</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Hertz Global</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">1.85</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−0.07 (−3.65%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#e11d48;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-HTZ-2026-10-12.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="HTZ 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Vehicle &amp; Truck Rental</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">CAR</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Avis Budget</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">105</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−0.88 (−0.83%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#e11d48;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-CAR-2026-10-12.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="CAR 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Vehicle &amp; Truck Rental</div></div><div style="background:#ffffff;border-radius:10px;overflow:hidden;border:1px solid #e8ecf1;box-shadow:0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);margin-bottom:14px"><div style="padding:11px 13px 7px"><div style="display:flex;align-items:flex-start;gap:7px"><div style="min-width:0"><div style="color:#0f172a;font-weight:700;font-size:0.92rem;letter-spacing:0.01em;line-height:1.2">R</div><div style="color:#64748b;font-size:0.72rem;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Ryder System</div></div><div style="text-align:right;margin-left:auto"><div style="color:#0f172a;font-size:1.18rem;font-weight:700;line-height:1.15;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">238</div><div style="color:#e11d48;font-size:0.66rem;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap">−1.04 (−0.44%)</div><div style="color:#94a3b8;font-size:0.55rem;letter-spacing:0.03em;text-align:right;white-space:nowrap">vs. prior close</div></div></div><div style="height:2px;width:26px;background:#15803d;margin-top:7px;border-radius:1px"></div></div><div style="display:flex;flex-wrap:wrap;gap:2px 9px;padding:4px 13px 0;color:#64748b;font-size:0.6rem;line-height:1.4"><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #2563eb;vertical-align:middle;margin-right:3px"></span>Price</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dotted #7c8ba1;vertical-align:middle;margin-right:3px"></span>20d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:1px dashed #475569;vertical-align:middle;margin-right:3px"></span>50d</span><span style="white-space:nowrap"><span style="display:inline-block;width:11px;border-top:2px solid #172033;vertical-align:middle;margin-right:3px"></span>150d</span></div><img src="assets/chart-R-2026-10-12.png" loading="lazy" decoding="async" style="width:100%;display:block" alt="R 12-month price"/><div style="padding:6px 13px 11px;color:#64748b;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase">Vehicle &amp; Truck Rental</div></div></div><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px;font-weight:600;white-space:nowrap">Ticker</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">Mkt cap</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/E fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/S fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">P/GP fwd</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">EV/EBITDA</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FCF yld</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">HTZ</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$584.1M</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">—</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.1x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.5x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">7.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">-1449.2%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">CAR</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$3.7B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">n/m</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">34.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">1.0x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">5.8x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">-307.1%</td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">R</code></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">$9.1B</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">19.3x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">16.2x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">0.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">3.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">3.6x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">4.7x</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums">7.5%</td></tr></tbody></table></div></section><section class="visuals visuals-tables"><h3 class="vis-head">Consensus projections</h3><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:0.82rem;line-height:1.3"><thead><tr style="color:#94a3b8;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em"><th style="text-align:left;padding:0 6px 3px 0;font-weight:600">Ticker</th><th style="text-align:left;padding:0 6px 3px;font-weight:600"></th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2026E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2027E</th><th style="text-align:right;padding:0 6px 3px;font-weight:600;white-space:nowrap">FY2028E</th></tr></thead><tbody><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">HTZ</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+8.2%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+3.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+3.2%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−58.3%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−93.4%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−829.6%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">CAR</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−0.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+1.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+2.7%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#dc2626;font-variant-numeric:tabular-nums">−54.1%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+90.5%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+36.0%</span></td></tr><tr style="border-top:1px solid rgba(148,163,184,0.22)"><td style="padding:3px 6px 3px 0;white-space:nowrap"><code style="font-weight:600">R</code></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">Revenue</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+7.0%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+5.1%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+6.9%</span></td></tr><tr style=""><td style="padding:3px 6px 3px 0"></td><td style="padding:3px 6px;color:#64748b;white-space:nowrap">EPS</td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+13.9%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+20.1%</span></td><td style="padding:3px 6px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums"><span style="color:#15803d;font-variant-numeric:tabular-nums">+18.6%</span></td></tr></tbody></table></div><p class="vis-note">Forward fiscal years only. Blank means no analyst coverage for that year.</p></section><div class="body"><p>Hertz is charging more for a day's rental than in any second quarter on record outside the 2022 travel boom, and its cars are still getting more expensive to own. <a href="https://newsroom.hertz.com/press-releases/press-release-details/hertz-announces-q2-2026-results-highlights-strong-commercial-momentum-and-continued-transformation-progress/" rel="noopener noreferrer">Revenue per day reached $62.11</a> in the June quarter, up 9% year over year, on total utilisation of 79% from a fleet 1% smaller than a year earlier. Over the same three months, <a href="https://www.sec.gov/Archives/edgar/data/0001657853/000165785326000045/q22026earningsrelease.htm" rel="noopener noreferrer">net depreciation per unit ran $302 a month against $256</a>, an 18% increase that the company attributed in part to the non-recurrence of prior-year tariff-related benefits.</p>
+<p>That $302 is not a price anyone paid. It is Hertz's own estimate of what a vehicle bought twelve to twenty-four months ago will be worth when it is sold, charged monthly and revised prospectively, which means one change in residual assumptions moves reported profit without a single additional rental. The June warning was widely read as a passing used-car blip. In September the <a href="https://www.coxautoinc.com/press-releases/q3-2026-muvvi-press-release/" rel="noopener noreferrer">Manheim Used Vehicle Value Index printed 205.9</a>, 0.6% below a year earlier on an adjusted basis and the first year-on-year decline of 2026, and Cox Automotive <a href="https://www.cnbc.com/2026/10/07/used-cars-manheim-index.html" rel="noopener noreferrer">cut its full-year forecast for the index from a 2% gain to roughly 0.2%</a>.</p>
+<h2>The $4 that came from the auction lane, not the counter</h2>
+<p>Hertz's gross depreciation per unit was $298 for the quarter. The gap to the $302 net figure came, <a href="https://s204.q4cdn.com/384814028/files/doc_financials/2026/q2/Q2-2026-Earnings-Prepared-Remarks-08-06-2026.pdf" rel="noopener noreferrer">in the company's prepared remarks of 6 August</a>, from "the loss on sale of a concentrated mix of older vehicles and pressure on the wholesale market dynamics that have since normalized." The same remarks said the fleet strategy "should continue to yield strong near-term results and solidify the ability to deliver net DPU below $300 per month," with about 94% of the US core fleet model year 2025 or 2026 — a younger, smaller book rebuilt after the electric-vehicle write-down cycle.</p>
+<p>"We're staying focused on what we can control, our fleet, our cost, our revenue performance, and the customer experience we deliver," chief executive Gil West told investors on the August 6 call.</p>
+<p>The cost of getting the estimate wrong was demonstrated in June, when Hertz <a href="https://www.cbtnews.com/hertz-dampens-guidance/" rel="noopener noreferrer">guided net depreciation per unit to roughly $300</a> because used-car softness converted April gains on vehicle sales into May losses, and trimmed adjusted corporate EBITDA guidance to $50m–$80m. On 24 June it <a href="https://www.tipranks.com/news/company-announcements/hertz-global-prices-exchangeable-notes-and-equity-offering" rel="noopener noreferrer">priced 37,037,037 shares at $2.70 to raise $100m</a> alongside $300m of exchangeable notes; diluted shares went from 314m in March to 418m in June. A <a href="https://www.morningstar.com/news/business-wire/20260820798939/htz-investor-reminder-hertz-global-holdings-inc-investors-have-until-september-22-2026-to-contact-kirby-mcinerney-llp-to-seek-lead-plaintiff-role" rel="noopener noreferrer">securities class action followed</a>, alleging that recurring used-market weakness was materially depressing both metrics.</p>
+<p>The shares have fallen 73.5% in six months, from $6.99 in mid-April to $1.85, and the downtrend began on 10 June, two weeks before the capital raise was announced.</p>
+<h2>A thin equity sliver is not a cheap enterprise</h2>
+<p>At $1.85 the equity is worth $584m. Trailing earnings are negative, consensus still has 2026 at -$0.77 a share, and book equity is negative, so the only workable anchor is enterprise value against EBITDA: 7.03x trailing, which is dearer than Avis Budget at 5.83x. The low share price reflects what is left over after the fleet debt, not a discount on the business.</p>
+<h2>Avis cut its cost per car and fell harder</h2>
+<p>Avis Budget, which rents under the Avis, Budget, Payless and Zipcar brands, ran the meter the other way. <a href="https://www.sec.gov/Archives/edgar/data/0000723612/000072361226000037/a03-pressreleasexq2f26.htm" rel="noopener noreferrer">Per-unit fleet cost fell 4% to $290 a month</a> excluding currency, <a href="https://www.investing.com/news/company-news/avis-budget-q2-2026-slides-show-margin-gains-despite-revenue-miss-93CH-4820649" rel="noopener noreferrer">revenue per day held flat at $67.84</a>, and a 5% smaller average fleet lifted <a href="https://www.stocktitan.net/news/CAR/avis-budget-group-reports-second-quarter-2026-f43tj6wlbfw3.html" rel="noopener noreferrer">utilisation 1.9 points to a second-quarter record 72.6%</a>. Its shares are down 74.5% in six months, but the starting point was a closing peak of $713.97 on 21 April, after which <a href="https://www.benzinga.com/trading-ideas/movers/26/04/52000824/avis-budget-group-plummets-as-fugazi-research-alleges-manufactured-short-squeeze" rel="noopener noreferrer">Fugazi Research alleged a manufactured squeeze</a> built on holdings of more than 49% by SRS Investment Management and about 20% by Pentwater Capital; the stock lost 67.9% across two sessions. Measured from a year ago it is down 32.4%, with unit costs lower and utilisation at a record — the part of the decline the fundamentals do not account for.</p>
+<p>Avis still carries the residual risk on about 84% of its fleet and <a href="https://www.sec.gov/Archives/edgar/data/0000723612/000072361226000039/car-20260630.htm" rel="noopener noreferrer">$19,850m of vehicle-programme debt</a> struck against those same values. A one-percent residual error across the book is roughly $200m by that arithmetic, about 5% of the $3.71bn equity.</p>
+<h2>Ryder's residuals have not turned</h2>
+<p>Ryder is barely a rental company in earnings terms. <a href="https://www.benzinga.com/news/26/07/60646206/ryder-system-q2-2026-earnings-call-complete-transcript" rel="noopener noreferrer">More than 90% of its revenue sits under long-term contracts</a>, lease capital spending is guided to <a href="https://www.marketbeat.com/instant-alerts/ryder-system-q2-earnings-call-highlights-2026-07-23/" rel="noopener noreferrer">$1.9bn against $200m for rental</a>, and <a href="https://newsroom.ryder.com/news/news-details/2026/Ryder-Reports-Second-Quarter-2026-Results/default.aspx" rel="noopener noreferrer">used truck and tractor prices rose 6% and 3%</a>, still above the residual estimates it books for depreciation. Its stock is up 30.5% over twelve months; the 11.7% three-month slide left the multiple almost untouched at 19.28x trailing against 20.37x in early May, and the 29 September downgrade from Baird's Dan Moore <a href="https://www.investing.com/news/analyst-ratings/baird-downgrades-ryder-stock-rating-on-elevated-expectations-93CH-4921728" rel="noopener noreferrer">cited elevated expectations</a> rather than residual values.</p>
+<p>The lag is the thing to watch there. September's weakness was concentrated where Ryder's book lives: non-electric wholesale prices fell 1.7% while electric values rose, and with diesel at record prices the <a href="https://www.cbtnews.com/wholesale-used-vehicle-prices-fall" rel="noopener noreferrer">days' supply of diesel vehicles reached 39, up 27% year over year</a>. A full-service lease signed three years ago was priced off an assumed Class 8 residual, and that assumption pays out only when the truck is sold.</p>
+<p>Ryder reports on 22 October, the first of the three and the first look at whether used-truck proceeds held above booked residuals through the September decline. Hertz follows on 5 November, when the quarter that contains that decline finally shows up in the only number that matters at its counter: what a car cost to own while someone else was driving it.</p></div><footer class="art-foot"><aside class="setup-panel"><p class="setup-head">The setup</p><div class="setup-row"><span class="setup-k">Where it stands</span><span>Hertz&#x27;s monthly depreciation per vehicle rose 18% to $302 while revenue per day rose 9%; Avis&#x27;s per-unit cost fell 4%; Ryder&#x27;s used-truck prices sit above booked residuals.</span></div><div class="setup-row"><span class="setup-k">Would confirm</span><span>Hertz net depreciation per unit above $300 a month in the third quarter, or further losses on vehicle disposals.</span></div><div class="setup-row"><span class="setup-k">Would invalidate</span><span>Hertz net depreciation per unit below $300 with revenue per day still rising, or Manheim values returning above year-ago levels.</span></div><div class="setup-row"><span class="setup-k">Watch next</span><span>Ryder reports third-quarter results on 22 October, Avis Budget on 3 November and Hertz on 5 November.</span></div><div class="setup-row"><span class="setup-k">Valuation</span><span>Hertz at 7.03x trailing enterprise value to EBITDA, dearer than Avis Budget&#x27;s 5.83x; no usable price-to-earnings, with 2026 consensus at -$0.77.</span></div></aside><details class="disclosure"><summary>Sources (63)</summary><ul class="sources"><li><a href="https://www.sec.gov/Archives/edgar/data/0001657853/000165785326000045/q22026earningsrelease.htm" target="_blank" rel="noopener noreferrer">HERTZ GLOBAL HOLDINGS, INC - Form 8-K - Q2 2026 earnings release</a> <span class="src-domain">sec.gov</span></li><li><a href="https://newsroom.hertz.com/press-releases/press-release-details/hertz-announces-q2-2026-results-highlights-strong-commercial-momentum-and-continued-transformation-progress/" target="_blank" rel="noopener noreferrer">Hertz Announces Q2 2026 Results, Highlights Strong Commercial Momentum and Continued Transformation Progress</a> <span class="src-domain">newsroom.hertz.com</span></li><li><a href="https://s204.q4cdn.com/384814028/files/doc_financials/2026/q2/Q2-2026-Earnings-Prepared-Remarks-08-06-2026.pdf" target="_blank" rel="noopener noreferrer">Hertz Global Holdings, Inc. Q2 2026 Prepared Remarks (6 August 2026)</a> <span class="src-domain">s204.q4cdn.com</span></li><li><a href="https://finance.yahoo.com/quote/HTZ/earnings/HTZ-Q2-2026-earnings_call-662248.html" target="_blank" rel="noopener noreferrer">Hertz Global Holdings, Inc (HTZ) Q2 FY2026 earnings call transcript</a> <span class="src-domain">finance.yahoo.com</span></li><li><a href="https://www.cbtnews.com/hertz-dampens-guidance/" target="_blank" rel="noopener noreferrer">Hertz lowers Q2 guidance amid struggling used-car market</a> <span class="src-domain">cbtnews.com</span></li><li><a href="https://www.tipranks.com/news/company-announcements/hertz-global-prices-exchangeable-notes-and-equity-offering" target="_blank" rel="noopener noreferrer">Hertz Global prices exchangeable notes and equity offering</a> <span class="src-domain">tipranks.com</span></li><li><a href="https://www.morningstar.com/news/business-wire/20260820798939/htz-investor-reminder-hertz-global-holdings-inc-investors-have-until-september-22-2026-to-contact-kirby-mcinerney-llp-to-seek-lead-plaintiff-role" target="_blank" rel="noopener noreferrer">HTZ Investor Reminder: Hertz Global Holdings securities class action</a> <span class="src-domain">morningstar.com</span></li><li><a href="https://s204.q4cdn.com/384814028/files/doc_news/Hertz-Global-Holdings-Inc--to-Announce-Third-Quarter-2026-Financial-Results-on-November-5-2026-2026.pdf" target="_blank" rel="noopener noreferrer">Hertz Global Holdings, Inc. to Announce Third Quarter 2026 Financial Results on November 5, 2026</a> <span class="src-domain">s204.q4cdn.com</span></li><li><a href="https://www.sec.gov/Archives/edgar/data/0000723612/000072361226000037/a03-pressreleasexq2f26.htm" target="_blank" rel="noopener noreferrer">AVIS BUDGET GROUP, INC. - Form 8-K - Q2 2026 press release</a> <span class="src-domain">sec.gov</span></li><li><a href="https://www.investing.com/news/company-news/avis-budget-q2-2026-slides-show-margin-gains-despite-revenue-miss-93CH-4820649" target="_blank" rel="noopener noreferrer">Avis Budget Q2 2026 slides show margin gains despite revenue miss</a> <span class="src-domain">investing.com</span></li><li><a href="https://www.stocktitan.net/news/CAR/avis-budget-group-reports-second-quarter-2026-f43tj6wlbfw3.html" target="_blank" rel="noopener noreferrer">Avis Budget Group Rental Utilization Hits 72.6%, a Q2 Record</a> <span class="src-domain">stocktitan.net</span></li><li><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-avis-budget-group-q2-2026-misses-forecasts-as-stock-falls-93CH-4820599" target="_blank" rel="noopener noreferrer">Earnings call transcript: Avis Budget Group Q2 2026 misses forecasts as stock falls</a> <span class="src-domain">investing.com</span></li><li><a href="https://www.sec.gov/Archives/edgar/data/0000723612/000072361226000039/car-20260630.htm" target="_blank" rel="noopener noreferrer">AVIS BUDGET GROUP, INC. - Form 10-Q - Q2 FY2026</a> <span class="src-domain">sec.gov</span></li><li><a href="https://www.sec.gov/Archives/edgar/data/0000723612/000072361226000028/car-20260331.htm" target="_blank" rel="noopener noreferrer">AVIS BUDGET GROUP, INC. - Form 10-Q - Q1 FY2026</a> <span class="src-domain">sec.gov</span></li><li><a href="https://www.stocktitan.net/sec-filings/CAR/8-k-avis-budget-group-inc-reports-material-event-48364b078231.html" target="_blank" rel="noopener noreferrer">Avis Budget Group (NASDAQ: CAR) issues $650M in asset-backed fleet securities</a> <span class="src-domain">stocktitan.net</span></li><li><a href="https://www.axios.com/2026/04/24/avis-stock-shorts-hedge-funds" target="_blank" rel="noopener noreferrer">The strange ride taken by Avis stock</a> <span class="src-domain">axios.com</span></li><li><a href="https://www.benzinga.com/trading-ideas/movers/26/04/52000824/avis-budget-group-plummets-as-fugazi-research-alleges-manufactured-short-squeeze" target="_blank" rel="noopener noreferrer">Avis Budget Group Plummets As Fugazi Research Alleges Manufactured Short Squeeze</a> <span class="src-domain">benzinga.com</span></li><li><a href="https://www.stocktitan.net/news/CAR/avis-budget-group-to-announce-third-quarter-2026-results-on-november-wu90kat48eyn.html" target="_blank" rel="noopener noreferrer">Avis Budget sets Q3 2026 earnings date for Nov. 3</a> <span class="src-domain">stocktitan.net</span></li><li><a href="https://newsroom.ryder.com/news/news-details/2026/Ryder-Reports-Second-Quarter-2026-Results/default.aspx" target="_blank" rel="noopener noreferrer">Ryder Reports Second Quarter 2026 Results</a> <span class="src-domain">newsroom.ryder.com</span></li><li><a href="https://www.benzinga.com/news/26/07/60646206/ryder-system-q2-2026-earnings-call-complete-transcript" target="_blank" rel="noopener noreferrer">Ryder System Q2 2026 Earnings Call: Complete Transcript</a> <span class="src-domain">benzinga.com</span></li><li><a href="https://www.marketbeat.com/instant-alerts/ryder-system-q2-earnings-call-highlights-2026-07-23/" target="_blank" rel="noopener noreferrer">Ryder System Q2 Earnings Call Highlights</a> <span class="src-domain">marketbeat.com</span></li><li><a href="https://www.investing.com/news/analyst-ratings/baird-downgrades-ryder-stock-rating-on-elevated-expectations-93CH-4921728" target="_blank" rel="noopener noreferrer">Baird downgrades Ryder stock rating on elevated expectations</a> <span class="src-domain">investing.com</span></li><li><a href="https://investors.ryder.com/news/news-details/2026/Ryder-to-Release-Third-Quarter-2026-Earnings-on-October-22-2026/default.aspx" target="_blank" rel="noopener noreferrer">Ryder to Release Third Quarter 2026 Earnings on October 22, 2026</a> <span class="src-domain">investors.ryder.com</span></li><li><a href="https://www.ttnews.com/articles/ryder-2026-succession-plan" target="_blank" rel="noopener noreferrer">Ryder Outlines 2026 Succession Plan for New CEO</a> <span class="src-domain">ttnews.com</span></li><li><a href="https://www.coxautoinc.com/press-releases/q3-2026-muvvi-press-release/" target="_blank" rel="noopener noreferrer">Manheim Used Vehicle Value Index Declines in September as Third-Quarter Depreciation Accelerates; Year-End Valuation Forecast Lowered Amid Headwinds</a> <span class="src-domain">coxautoinc.com</span></li><li><a href="https://www.cnbc.com/2026/10/07/used-cars-manheim-index.html" target="_blank" rel="noopener noreferrer">Used car prices fall in Q3, while demand for fuel-efficient vehicles grows</a> <span class="src-domain">cnbc.com</span></li><li><a href="https://www.cbtnews.com/wholesale-used-vehicle-prices-fall" target="_blank" rel="noopener noreferrer">Wholesale used-vehicle prices fall in September as high fuel costs shift demand</a> <span class="src-domain">cbtnews.com</span></li><li><a href="https://news.dealershipguy.com/p/new-vehicle-prices-surge-from-impact-of-tariffs" target="_blank" rel="noopener noreferrer">New-vehicle prices surge from impact of tariffs</a> <span class="src-domain">news.dealershipguy.com</span></li><li><a href="https://www.autorentalnews.com/news/cross-pressures-evolving-trends-drive-2026-rental-car-industry" target="_blank" rel="noopener noreferrer">Cross-Pressures, Evolving Trends Drive 2026 Rental Car Industry</a> <span class="src-domain">autorentalnews.com</span></li></ul><p class="src-internal">Also checked against 18 company-fundamentals reads, 10 price-database queries, 5 research notes, 1 prior recommendation in the author's own data.</p></details></footer></article></div></main><nav class="pager" aria-label="More"><a href="index.html">← More from DK Street Journal</a></nav><footer class="site-foot"><p class="short-notice">Not investment advice. Written by software, unreviewed, and possibly wrong. The author may hold positions. No liability accepted. <a href="index.html#disclaimer">Read the full disclaimer ›</a></p><p class="built">October 12, 2026 · 4:14 PM PDT</p></footer></div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T20:45:53Z",
+  "generated_at": "2026-10-12T23:17:51Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -17,8 +17,7 @@
     "Higher Education",
     "Real Estate & Construction",
     "Transportation & Logistics",
-    "Food & Agriculture",
-    "Specialty Chemicals & Materials"
+    "Food & Agriculture"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -270,7 +269,8 @@
     "364e4b52bbf343f0809de82af4f24740": "Healthcare & Medical",
     "3672fb5768304038a5e4dd79fa271679": "Enterprise Software & Cloud",
     "36af0bdb4593485c90ff54940e00cd33": "Enterprise Software & Cloud",
-    "36c2ce37293f41dbbfb3edd71aa732b3": "Specialty Chemicals & Materials",
+    "36c2ce37293f41dbbfb3edd71aa732b3": "Industrial Equipment & Mining",
+    "3709040f729642518c6891f23a10ce67": "Retail & Consumer Services",
     "371ded5427b848f797301bfc6e00d606": "IT Services & Consulting",
     "374332d74d3544b1bf2b9781076356ec": "IT Services & Consulting",
     "37a78c4109484a54bc0528ebf12e2123": "AI Data-Center Infrastructure",
