@@ -17,7 +17,8 @@
     "Higher Education",
     "Real Estate & Construction",
     "Transportation & Logistics",
-    "Food & Agriculture"
+    "Food & Agriculture",
+    "Media & Digital Content"
   ],
   "assignments": {
     "00527b4b481b4f2fa9e0f63bc2fda5b4": "Retail & Consumer Services",
@@ -125,6 +126,7 @@
     "181e345aa37b40fc8bf9ccef4df9457f": "AI Data-Center Infrastructure",
     "184aa301b26443eab604e268966853e4": "Energy, Power & Utilities",
     "185bc5f3861e4b24af266e4aec092a11": "Industrial Equipment & Mining",
+    "1909d50fda6c456dbdad0940aa345554": "Media & Digital Content",
     "1943245f0f134e48b583dd9108b92578": "Energy, Power & Utilities",
     "194b34a7abd34473855766f370b7c05d": "Enterprise Software & Cloud",
     "19843b4ebe804b4a949475494f2016ed": "Energy, Power & Utilities",
