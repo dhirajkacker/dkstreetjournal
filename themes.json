@@ -19,7 +19,8 @@
     "Media & Digital Content",
     "Packaging & Paper",
     "Cannabis Industry",
-    "Sports Betting & Gaming"
+    "Sports Betting & Gaming",
+    "Electronic Test Equipment"
   ],
   "assignments": {
     "000425c4b3094329b4de5ce35301f274": "Semiconductors & Chip Manufacturing",
@@ -850,6 +851,7 @@
     "abbe69cd003546f781f45af6bd54c538": "Enterprise Software & Cloud",
     "abc3cd2a37a14c47b0bdc975b4d3cddb": "Financial Services & Payments",
     "abdb19efe35d4b2489075da22386aed5": "Retail & Consumer Services",
+    "abe230b213144d2485ab92f1be845b16": "Electronic Test Equipment",
     "ac1837d2304b4bde9c9cbb96a843a7f9": "Energy, Power & Utilities",
     "ac1c5c3469bb4b2db1d8d0f7b1c3ef17": "AI Data-Center Infrastructure",
     "ac322883580d4efda014d49004d1a4b1": "AI Data-Center Infrastructure",
