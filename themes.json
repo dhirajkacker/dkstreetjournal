@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T14:27:15Z",
+  "generated_at": "2026-11-07T14:38:36Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -18,9 +18,7 @@
     "Food & Agriculture",
     "Media & Digital Content",
     "Packaging & Paper",
-    "Cannabis Industry",
-    "Sports Betting & Gaming",
-    "Electronic Test Equipment"
+    "Sports Betting & Gaming"
   ],
   "assignments": {
     "000425c4b3094329b4de5ce35301f274": "Semiconductors & Chip Manufacturing",
@@ -115,6 +113,7 @@
     "14c96feca5954290a13a1fc2c7293331": "Semiconductors & Chip Manufacturing",
     "153ca1e23b9c47fc805ab0df21aa3d8d": "Financial Services & Payments",
     "1553acdad94d465ba3bc3f7a3ede778c": "Defense & Aerospace",
+    "15744094d7f54bdfbff8aa9642064fc8": "AI Data-Center Infrastructure",
     "15a712d11ba14020818e8596a886f76e": "Enterprise Software & Cloud",
     "15d4e148c9ff479ab54d61188a678722": "Energy, Power & Utilities",
     "15facea2ff854b52aeabdbaa86e5554b": "Retail & Consumer Services",
@@ -822,7 +821,7 @@
     "a5d5412ea0e541e69652ccc71f0c4230": "AI Data-Center Infrastructure",
     "a636aaf6666046138bee40f3f2532fa6": "AI Data-Center Infrastructure",
     "a6679194cd234fd6ba8c0eab4a01ea98": "Enterprise Software & Cloud",
-    "a6afcbe17ce844da96c46ea183df8121": "Cannabis Industry",
+    "a6afcbe17ce844da96c46ea183df8121": "Food & Agriculture",
     "a6dfd81aa96642ce8e06e74179d8605a": "AI Data-Center Infrastructure",
     "a6e94dcbfc5f48f1b4157531edb3d34e": "Retail & Consumer Services",
     "a707b5df3df244838f23e32d6b88ccfe": "Enterprise Software & Cloud",
@@ -851,7 +850,7 @@
     "abbe69cd003546f781f45af6bd54c538": "Enterprise Software & Cloud",
     "abc3cd2a37a14c47b0bdc975b4d3cddb": "Financial Services & Payments",
     "abdb19efe35d4b2489075da22386aed5": "Retail & Consumer Services",
-    "abe230b213144d2485ab92f1be845b16": "Electronic Test Equipment",
+    "abe230b213144d2485ab92f1be845b16": "Semiconductors & Chip Manufacturing",
     "ac1837d2304b4bde9c9cbb96a843a7f9": "Energy, Power & Utilities",
     "ac1c5c3469bb4b2db1d8d0f7b1c3ef17": "AI Data-Center Infrastructure",
     "ac322883580d4efda014d49004d1a4b1": "AI Data-Center Infrastructure",
