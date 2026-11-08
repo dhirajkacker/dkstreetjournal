@@ -19,7 +19,8 @@
     "Media & Digital Content",
     "Packaging & Paper",
     "Sports Betting & Gaming",
-    "Computer Hardware Resellers"
+    "Computer Hardware Resellers",
+    "IT Services"
   ],
   "assignments": {
     "000425c4b3094329b4de5ce35301f274": "Semiconductors & Chip Manufacturing",
@@ -1064,6 +1065,7 @@
     "d4f2138c1fa54d37b8d40910e529475d": "Financial Services & Payments",
     "d50d447dcf2b460f9e7c15c4dd67b683": "Energy, Power & Utilities",
     "d5764f05e3954e3c92f42cc75073ee1f": "AI Data-Center Infrastructure",
+    "d5a47a54b3054ac3a5ed7ec38a7b3a31": "IT Services",
     "d62f460a6f8847c7a27a0bddea2572ab": "Defense & Aerospace",
     "d67c0f08d381476ab94ad37d161efd09": "Enterprise Software & Cloud",
     "d6b77988c64d4b3394c263a327ec8585": "Semiconductors & Chip Manufacturing",
