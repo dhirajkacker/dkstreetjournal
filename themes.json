@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T14:38:36Z",
+  "generated_at": "2026-11-08T15:29:34Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -19,8 +19,7 @@
     "Media & Digital Content",
     "Packaging & Paper",
     "Sports Betting & Gaming",
-    "Computer Hardware Resellers",
-    "IT Services"
+    "Computer Hardware Resellers"
   ],
   "assignments": {
     "000425c4b3094329b4de5ce35301f274": "Semiconductors & Chip Manufacturing",
@@ -342,6 +341,7 @@
     "40d881ae40184056ba65562914f574db": "Enterprise Software & Cloud",
     "41ba78fbde1d477ab09ec09d199633d0": "Financial Services & Payments",
     "41c9fbbf65054ffa89ff3f1912449147": "Energy, Power & Utilities",
+    "4217fc3c4cdd40ca8c43b74d3a884c7b": "AI Data-Center Infrastructure",
     "423e1f376a534da381915eb8275b27a3": "Energy, Power & Utilities",
     "424f2d63a72445d799fd919766ed74f6": "Industrial Equipment & Mining",
     "425bed3abcbe4bfb948c26531cb83844": "Enterprise Software & Cloud",
@@ -373,7 +373,7 @@
     "47ae38bc310e476b8d9215972bb5a243": "Telecom & Networking",
     "47d427b3847e43f8918a5e1398a3b282": "AI Data-Center Infrastructure",
     "4804bc75a3c248a5805608a63a7a6445": "Industrial Equipment & Mining",
-    "484c14582867461690658d89dc9b996f": "IT Services",
+    "484c14582867461690658d89dc9b996f": "Enterprise Software & Cloud",
     "48797f5ebe2543998b5c7f5f389e038f": "Transportation & Logistics",
     "48c1b0882f924b36a4a66484e22d57e3": "Enterprise Software & Cloud",
     "48c5812bd60f43248d7fb0de012f4bff": "Enterprise Software & Cloud",
@@ -1071,7 +1071,7 @@
     "d4f2138c1fa54d37b8d40910e529475d": "Financial Services & Payments",
     "d50d447dcf2b460f9e7c15c4dd67b683": "Energy, Power & Utilities",
     "d5764f05e3954e3c92f42cc75073ee1f": "AI Data-Center Infrastructure",
-    "d5a47a54b3054ac3a5ed7ec38a7b3a31": "IT Services",
+    "d5a47a54b3054ac3a5ed7ec38a7b3a31": "Enterprise Software & Cloud",
     "d62f460a6f8847c7a27a0bddea2572ab": "Defense & Aerospace",
     "d67c0f08d381476ab94ad37d161efd09": "Enterprise Software & Cloud",
     "d6b77988c64d4b3394c263a327ec8585": "Semiconductors & Chip Manufacturing",
