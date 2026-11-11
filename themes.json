@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T15:29:34Z",
+  "generated_at": "2026-11-11T03:23:20Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -18,9 +18,7 @@
     "Food & Agriculture",
     "Media & Digital Content",
     "Packaging & Paper",
-    "Sports Betting & Gaming",
-    "Computer Hardware Resellers",
-    "Building Security Systems"
+    "Sports Betting & Gaming"
   ],
   "assignments": {
     "000425c4b3094329b4de5ce35301f274": "Semiconductors & Chip Manufacturing",
@@ -287,6 +285,7 @@
     "34898bad1a604e299d76e33d299df9e2": "Enterprise Software & Cloud",
     "34a583a9db5f4bd48539ca6a123ed24c": "Financial Services & Payments",
     "34cc5d9b3e7a4fdab13dc14a221bde59": "Enterprise Software & Cloud",
+    "34cd1fb0f93e45f195fb26b0bfde8574": "AI Data-Center Infrastructure",
     "35a4e8fc459c44b3bb89a0b1a272fe41": "AI Data-Center Infrastructure",
     "35bb25ae7dd04ddf89fc9880ac5b7ce9": "Industrial Equipment & Mining",
     "361df4192fd84fe69da38d865c8ee853": "Retail & Consumer Services",
@@ -647,7 +646,7 @@
     "8243758e95f14b5989a346293f8a7aec": "AI Data-Center Infrastructure",
     "826114a97c184ecbbce6a3efd2a989e3": "Energy, Power & Utilities",
     "826c850fb62340938b7c08e65c91baee": "Energy, Power & Utilities",
-    "82dcc29e7eda49169d468d5eb95df9b6": "Computer Hardware Resellers",
+    "82dcc29e7eda49169d468d5eb95df9b6": "Retail & Consumer Services",
     "8308399aef654a0fab76b876b6116cba": "Enterprise Software & Cloud",
     "834106c70f3e4d0789e475ef65765986": "Financial Services & Payments",
     "8350d50e5cbf4d89bba43a127a687540": "Semiconductors & Chip Manufacturing",
@@ -781,7 +780,7 @@
     "9ac7511b2d24426ca2c0ad815789d2a6": "AI Data-Center Infrastructure",
     "9ad09d8d48c945ec82c1a3c4297d036e": "Energy, Power & Utilities",
     "9b0d3022de4c4b2eb34c9c9c4911847c": "Energy, Power & Utilities",
-    "9b27fed5740844dd8c61f3907aaaf74b": "Building Security Systems",
+    "9b27fed5740844dd8c61f3907aaaf74b": "Real Estate & Construction",
     "9c87b6b7db5749ebb8d9f6fa1648406a": "Energy, Power & Utilities",
     "9c9b61ea1b974deaa0a9bedddb601a39": "Retail & Consumer Services",
     "9cca58518e9e484aae37e381a688dbfe": "AI Data-Center Infrastructure",
