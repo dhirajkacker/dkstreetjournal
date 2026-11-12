@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T03:23:20Z",
+  "generated_at": "2026-11-12T04:16:38Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -16,9 +16,7 @@
     "Real Estate & Construction",
     "Transportation & Logistics",
     "Food & Agriculture",
-    "Media & Digital Content",
-    "Packaging & Paper",
-    "Sports Betting & Gaming"
+    "Media & Digital Content"
   ],
   "assignments": {
     "000425c4b3094329b4de5ce35301f274": "Semiconductors & Chip Manufacturing",
@@ -97,6 +95,7 @@
     "0f9b22aad7e145acb6263fb9e44e637d": "Semiconductors & Chip Manufacturing",
     "0fecf0fc0d884b6fb2d88b345cefa2e1": "Energy, Power & Utilities",
     "0ff5283ce5d14326acfb16a4004fd0c9": "Enterprise Software & Cloud",
+    "10adf85b061b4d21833a2d4d8490ab29": "Media & Digital Content",
     "10b7e0ba2b914dd9b3895f0e8cbd0bfa": "Financial Services & Payments",
     "10bb6c193da24200839dd205b8579347": "Retail & Consumer Services",
     "1125fe9115ca42bc89d16a1bf9d80a04": "Financial Services & Payments",
@@ -254,7 +253,7 @@
     "2eae37337e2648d890096740ae9259f4": "Healthcare & Medical",
     "2f0f5d615bc240de99cc6e1d61752968": "AI Data-Center Infrastructure",
     "2f2097d1c42d4a1097240c36f259f062": "Food & Agriculture",
-    "2fbf7fe62fac4c48a98b321510d71139": "Packaging & Paper",
+    "2fbf7fe62fac4c48a98b321510d71139": "Industrial Equipment & Mining",
     "2fdd6b9ea2344802bc8bb2eab78c3f5b": "Energy, Power & Utilities",
     "2ff02a9561a64a6d9a2d36f252d76355": "Food & Agriculture",
     "30719c27be984dacbe81bb365ea9c79e": "Energy, Power & Utilities",
@@ -501,7 +500,7 @@
     "61a8b846c20f4a80a277feb70a529f45": "AI Data-Center Infrastructure",
     "61accf08ef8948548c9fa9b724bd6075": "AI Data-Center Infrastructure",
     "61d011bebed24699b520d6ad6aa9cf57": "Energy, Power & Utilities",
-    "6237b77fb71144dc8d281fedefb10344": "Sports Betting & Gaming",
+    "6237b77fb71144dc8d281fedefb10344": "Media & Digital Content",
     "634d6567b9cf498ebb48c00a90ccf7ec": "AI Data-Center Infrastructure",
     "63b0c71db6d54466b897475f4a9d98e1": "Industrial Equipment & Mining",
     "642ec9c802b54967abd691c398ee858b": "Financial Services & Payments",
