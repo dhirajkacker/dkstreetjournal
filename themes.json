@@ -17,7 +17,8 @@
     "Transportation & Logistics",
     "Food & Agriculture",
     "Media & Digital Content",
-    "Information Services"
+    "Information Services",
+    "Automotive Parts & Suppliers"
   ],
   "assignments": {
     "000425c4b3094329b4de5ce35301f274": "Semiconductors & Chip Manufacturing",
@@ -845,6 +846,7 @@
     "a29668c8837543019dc6428f6c06ac80": "Semiconductors & Chip Manufacturing",
     "a29b9051c2b849358d1a53a582693350": "Semiconductors & Chip Manufacturing",
     "a2b9c505dfaa4a9e80287ef63169b253": "Energy, Power & Utilities",
+    "a2ba4391906b45979c19ad114a355122": "Automotive Parts & Suppliers",
     "a2bc7df3294b4dbebf717dd5f4cee033": "Financial Services & Payments",
     "a359d042d22649fb8a9bc735496ccca2": "Enterprise Software & Cloud",
     "a36c70ef764f4db7987a55ffcefcc767": "Enterprise Software & Cloud",
