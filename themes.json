@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T04:16:38Z",
+  "generated_at": "2026-11-24T06:34:54Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -17,7 +17,7 @@
     "Transportation & Logistics",
     "Food & Agriculture",
     "Media & Digital Content",
-    "Data Center Construction"
+    "Information Services"
   ],
   "assignments": {
     "000425c4b3094329b4de5ce35301f274": "Semiconductors & Chip Manufacturing",
@@ -858,6 +858,7 @@
     "a5724daf3b4b4f64bee1cf6506dfb44c": "Industrial Equipment & Mining",
     "a5840d2191414c28ae1b4ae731101fb3": "AI Data-Center Infrastructure",
     "a589a6f31c974eda960680f4bf64b82f": "Enterprise Software & Cloud",
+    "a59e577998d941ba875fae03416083ae": "Information Services",
     "a5aca143c60a46f1bbd647ab78e6b552": "Retail & Consumer Services",
     "a5d5412ea0e541e69652ccc71f0c4230": "AI Data-Center Infrastructure",
     "a636aaf6666046138bee40f3f2532fa6": "AI Data-Center Infrastructure",
@@ -1275,7 +1276,7 @@
     "f35ea49d5b094e4383c2ba8c91f6a415": "AI Data-Center Infrastructure",
     "f3cb727e979344a582c273913050745e": "AI Data-Center Infrastructure",
     "f45fc0be1d044dca89fd483f809f3d59": "Energy, Power & Utilities",
-    "f4962670bdd54ebdbb33d00219fb7e4f": "Data Center Construction",
+    "f4962670bdd54ebdbb33d00219fb7e4f": "AI Data-Center Infrastructure",
     "f4b4485bbc494888be0c7bb7abcba35d": "Enterprise Software & Cloud",
     "f4c9be1218ec433cb1f3b9d4f60e1b8a": "Financial Services & Payments",
     "f5695ae39da546a39148f9763f388da8": "Enterprise Software & Cloud",
