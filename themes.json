@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T06:34:54Z",
+  "generated_at": "2026-11-25T08:24:00Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -16,10 +16,7 @@
     "Real Estate & Construction",
     "Transportation & Logistics",
     "Food & Agriculture",
-    "Media & Digital Content",
-    "Information Services",
-    "Automotive Parts & Suppliers",
-    "IT Services & Consulting"
+    "Media & Digital Content"
   ],
   "assignments": {
     "000425c4b3094329b4de5ce35301f274": "Semiconductors & Chip Manufacturing",
@@ -104,7 +101,7 @@
     "0f30891412c84349b8fd4f85c2537906": "AI Data-Center Infrastructure",
     "0f9b22aad7e145acb6263fb9e44e637d": "Semiconductors & Chip Manufacturing",
     "0fecf0fc0d884b6fb2d88b345cefa2e1": "Energy, Power & Utilities",
-    "0ff3fb921fb644c0bda5a9cfc2488685": "IT Services & Consulting",
+    "0ff3fb921fb644c0bda5a9cfc2488685": "Enterprise Software & Cloud",
     "0ff5283ce5d14326acfb16a4004fd0c9": "Enterprise Software & Cloud",
     "10adf85b061b4d21833a2d4d8490ab29": "Media & Digital Content",
     "10b7e0ba2b914dd9b3895f0e8cbd0bfa": "Financial Services & Payments",
@@ -514,6 +511,7 @@
     "5ed4302e13b94a31880a65287e03359e": "AI Data-Center Infrastructure",
     "5ed827145cfa42b7b9a107cb989b3b49": "Enterprise Software & Cloud",
     "5f194e663bf64ed4b1449d108cc7751f": "Energy, Power & Utilities",
+    "5f8e367004fd4896866b02ede735ea88": "Energy, Power & Utilities",
     "5fd9681df2ae45c583b2685e40cbb8a4": "AI Data-Center Infrastructure",
     "5fef0a73017a4ab28d8d02062570f86e": "Energy, Power & Utilities",
     "60121314a4c146df849859768fbeef17": "Energy, Power & Utilities",
@@ -852,7 +850,7 @@
     "a29668c8837543019dc6428f6c06ac80": "Semiconductors & Chip Manufacturing",
     "a29b9051c2b849358d1a53a582693350": "Semiconductors & Chip Manufacturing",
     "a2b9c505dfaa4a9e80287ef63169b253": "Energy, Power & Utilities",
-    "a2ba4391906b45979c19ad114a355122": "Automotive Parts & Suppliers",
+    "a2ba4391906b45979c19ad114a355122": "Industrial Equipment & Mining",
     "a2bc7df3294b4dbebf717dd5f4cee033": "Financial Services & Payments",
     "a359d042d22649fb8a9bc735496ccca2": "Enterprise Software & Cloud",
     "a36c70ef764f4db7987a55ffcefcc767": "Enterprise Software & Cloud",
@@ -869,7 +867,7 @@
     "a5724daf3b4b4f64bee1cf6506dfb44c": "Industrial Equipment & Mining",
     "a5840d2191414c28ae1b4ae731101fb3": "AI Data-Center Infrastructure",
     "a589a6f31c974eda960680f4bf64b82f": "Enterprise Software & Cloud",
-    "a59e577998d941ba875fae03416083ae": "Information Services",
+    "a59e577998d941ba875fae03416083ae": "Enterprise Software & Cloud",
     "a5aca143c60a46f1bbd647ab78e6b552": "Retail & Consumer Services",
     "a5d5412ea0e541e69652ccc71f0c4230": "AI Data-Center Infrastructure",
     "a636aaf6666046138bee40f3f2532fa6": "AI Data-Center Infrastructure",
