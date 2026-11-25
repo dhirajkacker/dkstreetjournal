@@ -16,7 +16,8 @@
     "Real Estate & Construction",
     "Transportation & Logistics",
     "Food & Agriculture",
-    "Media & Digital Content"
+    "Media & Digital Content",
+    "Quantum Computing"
   ],
   "assignments": {
     "000425c4b3094329b4de5ce35301f274": "Semiconductors & Chip Manufacturing",
@@ -823,6 +824,7 @@
     "9d11fe0c3ce84c919b4485034f373da8": "Financial Services & Payments",
     "9d239751043045e4be6604a647c41ea2": "Energy, Power & Utilities",
     "9d38edd492c146c9b5a503d130c9099a": "Financial Services & Payments",
+    "9d6f2097ad344c6a99a869a2bf40f345": "Quantum Computing",
     "9e00bb2b5f224ebaa7b1d71cdbb27a35": "Energy, Power & Utilities",
     "9e02b52c516d47fca309aba1423bfb4f": "AI Data-Center Infrastructure",
     "9e2e199ba6234bc187a6deb69403be54": "AI Data-Center Infrastructure",
