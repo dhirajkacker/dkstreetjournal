@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T08:24:00Z",
+  "generated_at": "2026-11-26T10:07:39Z",
   "n_at_last_recluster": 206,
   "order": [
     "Enterprise Software & Cloud",
@@ -16,9 +16,7 @@
     "Real Estate & Construction",
     "Transportation & Logistics",
     "Food & Agriculture",
-    "Media & Digital Content",
-    "Quantum Computing",
-    "Automotive Manufacturing"
+    "Media & Digital Content"
   ],
   "assignments": {
     "000425c4b3094329b4de5ce35301f274": "Semiconductors & Chip Manufacturing",
@@ -831,7 +829,7 @@
     "9d11fe0c3ce84c919b4485034f373da8": "Financial Services & Payments",
     "9d239751043045e4be6604a647c41ea2": "Energy, Power & Utilities",
     "9d38edd492c146c9b5a503d130c9099a": "Financial Services & Payments",
-    "9d6f2097ad344c6a99a869a2bf40f345": "Quantum Computing",
+    "9d6f2097ad344c6a99a869a2bf40f345": "Semiconductors & Chip Manufacturing",
     "9e00bb2b5f224ebaa7b1d71cdbb27a35": "Energy, Power & Utilities",
     "9e02b52c516d47fca309aba1423bfb4f": "AI Data-Center Infrastructure",
     "9e2e199ba6234bc187a6deb69403be54": "AI Data-Center Infrastructure",
@@ -865,7 +863,7 @@
     "a359d042d22649fb8a9bc735496ccca2": "Enterprise Software & Cloud",
     "a36c70ef764f4db7987a55ffcefcc767": "Enterprise Software & Cloud",
     "a36c88f898744c50b6f27790f3deb6ac": "Semiconductors & Chip Manufacturing",
-    "a3743688c9e84c74ad786f06cc7b8ff5": "Automotive Manufacturing",
+    "a3743688c9e84c74ad786f06cc7b8ff5": "Industrial Equipment & Mining",
     "a38a0775c646476baf54f9b6851175bc": "Enterprise Software & Cloud",
     "a40023ee5e28452c98d298ed80f755c1": "Real Estate & Construction",
     "a44c9784981b4a488919bd5e18ed7fad": "Enterprise Software & Cloud",
@@ -1311,6 +1309,7 @@
     "f4962670bdd54ebdbb33d00219fb7e4f": "AI Data-Center Infrastructure",
     "f4b4485bbc494888be0c7bb7abcba35d": "Enterprise Software & Cloud",
     "f4c9be1218ec433cb1f3b9d4f60e1b8a": "Financial Services & Payments",
+    "f4e3c8c5401d4d4a93a5e020757ca8e7": "AI Data-Center Infrastructure",
     "f5695ae39da546a39148f9763f388da8": "Enterprise Software & Cloud",
     "f5737017dd9c4cc0bf23b00776dc3747": "Retail & Consumer Services",
     "f5bc99309e724997833cee1785cf729b": "Defense & Aerospace",
